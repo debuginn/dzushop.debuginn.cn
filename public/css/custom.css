@@ -1,0 +1,30 @@
+/*公共类*/
+.admin-content{padding: 20px;width: 100%;background: #f2edf3;}
+
+/*后台公共头部类*/
+.admin-head{background-color: #ffffff;border-radius: 10px; margin: 0px;padding: 5px;}
+/*.admin-head>div{padding: 10px 20px;}*/
+/*.admin-head-btn{display: inline;}*/
+.admin-head-left{padding: 10px 0px;}
+.admin-head-right{float: right; padding: 5px 0px;}
+.admin-head-search{}
+.admin-head-user-count{padding: 10px 20px;line-height: 100%;}
+
+/*后台公共表格类*/
+.admin-box{background-color: #ffffff;border-radius: 5px;margin: 20px 0px;}
+.admin-check-custom{vertical-align: middle;}
+
+/*后台公共分页类*/
+.admin-page{padding: 20px 0px;margin: 0px auto;}
+
+/*用户界面相关CSS*/
+
+/*用户登录界面CSS*/
+.admin-login-img{
+    height:47px;
+}
+/*图片页面相关CSS*/
+.admin-pic-create-box1{padding: 40px 20px;border-right: 1px solid #acacac;}
+.admin-pic-create-box2{padding: 40px 20px}
+.admin-pic-create-img{max-width: 100%; max-height: 300px;}
+.admin-pic-edit-img{max-width: 100%;max-height: 300px;}
