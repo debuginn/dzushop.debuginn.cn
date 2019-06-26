@@ -11,51 +11,58 @@
 |
 */
 
-
-//上传图片控制器
-Route::get('photo', 'UserController@photo');
-//处理上传图片控制器
-Route::post('upload', 'UserController@upload');
-
-
-/**
- * 2019-04-14学习
- */
-//请求
-Route::get('request', "RequestController@index");
-
-Route::match(['post', 'get'], '/admin/user/add', 'UserController@add');
-
-
-/**
- * 2019-04-13学习
- */
 /*
  * 路由组 -- 后台
  */
 
-//完成用户的登录路由
-Route::get('admin/login', "Admin\LoginController@index");
-//登陆的操作
-Route::post('admin/check', "Admin\LoginController@check");
-//登录验证码
-Route::get('admin/captcha', "Admin\LoginController@captcha");
-
 //通过路由组进行提取 提取公共命名空间 公共的前缀 中间件
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin'], function(){
-    //首页路由设置
+    /**
+     * 后台登录认证组
+     */
+    //完成用户的登录路由
+    Route::get('login',"LoginController@index");
+    //登陆的操作
+    Route::post('check',"LoginController@check");
+    //登录验证码
+    Route::get('captcha',"LoginController@captcha");
+
+
+    //后台首页路由设置
     Route::get('/', 'IndexController@index');
+
+    /**
+     * 后台管理员管理组
+     */
+    // 管理员管理首页
+    Route::get('admin', 'AdminController@index');
+    // 创建管理员方法
+    Route::get('admin/create', 'AdminController@create');
+    // 创建管理员保存方法
+    Route::post('admin/store', 'AdminController@store');
+    // 修改管理员方法
+    Route::get('admin/edit/{id}', 'AdminController@edit');
+    // 修改管理员保存方法
+    Route::post('admin/update', 'AdminController@update');
+    // 删除管理员方法
+    Route::get('admin/destory', 'AdminController@destory');
 
     /*
      * 用户管理模块路由设置
      */
-    Route::get('user',             'UserController@index');       //用户模块首页
-    Route::get('user/indexTable',  'UserController@indexTable');  //首页封装json数据方法
-    Route::get('user/create',      'UserController@create');      //创建用户方法
-    Route::post('user/store',      'UserController@store');       //保存用户方法
-    Route::get('user/edit/{id}',   'UserController@edit');        //修改用户信息方法
-    Route::post('user/status',     'UserController@status');      //用户状态选择方法
-    Route::post('user/update',     'UserController@update');      //用户修改信息方法
+    // 用户模块首页
+    Route::get('user', 'UserController@index');
+    // 创建用户方法
+    Route::get('user/create', 'UserController@create');
+    // 保存创建用户方法
+    Route::post('user/store',      'UserController@store');
+    // 修改用户信息方法
+    Route::get('user/edit/{id}',   'UserController@edit');
+    // 用户修改信息保存方法
+    Route::post('user/update',     'UserController@update');
+    // 用户状态选择方法
+    Route::post('user/status',     'UserController@status');
+    // 删除用户方法
     Route::get('user/destory',     'UserController@destory');
 
     /**

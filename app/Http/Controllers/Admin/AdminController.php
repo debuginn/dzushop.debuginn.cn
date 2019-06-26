@@ -6,17 +6,17 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 /**
- * 后台首页控制器
+ * 管理员控制器
  * Class IndexController
  * @package App\Http\Controllers\Admin
  */
-class IndexController extends Controller
+class AdminController extends Controller
 {
     /**
-     * 后台首页界面
+     * 管理员控制首页
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(){
-        return view("admin.index");
+        return view("admin.admin.index");
     }
 }

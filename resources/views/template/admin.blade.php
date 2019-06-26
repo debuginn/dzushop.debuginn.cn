@@ -67,7 +67,6 @@
                                 </p>
                             </div>
                         </a>
-                        </a>
                         <div class="dropdown-divider"></div>
                         <h6 class="p-3 mb-0 text-center">查看所有通知</h6>
                     </div>
@@ -94,6 +93,18 @@
                         <span class="menu-title">首页</span>
                         <i class="mdi mdi-home menu-icon"></i>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-title">管理员管理</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-settings menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="/admin/admin">管理员列表</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
