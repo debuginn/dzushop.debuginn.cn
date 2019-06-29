@@ -1,116 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="前台页面设计">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/plugins/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/plugins/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/plugins/nice-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/plugins/plugins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/plugins/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/plugins/venobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/vendor/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/vendor/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/vendor/fontawesome-stars.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/vendor/ion-fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/css/vendor/vendor.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/ionicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/ionicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/fonts/ionicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/banner/3-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/banner/3-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/banner/3-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/banner/3-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/brand/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/brand/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/brand/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/brand/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/brand/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/footer/logo/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/footer/payment/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/menu/logo/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/large-size/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/1-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/1-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/2-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/2-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/3-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/3-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/3-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/4-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/4-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/5-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/5-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/6-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/7-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/7-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/7-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/8-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/medium-size/8-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/product/small-size/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/shop/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/2-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/3-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/3-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/4-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/images/slider/4-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/ajax-mail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/jquery.barrating.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/jquery.counterup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/jquery.elevateZoom-3.0.8.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/jquery.nice-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/jquery.sticky-sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/jquery.ui.touch-punch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/plugins.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/scroll-top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/theia-sticky-sidebar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/venobox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/plugins/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/vendor/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/vendor/jquery-1.12.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/vendor/modernizr-2.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/vendor/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/js/vendor/vendor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+    <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Configuration.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,84 +21,45 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="172">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/template/admin.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="36" column="118" lean-forward="true" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="118" />
               <folding>
-                <element signature="e#44#72#0#PHP" expanded="true" />
+                <element signature="e#7841#7848#1#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="e#45#73#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="79" column="1" lean-forward="true" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-              <folding>
-                <element signature="e#44#72#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/home/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="156" column="4" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/home/css/vendor/ion-fonts.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/home/css/vendor/font-awesome.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="5324" column="1" lean-forward="true" selection-start-line="5324" selection-start-column="1" selection-end-line="5324" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/home/css/plugins/animate.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="3300" lean-forward="true" selection-start-line="3300" selection-end-line="3300" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/home/css/style.css">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="6872" selection-start-line="6872" selection-start-column="2" selection-end-line="6880" selection-end-column="3" />
+            <state relative-caret-position="350">
+              <caret line="99" column="52" lean-forward="true" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
+              <folding>
+                <element signature="e#3813#3820#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/user/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="60" column="34" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="60" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -225,18 +82,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
-        <option value="$PROJECT_DIR$/resources/views/template/admin.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/index.blade.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" />
         <option value="$PROJECT_DIR$/public/home/js/main.js" />
         <option value="$PROJECT_DIR$/public/home/css/vendor/ion-fonts.css" />
         <option value="$PROJECT_DIR$/public/home/css/vendor/font-awesome.css" />
         <option value="$PROJECT_DIR$/public/home/css/plugins/animate.css" />
         <option value="$PROJECT_DIR$/public/home/css/style.css" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/template/admin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" />
       </list>
     </option>
   </component>
@@ -330,9 +187,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="28" />
-    <option name="width" value="1938" />
+    <option name="x" value="-10" />
+    <option name="y" value="27" />
+    <option name="width" value="1939" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -341,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -392,31 +250,6 @@
             <path>
               <item name="dzushop.debuginn.cn" type="b2602c69:ProjectViewProjectNode" />
               <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dzushop.debuginn.cn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dzushop.debuginn.cn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dzushop.debuginn.cn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dzushop.debuginn.cn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -437,18 +270,28 @@
               <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dzushop.debuginn.cn" type="b2602c69:ProjectViewProjectNode" />
               <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dzushop.debuginn.cn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dzushop.debuginn.cn" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,7 +353,8 @@
       <workItem from="1561604049183" duration="2749000" />
       <workItem from="1561635944091" duration="2905000" />
       <workItem from="1561710575721" duration="6985000" />
-      <workItem from="1561798270348" duration="1898000" />
+      <workItem from="1561798270348" duration="1984000" />
+      <workItem from="1561801487578" duration="7956000" />
     </task>
     <task id="LOCAL-00001" summary="修改readme文件为laravel，后期加上readme文件">
       <created>1561460857044</created>
@@ -526,11 +370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561513520339</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="前台页面设计">
+      <created>1561801424203</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561801424203</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23150000" />
+    <option name="totallyTimeSpent" value="31192000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,10 +396,9 @@
     <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20682731" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18473895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -557,16 +407,17 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49921012" weight="0.32916668" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007899" side_tool="true" weight="0.16944444" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50153846" side_tool="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49846154" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.22222222" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32931727" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="File Transfer" order="5" sideWeight="0.49960285" visible="true" weight="0.14056225" />
+      <window_info anchor="right" id="File Transfer" order="5" sideWeight="0.49960285" weight="0.14056225" />
+      <window_info anchor="right" id="Version Control" order="6" sideWeight="0.49921012" weight="0.32866618" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,42 +491,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="19" column="32" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1780">
-          <caret line="2763" column="73" lean-forward="true" selection-start-line="2763" selection-start-column="73" selection-end-line="2763" selection-end-column="73" />
-          <folding>
-            <element signature="e#283721#283727#0#HTML" expanded="true" />
-            <element signature="e#287480#287487#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/template/admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -699,33 +518,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/public/home/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#44#72#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="-6">
+          <caret line="6879" column="7" lean-forward="true" selection-start-line="6879" selection-start-column="7" selection-end-line="6879" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/public/home/css/plugins/animate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="e#45#73#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="3298" column="7" selection-start-line="3298" selection-start-column="7" selection-end-line="3298" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/public/home/css/vendor/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="79" column="1" lean-forward="true" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding>
-            <element signature="e#44#72#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="166">
+          <caret line="5325" lean-forward="true" selection-start-line="5325" selection-end-line="5325" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/home/css/vendor/ion-fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -736,31 +553,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/home/css/vendor/ion-fonts.css">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="301">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+          <folding>
+            <element signature="e#44#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/home/css/vendor/font-awesome.css">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="5324" column="1" lean-forward="true" selection-start-line="5324" selection-start-column="1" selection-end-line="5324" selection-end-column="1" />
+        <state relative-caret-position="372">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/home/css/plugins/animate.css">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="3300" lean-forward="true" selection-start-line="3300" selection-end-line="3300" />
+        <state relative-caret-position="389">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/home/css/style.css">
+    <entry file="file://$PROJECT_DIR$/resources/views/home/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6872" selection-start-line="6872" selection-start-column="2" selection-end-line="6880" selection-end-column="3" />
+        <state relative-caret-position="126">
+          <caret line="3752" column="41" lean-forward="true" selection-start-line="3752" selection-start-column="41" selection-end-line="3752" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="36" column="118" lean-forward="true" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="118" />
+          <folding>
+            <element signature="e#7841#7848#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="60" column="34" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="60" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="99" column="52" lean-forward="true" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
+          <folding>
+            <element signature="e#3813#3820#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

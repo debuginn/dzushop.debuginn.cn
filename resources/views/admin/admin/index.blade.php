@@ -25,7 +25,7 @@
             </div>
             <div class="col-md-2 col-sm-12">
                 <div class="admin-head-right">
-                    <a href="/admin/admin/create">
+                    <a href="javascript:;" data-toggle="modal" data-target="#addAdmin">
                         <button class="btn btn-sm btn-gradient-primary admin-head-btn">添加</button>
                     </a>
                 </div>
@@ -74,4 +74,63 @@
             </div>
         </div>
     </div>
+    {{--添加管理员模态框开始--}}
+    <div class="modal fade" id="addAdmin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">添加管理员</h4>
+                    <button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return false;" id="formAddAdmin">
+                        <div class="form-group">
+                            <label for="">管理员名称</label>
+                            <input type="text" name="name" class="form-control" placeholder="请输入管理员名称" onchange="adminCheck();">
+                        </div>
+                        <div class="form-group">
+                            <label for="">密码</label>
+                            <input type="password" name="pass" class="form-control" placeholder="请输入新的密码">
+                        </div>
+                        <div class="form-group">
+                            <label for="">重复密码</label>
+                            <input type="password" name="repass" class="form-control" placeholder="请再次输入新的密码" onchange="passCheck();">
+                        </div>
+                        <div class="form-group">
+                            <label for="">状态</label>
+                            <br>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="userstatus" id="userstatus1" value="0" checked>
+                                    启用
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="userstatus" id="userstatus2" value="1">
+                                    禁用
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <input type="submit" value="提交" class="btn btn-gradient-success" onclick="addAdmin();">
+                            <input type="reset" value="重置" class="btn btn-gradient-danger">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{--添加管理员模态框结束--}}
+    <script type="text/javascript">
+        /**
+         * 添加管理员操作
+         */
+        function addAdmin(){
+            str = $("#formAddAdmin").serialize();
+            bootbox.alert(str);
+        }
+    </script>
 @endsection

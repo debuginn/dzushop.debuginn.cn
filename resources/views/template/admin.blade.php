@@ -30,13 +30,17 @@
                 <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                         <div class="nav-profile-text">
-                            <p class="mb-1 text-black">Debug客栈</p>
+                            <p class="mb-1 text-black">张三</p>
                         </div>
                     </a>
                     <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#changePassword">
                             <i class="mdi mdi-cached mr-2 text-success"></i>
-                            登录日志
+                            修改密码
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="mdi mdi-home mr-2 text-success"></i>
+                            前台首页
                         </a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">
@@ -45,31 +49,11 @@
                         </a>
                     </div>
                 </li>
-                <!-- 通知中心 -->
+                <!-- 清除缓存 -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                        <i class="mdi mdi-bell-outline"></i>通知
-                        <span class="count-symbol bg-danger"></span>
+                    <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" >
+                        <i class="mdi mdi-filter-variant"></i> 清除缓存
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                        <h6 class="p-3 mb-0">通知中心</h6>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
-                                <div class="preview-icon bg-success">
-                                    <i class="mdi mdi-calendar"></i>通知
-                                </div>
-                            </div>
-                            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                                <h6 class="preview-subject font-weight-normal mb-1">今天</h6>
-                                <p class="text-gray ellipsis mb-0">
-                                    今天天气真好
-                                </p>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <h6 class="p-3 mb-0 text-center">查看所有通知</h6>
-                    </div>
                 </li>
                 <!-- 返回顶部 -->
                 <li class="nav-item nav-settings d-none d-lg-block">
@@ -170,7 +154,40 @@
     <!-- 页面内容结束 -->
 </div>
 <!-- 容器滚动条 -->
-
+{{--头部header修改密码模态框--}}
+<div class="modal fade" id="changePassword">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">修改密码</h4>
+                <button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="">原始密码</label>
+                        <input type="password" name="ordpassword" class="form-control" placeholder="请输入原始密码" onchange="passCheck();">
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="">新的密码</label>
+                        <input type="password" name="ordpassword" class="form-control" placeholder="请输入新的密码" onchange="passCheck();">
+                    </div>
+                    <div class="form-group">
+                        <label for="">重复密码</label>
+                        <input type="password" name="ordpassword" class="form-control" placeholder="请再次输入新的密码" onchange="passCheck();">
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <input type="submit" value="提交" class="btn btn-gradient-success">
+                        <input type="reset" value="重置" class="btn btn-gradient-danger">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{--头部header修改密码模态框结束--}}
 <!-- 插件:js -->
 <script src="{{ asset('vendors/js/vendor.bundle.base.js') }}"></script>
 <script src="{{ asset('vendors/js/vendor.bundle.addons.js') }}"></script>
@@ -187,6 +204,14 @@
 <script src="{{ asset('js/bootbox.min.js') }}"></script>
 <script src="{{ asset('js/bootbox.locales.min.js') }}"></script>
 <!-- 此页面自定义JS结束-->
+<script type="text/javascript">
+    /**
+     * 修改密码
+     */
+    function changePassword(){
+
+    }
+</script>
 </body>
 
 </html>
