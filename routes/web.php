@@ -12,6 +12,15 @@
 */
 
 /*
+ * 路由组 -- 前台
+ */
+
+
+Route::get('/', 'Home\IndexController@index');
+
+
+
+/*
  * 路由组 -- 后台
  */
 
@@ -96,13 +105,6 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     Route::get('pass', 'DataController@pass');
 });
 
-/*
- * 路由组 -- 前台
- */
-
-Route::group(['namespace'=>'Home'], function(){
-    Route::get('/', 'IndexController@index');
-});
 
 
 

@@ -2,13 +2,6 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="dzushop.debuginn.cn">
     <serverData>
-      <paths name="aliyun_blog">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="demo.debuginn.cn">
         <serverdata>
           <mappings>
@@ -24,41 +17,6 @@
         </serverdata>
       </paths>
       <paths name="iqiyi.debuginn.cn">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="laravel.debuginn.cn">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="wifi.debuginn.cn">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="腾讯云服务器">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="腾讯云服务器 (1)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="阿里云-个人Demo页面">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
