@@ -45,7 +45,7 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     // 管理员管理首页
     Route::get('admin', 'AdminController@index');
     // 创建管理员校验管理员是否存在
-    Route::get('admin/checkadmin', 'AdminController@checkadmin');
+    Route::post('admin/checkadmin', 'AdminController@checkadmin');
     // 创建管理员保存方法
     Route::post('admin/store', 'AdminController@store');
     // 修改管理员方法

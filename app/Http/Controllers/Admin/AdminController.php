@@ -18,8 +18,9 @@ class AdminController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(){
+        $count = DB::table('dzushop_admin')->count();
         $data = DB::table('dzushop_admin')->orderBy('id','asc')->paginate(10);
-        return view("admin.admin.index")->with('data',$data);
+        return view("admin.admin.index")->with('data',$data)->with('count',$count);
     }
 
     /**
@@ -27,7 +28,15 @@ class AdminController extends Controller
      * @param Request $request
      */
     public function checkadmin(Request $request){
-
+        // 接收来自前台的数据
+        $name = $request->input('name');
+        // 进行处理
+        $id = DB::table('dzushop_admin')->where('name', $name)->value('id');
+        if($id){
+            exit(json_encode(array('code'=>1, 'msg'=>'已经有该用户了')));
+        }else{
+            exit(json_encode(array('code'=>0, 'msg'=>'没有问题，数据库中没有该用户')));
+        }
     }
     /**
      * 管理员添加保存操作方法

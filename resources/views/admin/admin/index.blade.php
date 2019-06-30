@@ -11,17 +11,17 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
-                <div class="admin-head-search">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="请输入要查询的ID">
-                        <div class="input-group-append">
-                            <button class="btn btn-gradient-primary" type="button">搜索</button>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="admin-head-search">--}}
+{{--                    <div class="input-group input-group-sm">--}}
+{{--                        <input type="text" class="form-control" placeholder="请输入要查询的ID">--}}
+{{--                        <div class="input-group-append">--}}
+{{--                            <button class="btn btn-gradient-primary" type="button">搜索</button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
-                <span>共有{{ 111 }}个用户</span>
+                <span>共有 {{ $count }} 个用户</span>
             </div>
             <div class="col-md-2 col-sm-12">
                 <div class="admin-head-right">
@@ -126,6 +126,8 @@
         </div>
     </div>
     {{--添加管理员模态框结束--}}
+
+    {{--自定义ajax区域--}}
     <script type="text/javascript">
         /**
          * 检查用户输入用户名是否存在
@@ -135,9 +137,25 @@
         function adminCheck(){
             var name = $.trim($('input[name="name"]').val());
             //此处进行校验，第二个管理员开始校验
+            $.post(
+                // 请求地址加参数
+                '/admin/admin/checkadmin',
+                // 请求参数+CSRF认证
+                {'name':name, '_token':'{{ csrf_token() }}'},
+                // 请求回调函数
+                function(res){
+                    if(res.code > 0){
+                        bootbox.alert(res.msg);
+                        $('input[name="name"]').val("");
+                        $('input[name="name"]').focus();
+                    }
+                },
+                // 请求格式
+                'json'
+            );
         }
         /**
-         *
+         * 两次密码校验
          */
         function passCheck(){
             var pass = $.trim($('input[name="pass"]').val());
@@ -197,4 +215,5 @@
 
         }
     </script>
+    {{--自定义ajax区域结束--}}
 @endsection
