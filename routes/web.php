@@ -48,6 +48,8 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     Route::post('admin/checkadmin', 'AdminController@checkadmin');
     // 创建管理员保存方法
     Route::post('admin/store', 'AdminController@store');
+    // 用户状态选择方法
+    Route::post('admin/status', 'AdminController@status');
     // 修改管理员方法
     Route::get('admin/edit/{id}', 'AdminController@edit');
     // 修改管理员保存方法

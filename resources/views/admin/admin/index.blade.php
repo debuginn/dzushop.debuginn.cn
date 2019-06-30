@@ -212,7 +212,40 @@
                 // 传输采用json
                 'json'
             );
+        }
 
+        /**
+         * 修改当前状态
+         * @param obj
+         * @param id
+         */
+        function changeStatus(obj, id){
+            var id = id;
+            bootbox.alert("确定要改变当前管理员的状态么？", function(){
+                $.post(
+                    //请求地址
+                    '/admin/admin/status',
+                    //请求数据
+                    {'id':id, '_token':'{{ csrf_token() }}'},
+                    //回调函数
+                    function(res){
+                        if(res.code > 0){
+                            bootbox.alert("好像出错了，错误信息："+res.msg);
+                            setTimeout(function(){
+                                window.location.reload();
+                            },1000);
+                        }else{
+                            bootbox.alert('修改成功');
+                            setTimeout(function(){
+                                //当前页面刷新
+                                window.location.reload();
+                            },1000);
+                        }
+                    },
+                    //请求数据使用的方法
+                    'json'
+                );
+            })
         }
     </script>
     {{--自定义ajax区域结束--}}

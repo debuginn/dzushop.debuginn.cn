@@ -76,4 +76,28 @@ class AdminController extends Controller
             exit(json_encode(array('code'=>1, 'msg'=>"新增数据出现异常")));
         }
     }
+
+    /**
+     * 用户修改状态操作
+     * @param Request $request
+     */
+    public function status(Request $request){
+        $id = $request->input('id');
+        //获取当前id的状态
+        $st = DB::table('dzushop_admin')->where('id',$id)->value('status');
+        //接收读取状态值之后进行反转
+        if($st == 0){
+            $st = 1;
+        }else{
+            $st = 0;
+        }
+        //数据库操作
+        $result = DB::table('dzushop_admin')->where('id',$id)->update(['status'=>$st]);
+        //操作数据库返回值判断
+        if($result){
+            exit(json_encode(array('code'=>0, 'msg'=>'成功更新状态')));
+        }else{
+            exit(json_encode(array('code'=>1, 'msg'=>'更新状态异常')));
+        }
+    }
 }
