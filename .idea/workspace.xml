@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,20 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/template/admin.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="36" column="118" lean-forward="true" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="118" />
-              <folding>
-                <element signature="e#7841#7848#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="324">
+              <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -46,20 +33,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="99" column="52" lean-forward="true" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
+            <state relative-caret-position="366">
+              <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
               <folding>
-                <element signature="e#3813#3820#1#HTML" expanded="true" />
+                <element signature="e#45#73#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/user/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PicController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="60" column="34" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="60" selection-end-column="34" />
+            <state relative-caret-position="330">
+              <caret line="21" column="71" lean-forward="true" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -81,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/home/index.blade.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" />
@@ -90,9 +85,10 @@
         <option value="$PROJECT_DIR$/public/home/css/vendor/font-awesome.css" />
         <option value="$PROJECT_DIR$/public/home/css/plugins/animate.css" />
         <option value="$PROJECT_DIR$/public/home/css/style.css" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/home/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/template/admin.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" />
       </list>
     </option>
@@ -187,9 +183,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="27" />
-    <option name="width" value="1939" />
+    <option name="x" value="-9" />
+    <option name="y" value="28" />
+    <option name="width" value="1938" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -198,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,6 +287,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,7 +350,8 @@
       <workItem from="1561635944091" duration="2905000" />
       <workItem from="1561710575721" duration="6985000" />
       <workItem from="1561798270348" duration="1984000" />
-      <workItem from="1561801487578" duration="7956000" />
+      <workItem from="1561801487578" duration="8025000" />
+      <workItem from="1561864334454" duration="13065000" />
     </task>
     <task id="LOCAL-00001" summary="修改readme文件为laravel，后期加上readme文件">
       <created>1561460857044</created>
@@ -377,11 +374,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561801424203</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="前台页面汉化，管理员添加功能模态窗">
+      <created>1561815092538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561815092538</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31192000" />
+    <option name="totallyTimeSpent" value="44326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,7 +400,7 @@
     <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18473895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18674698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -416,7 +420,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32931727" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="File Transfer" order="5" sideWeight="0.49960285" weight="0.14056225" />
+      <window_info anchor="right" id="File Transfer" order="5" sideWeight="0.49960285" visible="true" weight="0.14056225" />
       <window_info anchor="right" id="Version Control" order="6" sideWeight="0.49921012" weight="0.32866618" />
     </layout>
   </component>
@@ -427,7 +431,8 @@
     <MESSAGE value="修改readme文件为laravel，后期加上readme文件" />
     <MESSAGE value="修整路由，开始开工" />
     <MESSAGE value="前台页面设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="前台页面设计" />
+    <MESSAGE value="前台页面汉化，管理员添加功能模态窗" />
+    <option name="LAST_COMMIT_MESSAGE" value="前台页面汉化，管理员添加功能模态窗" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LARAVEL.md">
@@ -442,13 +447,6 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RequestController.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DataController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PicController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/pic/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3018">
@@ -488,13 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="75" column="10" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="75" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -553,16 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding>
-            <element signature="e#44#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -590,37 +571,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
+        <state relative-caret-position="-540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/template/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="36" column="118" lean-forward="true" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="118" />
-          <folding>
-            <element signature="e#7841#7848#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="328">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/user/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="60" column="34" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="60" selection-end-column="34" />
+        <state relative-caret-position="784">
+          <caret line="118" column="16" lean-forward="true" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+          <folding>
+            <element signature="e#44#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="71" lean-forward="true" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="99" column="52" lean-forward="true" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
-          <folding>
-            <element signature="e#3813#3820#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="366">
+          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
         </state>
       </provider>
     </entry>
