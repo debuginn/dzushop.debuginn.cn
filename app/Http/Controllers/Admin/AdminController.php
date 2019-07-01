@@ -19,7 +19,10 @@ class AdminController extends Controller
      */
     public function index(){
         $count = DB::table('dzushop_admin')->count();
-        $data = DB::table('dzushop_admin')->orderBy('id','asc')->paginate(10);
+        $data = DB::table('dzushop_admin')
+            ->where('status', '=', '0')
+            ->orderBy('id','asc')
+            ->paginate(10);
         return view("admin.admin.index")->with('data',$data)->with('count',$count);
     }
 
@@ -98,6 +101,22 @@ class AdminController extends Controller
             exit(json_encode(array('code'=>0, 'msg'=>'成功更新状态')));
         }else{
             exit(json_encode(array('code'=>1, 'msg'=>'更新状态异常')));
+        }
+    }
+
+    /**
+     * 删除单个管理员操作方法
+     * @param Request $request
+     */
+    public function destroy(Request $request){
+        $id = $request->input('id');
+        $sql = DB::table('dzushop_admin')
+            ->where('id',$id)
+            ->update(['status'=>1]);
+        if($sql){
+            exit(json_encode(array('code'=>0, 'msg'=>'删除成功')));
+        }else{
+            exit(json_encode(array('code'=>1, 'msg'=>'删除出现异常')));
         }
     }
 }

@@ -23,10 +23,8 @@ Route::get('/', 'Home\IndexController@index');
 /*
  * 路由组 -- 后台
  */
-/**
- * 后台登录认证组 ,不能放在中间件下
- */
-//完成用户的登录路由
+// 后台登录认证组 ,不能放在中间件下
+// 完成用户的登录路由
 Route::get('admin/login',"Admin\LoginController@index");
 //登陆的操作
 Route::post('admin/check',"Admin\LoginController@check");
@@ -36,7 +34,7 @@ Route::get('admin/captcha',"Admin\LoginController@captcha");
 //通过路由组进行提取 提取公共命名空间 公共的前缀 中间件
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin'], function(){
 
-    //后台首页路由设置
+    // 后台首页路由设置
     Route::get('/', 'IndexController@index');
 
     /**
@@ -54,8 +52,8 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     Route::get('admin/edit/{id}', 'AdminController@edit');
     // 修改管理员保存方法
     Route::post('admin/update', 'AdminController@update');
-    // 删除管理员方法
-    Route::get('admin/destory', 'AdminController@destory');
+    // 删除单个管理员方法
+    Route::delete('admin/destroy/{id}', 'AdminController@destroy');
 
     /*
      * 用户管理模块路由设置
@@ -78,14 +76,15 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     /**
      * 用户图片管理设置
      */
-    Route::get('pic',             'PicController@index');          //图片管理方法
-    Route::get('pic/create',      'PicController@create');         //图片添加方法
-    Route::post('pic/store',      'PicController@store');          //保存添加图片方法
-    Route::post('pic/delAll',     'PicController@delAll');         //图片批量删除方法
-    Route::post('pic/sort',       'PicController@sort');           //图片无刷新排序方法
-    Route::delete('pic/destroy/{id}', 'PicController@destroy');    //图片单个删除方法
-    Route::get('pic/edit/{id}',   'PicController@edit');           //图片修改方法
-    Route::post('pic/update',     'PicController@update');         //修改图片更新方法
+    Route::get('pic',             'PicController@index');       //图片管理方法
+    Route::get('pic/create',      'PicController@create');      //图片添加方法
+    Route::post('pic/store',      'PicController@store');       //保存添加图片方法
+    Route::post('pic/delAll',     'PicController@delAll');      //图片批量删除方法
+    Route::post('pic/sort',       'PicController@sort');        //图片无刷新排序方法
+    Route::delete('pic/destroy/{id}', 'PicController@destroy'); //图片单个删除方法
+    Route::get('pic/edit/{id}',   'PicController@edit');        //图片修改方法
+    //修改图片更新方法
+    Route::post('pic/update',     'PicController@update');
 
 
 

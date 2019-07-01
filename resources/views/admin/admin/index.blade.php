@@ -247,6 +247,50 @@
                 );
             })
         }
+
+        /**
+         * 删除管理员
+         * @param obj
+         * @param id
+         */
+        function del(obj, id){
+            //获取id
+            var id=id;
+            bootbox.confirm({
+                title: "提示信息",
+                message: "你确定要删除么，此操作不能撤回，慎重！",
+                buttons: {
+                    cancel: {
+                        label: '<i class="fa fa-times"></i> 取消'
+                    },
+                    confirm: {
+                        label: '<i class="fa fa-check"></i> 删除'
+                    }
+                },
+                callback: function(){
+                    $.post(
+                        //请求地址及参数
+                        '/admin/admin/destroy/'+id,
+                        //数据 & 方式 & CSRF认证
+                        {'id':id, '_method':'delete','_token':'{{ csrf_token() }}'},
+                        //回调结果处理函数
+                        function(res){
+                            //若果大于0，则表示失败
+                            if(res.code>0){
+                                bootbox.alert("删除失败，错误信息："+res.msg);
+                            }else{
+                                bootbox.alert("删除成功");
+                                setTimeout(function () {
+                                    window.location.reload();
+                                },1000)
+                            }
+                        },
+                        //通过json进行传值
+                        'json'
+                    );
+                }
+            });
+        }
     </script>
     {{--自定义ajax区域结束--}}
 @endsection

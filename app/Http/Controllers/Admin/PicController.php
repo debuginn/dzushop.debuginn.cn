@@ -33,6 +33,7 @@ class PicController extends Controller
 
     /**
      * 保存添加图片
+     * @param Request $request
      */
     public function store(Request $request){
         //接受数据
