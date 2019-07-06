@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PicController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+            <state relative-caret-position="436">
+              <caret line="53" column="58" lean-forward="true" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -34,32 +34,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
+            <state relative-caret-position="494">
+              <caret line="131" column="50" lean-forward="true" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
               <folding>
                 <element signature="e#45#73#0#PHP" expanded="true" />
+                <element signature="e#320#418#0#PHP" />
+                <element signature="e#742#806#0#PHP" />
+                <element signature="e#811#1200#0#PHP" />
+                <element signature="e#2370#2428#0#PHP" />
+                <element signature="e#2433#3029#0#PHP" />
+                <element signature="e#3001#3062#0#PHP" />
+                <element signature="e#3067#3434#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="271" column="33" lean-forward="true" selection-start-line="271" selection-start-column="33" selection-end-line="271" selection-end-column="33" />
+            <state relative-caret-position="396">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
-                <element signature="e#3478#6296#0#HTML" />
+                <element signature="e#935#941#0#HTML" expanded="true" />
+                <element signature="e#1168#1174#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/pic/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="94" column="49" lean-forward="true" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -69,6 +68,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>assets</find>
+      <find>管理员密码</find>
     </findStrings>
     <replaceStrings>
       <replace>{{ asset(&quot;home</replace>
@@ -95,6 +95,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/admin/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/admin/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -369,7 +370,9 @@
       <workItem from="1561898079101" duration="50000" />
       <workItem from="1561898147069" duration="34000" />
       <workItem from="1561898199126" duration="3536000" />
-      <workItem from="1561983222282" duration="3429000" />
+      <workItem from="1561983222282" duration="3478000" />
+      <workItem from="1562053848196" duration="21000" />
+      <workItem from="1562412994547" duration="7172000" />
     </task>
     <task id="LOCAL-00001" summary="修改readme文件为laravel，后期加上readme文件">
       <created>1561460857044</created>
@@ -420,11 +423,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561901069746</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="删除管理员">
+      <created>1561987015322</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561987015323</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52405000" />
+    <option name="totallyTimeSpent" value="59647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,10 +446,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="-7" width="1476" height="878" extended-state="6" />
+    <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20422535" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20950468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -459,7 +469,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32931727" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="File Transfer" order="5" sideWeight="0.49960285" visible="true" weight="0.14014085" />
+      <window_info anchor="right" id="File Transfer" order="5" sideWeight="0.49960285" visible="true" weight="0.02008032" />
       <window_info anchor="right" id="Version Control" order="6" sideWeight="0.49921012" weight="0.32866618" />
     </layout>
   </component>
@@ -474,7 +484,8 @@
     <MESSAGE value="添加管理员功能及管理员列表展现及分页" />
     <MESSAGE value="判断管理员是否存在" />
     <MESSAGE value="修改当前管理员状态" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改当前管理员状态" />
+    <MESSAGE value="删除管理员" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除管理员" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LARAVEL.md">
@@ -645,36 +656,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/pic/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+        <state relative-caret-position="436">
+          <caret line="53" column="58" lean-forward="true" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
+        <state relative-caret-position="494">
+          <caret line="131" column="50" lean-forward="true" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
+            <element signature="e#320#418#0#PHP" />
+            <element signature="e#742#806#0#PHP" />
+            <element signature="e#811#1200#0#PHP" />
+            <element signature="e#2370#2428#0#PHP" />
+            <element signature="e#2433#3029#0#PHP" />
+            <element signature="e#3001#3062#0#PHP" />
+            <element signature="e#3067#3434#0#PHP" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/pic/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="94" column="49" lean-forward="true" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="271" column="33" lean-forward="true" selection-start-line="271" selection-start-column="33" selection-end-line="271" selection-end-column="33" />
+        <state relative-caret-position="342">
+          <caret line="190" column="48" lean-forward="true" selection-start-line="190" selection-start-column="48" selection-end-line="190" selection-end-column="48" />
           <folding>
-            <element signature="e#3478#6296#0#HTML" />
+            <element signature="e#5125#5131#0#HTML" expanded="true" />
+            <element signature="e#6387#6469#0#HTML" />
+            <element signature="e#9073#9149#0#HTML" />
+            <element signature="e#10201#10276#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/admin/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#935#941#0#HTML" expanded="true" />
+            <element signature="e#1168#1174#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

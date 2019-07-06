@@ -11,14 +11,14 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
-{{--                <div class="admin-head-search">--}}
-{{--                    <div class="input-group input-group-sm">--}}
-{{--                        <input type="text" class="form-control" placeholder="请输入要查询的ID">--}}
-{{--                        <div class="input-group-append">--}}
-{{--                            <button class="btn btn-gradient-primary" type="button">搜索</button>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                <div class="admin-head-search">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="请输入要查询的ID">
+                        <div class="input-group-append">
+                            <button class="btn btn-gradient-primary" type="button">搜索</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
                 <span>共有 {{ $count }} 个用户</span>
@@ -58,7 +58,7 @@
                         <td>{{ date("Y-m-d H:i:s", $value->time) }}</td>
                         <td>{{ date("Y-m-d H:i:s", $value->lasttime) }}</td>
                         <td>
-                            <a class="btn btn-sm btn-gradient-success" href="/admin/admin/edit/{{ $value->id }}">
+                            <a class="btn btn-sm btn-gradient-success" href="javascript:;" data-toggle="modal" data-target="#editAdmin" onclick="editAdmin(this, {{ $value->id }})">
                                 修改
                             </a>
                             <button class="btn btn-sm btn-gradient-danger" onclick="del(this, {{ $value->id }})">
@@ -87,7 +87,7 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group">
                             <label for="">管理员名称</label>
-                            <input type="text" name="name" class="form-control" placeholder="请输入管理员名称" onchange="adminCheck();" required>
+                            <input type="text" name="name" class="form-control" placeholder="请输入管理员名称" onmousedown="adminCheck();" required>
                         </div>
                         <div class="form-group">
                             <label for="">密码</label>
@@ -100,25 +100,17 @@
                         <div class="form-group">
                             <label for="">状态</label>
                             <br>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="status" id="userstatus1" value="0" checked>
-                                    启用
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="status" id="userstatus2" value="1">
-                                    禁用
-                                </label>
-                            </div>
+                            <input type="radio" class="" name="status" id="userstatus1" value="0" checked>
+                            启用
+                            &nbsp;
+                            <input type="radio" class="" name="status" id="userstatus2" value="1">
+                            禁用
                         </div>
                         <hr>
                         <div class="form-group">
                             <input type="submit" value="提交" class="btn btn-gradient-success" onclick="addAdmin();">
                             <input type="reset" value="重置" class="btn btn-gradient-danger">
-                            <button type="button" class="btn btn-gradient-primary" aria-label="Close" data-dismiss="modal">关闭当前窗口</button>
+                            <button type="button" class="btn btn-gradient-primary"  onclick="reloadPage()" aria-label="Close" data-dismiss="modal">关闭当前窗口</button>
                         </div>
                     </form>
                 </div>
@@ -126,6 +118,21 @@
         </div>
     </div>
     {{--添加管理员模态框结束--}}
+    {{--修改管理员模态框开始--}}
+    <div class="modal fade" id="editAdmin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">修改管理员</h4>
+                    <button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body" id="editbody">
+                    {{--ajax动态填充数据--}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{--修改管理员模态框结束--}}
 
     {{--自定义ajax区域--}}
     <script type="text/javascript">
@@ -207,13 +214,16 @@
                     }
                     if(res.code == 0){
                         bootbox.alert(res.msg);
+                        // 清空用户名密码及重复密码内容
+                        $('input[name="name"]').val("");
+                        $('input[name="pass"]').val("");
+                        $('input[name="repass"]').val("");
                     }
                 },
                 // 传输采用json
                 'json'
             );
         }
-
         /**
          * 修改当前状态
          * @param obj
@@ -247,7 +257,6 @@
                 );
             })
         }
-
         /**
          * 删除管理员
          * @param obj
@@ -290,6 +299,31 @@
                     );
                 }
             });
+        }
+        /**
+         * 添加成功重载页面
+         */
+        function reloadPage() {
+            window.location.reload();
+        }
+
+        /**
+         * 修改管理员信息
+         * @param obj
+         * @param id
+         */
+        function editAdmin(obj, id){
+            var id = id;
+            // 发送ajax数据
+            $.get(
+                "/admin/admin/edit/"+id,
+                {},
+                function(data){
+                    if(data){
+                        $('#editbody').html(data);
+                    }
+                }
+            )
         }
     </script>
     {{--自定义ajax区域结束--}}

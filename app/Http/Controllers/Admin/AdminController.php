@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Symfony\Component\Console\Helper\Table;
+use Illuminate\Support\Facades\Crypt;
 
 /**
  * 管理员控制器
@@ -18,9 +19,11 @@ class AdminController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(){
-        $count = DB::table('dzushop_admin')->count();
+        $count = DB::table('dzushop_admin')
+            ->where('delstatus', '=', '0')
+            ->count();
         $data = DB::table('dzushop_admin')
-            ->where('status', '=', '0')
+            ->where('delstatus', '=', '0')
             ->orderBy('id','asc')
             ->paginate(10);
         return view("admin.admin.index")->with('data',$data)->with('count',$count);
@@ -41,6 +44,7 @@ class AdminController extends Controller
             exit(json_encode(array('code'=>0, 'msg'=>'没有问题，数据库中没有该用户')));
         }
     }
+
     /**
      * 管理员添加保存操作方法
      * @param Request $request
@@ -61,16 +65,17 @@ class AdminController extends Controller
             exit(json_encode(array('code'=>1, 'msg'=>'传入status参数异常，请联系管理员')));
         }
         //完善数据库字段
-        $md5Pass = md5($pass);
+        $cryptPass = Crypt::encrypt($pass);
         $time = time();
 
         $result = DB::table('dzushop_admin')->insert([
             'name' => $name,
-            'pass' => $md5Pass,
+            'pass' => $cryptPass,
             'time' => $time,
             'lasttime' => $time,
             'count' => 1,
-            'status' => $status
+            'status' => $status,
+            'delstatus' => 0,
         ]);
 
         if($result){
@@ -112,11 +117,20 @@ class AdminController extends Controller
         $id = $request->input('id');
         $sql = DB::table('dzushop_admin')
             ->where('id',$id)
-            ->update(['status'=>1]);
+            ->update(['delstatus'=>1]);
         if($sql){
             exit(json_encode(array('code'=>0, 'msg'=>'删除成功')));
         }else{
             exit(json_encode(array('code'=>1, 'msg'=>'删除出现异常')));
         }
+    }
+
+    public function edit($id){
+        // 查询数据库
+        $data = DB::table('dzushop_admin')->find($id);
+
+        $data->pass = Crypt::decrypt($data->pass);
+        // 将数据封装给前台数据
+        return view('admin.admin.edit')->with("data",$data);
     }
 }
