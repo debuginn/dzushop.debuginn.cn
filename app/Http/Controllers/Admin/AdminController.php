@@ -125,6 +125,11 @@ class AdminController extends Controller
         }
     }
 
+    /**
+     * 修改模态窗方法
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function edit($id){
         // 查询数据库
         $data = DB::table('dzushop_admin')->find($id);
@@ -132,5 +137,42 @@ class AdminController extends Controller
         $data->pass = Crypt::decrypt($data->pass);
         // 将数据封装给前台数据
         return view('admin.admin.edit')->with("data",$data);
+    }
+
+    /**
+     * 更新修改数据
+     * @param Request $request
+     */
+    public function update(Request $request){
+
+        $upid = $request->input('upid');
+        $uppass = $request->input('uppass');
+        $upstatus = $request->input('upstatus');
+
+        if($upid == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器没有获取用户id信息')));
+        }
+        if($uppass == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器没有获取到用户密码')));
+        }
+        if($upstatus == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器没有获取到用户状态')));
+        }
+
+        // 处理pass
+        $cryptPass = Crypt::encrypt($uppass);
+
+        $data = DB::table('dzushop_admin')
+            ->where('id','=',$upid)
+            ->update([
+                'pass' => $cryptPass,
+                'status' => $upstatus
+            ]);
+        //判断是否修改成功
+        if($data){
+            exit(json_encode(array('code'=>0, 'msg'=>'编辑管理员信息成功')));
+        }else{
+            exit(json_encode(array('code'=>1, 'msg'=>'编辑管理员信息异常')));
+        }
     }
 }

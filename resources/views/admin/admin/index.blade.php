@@ -37,9 +37,9 @@
                 <tr>
                     <th>ID</th>
                     <th>姓名</th>
-                    <th>状态</th>
                     <th>创建时间</th>
                     <th>最后登录时间</th>
+                    <th>状态</th>
                     <th></th>
                 </tr>
                 </thead>
@@ -48,6 +48,8 @@
                     <tr>
                         <td>{{ $value->id }}</td>
                         <td>{{ $value->name }}</td>
+                        <td>{{ date("Y-m-d H:i:s", $value->time) }}</td>
+                        <td>{{ date("Y-m-d H:i:s", $value->lasttime) }}</td>
                         <td>
                             @if($value->status == 0)
                                 <span class="btn btn-sm btn-rounded btn-gradient-success" onclick="changeStatus(this, {{ $value->id }})">开启</span>
@@ -55,8 +57,6 @@
                                 <span class="btn btn-sm btn-rounded btn-gradient-danger" onclick="changeStatus(this, {{ $value->id }})">禁用</span>
                             @endif
                         </td>
-                        <td>{{ date("Y-m-d H:i:s", $value->time) }}</td>
-                        <td>{{ date("Y-m-d H:i:s", $value->lasttime) }}</td>
                         <td>
                             <a class="btn btn-sm btn-gradient-success" href="javascript:;" data-toggle="modal" data-target="#editAdmin" onclick="editAdmin(this, {{ $value->id }})">
                                 修改
@@ -124,7 +124,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">修改管理员</h4>
-                    <button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body" id="editbody">
                     {{--ajax动态填充数据--}}
@@ -324,6 +326,45 @@
                     }
                 }
             )
+        }
+
+        function updateAdmin(){
+            // 获取用户修改信息
+            var uppass = $.trim($('input[name="uppass"]').val());
+            var uprepass = $.trim($('input[name="uprepass"]').val());
+            var upstatus = $('input[name="upstatus"]').val();
+            //判断是否接收到值
+            if(uppass == ""){
+                bootbox.alert("管理员密码没有获取到");
+                $('input[name="uppass"]').focus();
+                return false;
+            }
+            if(uprepass == ""){
+                bootbox.alert("管理员重复密码没有获取到");
+                $('input[name="uprepass"]').focus();
+                return false;
+            }
+
+            $.post(
+                // 请求地址
+                '/admin/admin/update',
+                // 请求参数及csrf认证
+                $('#formEditAdmin').serialize(),
+                // 请求回调函数
+                function(res){
+                    if(res.code > 0){
+                        bootbox.alert(res.msg);
+                    }
+                    if(res.code == 0){
+                        bootbox.alert(res.msg);
+                        setTimeout(function(){
+                            window.location.href = "/admin/admin";
+                        }, 2000);
+                    }
+                },
+                // 传输采用json
+                'json'
+            );
         }
     </script>
     {{--自定义ajax区域结束--}}
