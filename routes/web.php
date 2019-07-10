@@ -26,12 +26,12 @@ Route::get('/', 'Home\IndexController@index');
 // 后台登录认证组 ,不能放在中间件下
 // 完成用户的登录路由
 Route::get('admin/login',"Admin\LoginController@index");
-//登陆的操作
+// 登陆的操作
 Route::post('admin/check',"Admin\LoginController@check");
-//登录验证码
+// 登录验证码
 Route::get('admin/captcha',"Admin\LoginController@captcha");
 
-//通过路由组进行提取 提取公共命名空间 公共的前缀 中间件
+// 通过路由组进行提取 提取公共命名空间 公共的前缀 中间件
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin'], function(){
 
     // 后台首页路由设置
@@ -63,20 +63,39 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     // 创建用户方法
     Route::get('user/create', 'UserController@create');
     // 保存创建用户方法
-    Route::post('user/store',      'UserController@store');
+    Route::post('user/store', 'UserController@store');
     // 修改用户信息方法
-    Route::get('user/edit/{id}',   'UserController@edit');
+    Route::get('user/edit/{id}', 'UserController@edit');
     // 用户修改信息保存方法
-    Route::post('user/update',     'UserController@update');
+    Route::post('user/update', 'UserController@update');
     // 用户状态选择方法
-    Route::post('user/status',     'UserController@status');
+    Route::post('user/status', 'UserController@status');
     // 删除用户方法
-    Route::get('user/destory',     'UserController@destory');
+    Route::get('user/destory', 'UserController@destory');
+
+    /**
+     * 分类管理方法设置
+     */
+    // 用户模块首页
+    Route::get('types', 'TypesController@index');
+    // 创建分类方法
+    Route::get('types/create', 'TypesController@create');
+    // 保存创建分类方法
+    Route::post('types/store', 'TypesController@store');
+    // 修改分类信息方法
+    Route::get('types/edit/{id}', 'TypesController@edit');
+    // 修改分类保存方法
+    Route::post('types/update', 'TypesController@update');
+    // 分类状态选择方法
+    Route::post('types/status', 'TypesController@status');
+    // 删除分类方法
+    Route::get('types/destory', 'TypesController@destory');
 
     /**
      * 用户图片管理设置
      */
-    Route::get('pic',             'PicController@index');       //图片管理方法
+    // 图片管理方法
+    Route::get('pic',             'PicController@index');
     Route::get('pic/create',      'PicController@create');      //图片添加方法
     Route::post('pic/store',      'PicController@store');       //保存添加图片方法
     Route::post('pic/delAll',     'PicController@delAll');      //图片批量删除方法
@@ -99,10 +118,6 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     //设置文件上传的方法
     Route::any('shangchuan', 'CommonController@upload');
 
-
-    // Data数据库连贯操作
-    Route::get('data', 'DataController@index');
-    Route::get('pass', 'DataController@pass');
 });
 
 
