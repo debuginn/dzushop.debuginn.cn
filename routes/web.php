@@ -89,7 +89,7 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     // 分类状态选择方法
     Route::post('types/status', 'TypesController@status');
     // 删除分类方法
-    Route::get('types/destory', 'TypesController@destory');
+    Route::delete('types/destroy/{id}', 'TypesController@destroy');
 
     /**
      * 用户图片管理设置

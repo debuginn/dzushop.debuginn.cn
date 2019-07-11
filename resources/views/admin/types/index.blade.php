@@ -13,17 +13,15 @@
             <div class="col-md-4 col-sm-12">
                 <div class="admin-head-search">
                     <div class="input-group input-group-sm">
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="请输入要查询的ID">
-                            <div class="input-group-append">
-                                <button class="btn btn-gradient-primary" type="button">搜索</button>
-                            </div>
-                        </form>
+                        <input type="text" class="form-control" placeholder="请输入要查询的ID">
+                        <div class="input-group-append">
+                            <button class="btn btn-gradient-primary" type="button">搜索</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
-                <span>共有{{ 111 }}个菜单</span>
+                <span>共有{{ $count }}个菜单</span>
             </div>
             <div class="col-md-2 col-sm-12">
                 <div class="admin-head-right">
@@ -38,26 +36,45 @@
                 <thead>
                 <tr>
                     <th>ID</th>
+                    <th>名称</th>
                     <th>标题</th>
+                    <th>关键字</th>
+                    <th>描述</th>
                     <th>排序</th>
-                    <th>缩略图</th>
+                    <th>是否楼层</th>
+                    <th>添加子类</th>
                     <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
-               {{-- @foreach($data as $value)
+                @foreach($data as $value)
                     <tr>
-                        --}}{{--按序号输出数值--}}{{--
                         <td>{{ $value->id }}</td>
+                        <?php
+                            $arr = explode(',', $value->path);
+                            $tot = count($arr)-2;
+                        ?>
+                        <td>{{ str_repeat('|----',$tot) }}{{ $value->name }}</td>
                         <td>{{ $value->title }}</td>
+                        <td>{{ $value->keywords }}</td>
+                        <td>{{ $value->description }}</td>
                         <td>
                             <input type="text" class="form-control form-control-sm" value="{{ $value->sort }}" onchange="change(this, {{ $value->id }});">
                         </td>
                         <td>
-                            <img class="admin-pic-index-img" src="{{ url($value->img) }}" alt="{{ $value->title }}">
+                            @if($value->is_lou == 0)
+                                <span class="btn btn-sm btn-rounded btn-gradient-success" onclick="status(this, {{ $value->id }})">是</span>
+                            @else
+                                <span class="btn btn-sm btn-rounded btn-gradient-danger" onclick="status(this, {{ $value->id }})">否</span>
+                            @endif
                         </td>
                         <td>
-                            <a class="btn btn-sm btn-gradient-success" href="/admin/pic/edit/{{ $value->id }}">
+                            <a href="/admin/types/create?pid={{ $value->id }}&path={{ $value->path }}{{ $value->id }},">
+                                <span class="btn btn-sm btn-rounded btn-gradient-primary">添加子类</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-sm btn-gradient-success" href="/admin/types/edit/{{ $value->id }}">
                                 修改
                             </a>
                             <button class="btn btn-sm btn-gradient-danger" href="javascript:;" onclick="del(this, {{ $value->id }})">
@@ -65,11 +82,11 @@
                             </button>
                         </td>
                     </tr>
-                @endforeach--}}
+                @endforeach
                 </tbody>
             </table>
             <div class="admin-page">
-                {{--{{ $data->links() }}--}}
+                {{ $data->links() }}
             </div>
         </div>
     </div>
@@ -81,20 +98,13 @@
             //获取id
             var id=id;
             bootbox.confirm({
-                title: "提示信息",
+                size: "small",
+                title: "确定要删除么",
                 message: "你确定要删除么，此操作不能撤回，慎重！",
-                buttons: {
-                    cancel: {
-                        label: '<i class="fa fa-times"></i> 取消'
-                    },
-                    confirm: {
-                        label: '<i class="fa fa-check"></i> 删除'
-                    }
-                },
-                callback: function(){
+                callback: function(result){
                     $.post(
                         //请求地址及参数
-                        '/admin/pic/destroy/'+id,
+                        '/admin/types/destroy/'+id,
                         //数据 & 方式 & CSRF认证
                         {'id':id, '_method':'delete', '_token':'{{ csrf_token() }}'},
                         //回调结果处理函数
@@ -113,7 +123,7 @@
                         'json'
                     );
                 }
-            });
+            })
         }
         /**
          * 无刷新修改排序值
@@ -127,7 +137,7 @@
             if(!isNaN(val)){
                 $.post(
                     /*请求地址*/
-                    '/admin/pic/sort',
+                    '/admin/types/sort',
                     /*请求数值 方式  及 CSRF认证*/
                     {'id':id, 'val':val, '_method':'post', '_token':'{{ csrf_token() }}'},
                     /*请求回调方法*/
