@@ -11,24 +11,21 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
-                <div class="admin-head-search">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="请输入要查询的ID">
-                        <div class="input-group-append">
-                            <button class="btn btn-gradient-primary" type="button">搜索</button>
+                <form action="">
+                    <div class="admin-head-search">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="请输入要查询的手机号码" name="search" />
+                            <div class="input-group-append">
+                                <button class="btn btn-gradient-primary" type="submit">搜索</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
                 <span>共有{{ $count }}个用户</span>
             </div>
             <div class="col-md-2 col-sm-12">
-                <div class="admin-head-right">
-                    <a href="/admin/user/create">
-                        <button class="btn btn-sm btn-gradient-primary admin-head-btn">添加</button>
-                    </a>
-                </div>
             </div>
         </div>
         <div class="row admin-box">
@@ -36,10 +33,10 @@
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>姓名</th>
+                    <th>邮箱</th>
+                    <th>电话</th>
+                    <th>注册时间</th>
                     <th>状态</th>
-                    <th>创建时间</th>
-                    <th>更改时间</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -47,23 +44,15 @@
                     <tr>
                         {{--按序号输出数值--}}
                         <td>{{ $value->id }}</td>
-                        <td>{{ $value->name }}</td>
+                        <td>{{ $value->email }}</td>
+                        <td>{{ $value->tel }}</td>
+                        <td>{{ $value->time }}</td>
                         <td>
                             @if($value->status == 0)
                                 <span class="btn btn-sm btn-rounded btn-gradient-success" onclick="status(this, {{ $value->id }})">开启</span>
                             @elseif($value->status == 1)
                                 <span class="btn btn-sm btn-rounded btn-gradient-danger" onclick="status(this, {{ $value->id }})">禁用</span>
                             @endif
-                        </td>
-                        <td>{{ $value->time }}</td>
-                        <td>{{ $value->settime }}</td>
-                        <td>
-                            <a class="btn btn-sm btn-gradient-success" href="/admin/user/edit/{{ $value->id }}">
-                                修改
-                            </a>
-                            <button class="btn btn-sm btn-gradient-danger" onclick="del(this, {{ $value->id }})">
-                                删除
-                            </button>
                         </td>
                     </tr>
                 @endforeach

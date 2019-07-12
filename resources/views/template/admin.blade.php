@@ -29,6 +29,9 @@
             <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                        <div class="nav-profile-img">
+                            <img src="{{ asset('images/faces/face1.jpg')}}" alt="image">
+                        </div>
                         <div class="nav-profile-text">
                             <p class="mb-1 text-black">张三</p>
                         </div>
@@ -105,24 +108,24 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                        <span class="menu-title">系统管理</span>
+                    <a class="nav-link" data-toggle="collapse" href="#ui-slider" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-title">轮播图管理</span>
                         <i class="menu-arrow"></i>
-                        <i class="mdi mdi-settings menu-icon"></i>
+                        <i class="mdi mdi-file-image menu-icon"></i>
                     </a>
-                    <div class="collapse" id="ui-basic">
+                    <div class="collapse" id="ui-slider">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="#">菜单管理</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="/admin/slider">轮播图管理</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#ui-photo" aria-expanded="false" aria-controls="ui-basic">
+                    <a class="nav-link" data-toggle="collapse" href="#ui-user" aria-expanded="false" aria-controls="ui-basic">
                         <span class="menu-title">用户管理</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-account menu-icon"></i>
                     </a>
-                    <div class="collapse" id="ui-photo">
+                    <div class="collapse" id="ui-user">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="/admin/user">用户管理</a></li>
                             <li class="nav-item"> <a class="nav-link" href="/admin/user/create">用户添加</a></li>
@@ -130,15 +133,27 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#ui-photo" aria-expanded="false" aria-controls="ui-basic">
-                        <span class="menu-title">图片管理</span>
+                    <a class="nav-link" data-toggle="collapse" href="#ui-ads" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-title">广告管理</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-file-image menu-icon"></i>
                     </a>
-                    <div class="collapse" id="ui-photo">
+                    <div class="collapse" id="ui-ads">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="/admin/pic">图片管理</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="/admin/pic/create">图片添加</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="/admin/ads">广告管理</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="/admin/typesads">分类广告管理</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#ui-sys" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-title">系统管理</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-file-image menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="ui-sys">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="/admin/sys">系统管理</a></li>
                         </ul>
                     </div>
                 </li>

@@ -14,8 +14,6 @@
 /*
  * 路由组 -- 前台
  */
-
-
 Route::get('/', 'Home\IndexController@index');
 
 
@@ -57,6 +55,9 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
 
     /*
      * 用户管理模块路由设置
+     * =====================
+     * 1、在实际情况中，用户登录都是靠自己注册信息获得；
+     * 2、后台管理只有更改状态或查看的权限
      */
     // 用户模块首页
     Route::get('user', 'UserController@index');
@@ -84,20 +85,22 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     Route::post('types/sort',  'TypesController@sort');
 
     /**
-     * 用户图片管理设置
+     * 轮播图管理方法
      */
-    // 图片管理方法
-    Route::get('pic',             'PicController@index');
-    Route::get('pic/create',      'PicController@create');      //图片添加方法
-    Route::post('pic/store',      'PicController@store');       //保存添加图片方法
-    Route::post('pic/delAll',     'PicController@delAll');      //图片批量删除方法
-    Route::post('pic/sort',       'PicController@sort');        //图片无刷新排序方法
-    Route::delete('pic/destroy/{id}', 'PicController@destroy'); //图片单个删除方法
-    Route::get('pic/edit/{id}',   'PicController@edit');        //图片修改方法
-    //修改图片更新方法
-    Route::post('pic/update',     'PicController@update');
+    Route::get('slider', 'SliderController@index');
 
+    /**
+     *  广告管理方法
+     */
+    // 主体广告
+    Route::get('ads', 'AdsController@index');
+    // 分类广告
+    Route::get('typesads', 'TypesAdsController@index');
 
+    /**
+     *  系统设置
+     */
+    Route::get('sys', 'SysController@index');
 
     /*
      * 商品管理模块路由设置
@@ -110,6 +113,20 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     //设置文件上传的方法
     Route::any('shangchuan', 'CommonController@upload');
 
+
+    /**
+     * 用户图片管理设置
+     */
+    // 图片管理方法
+    Route::get('pic',             'PicController@index');
+    Route::get('pic/create',      'PicController@create');      //图片添加方法
+    Route::post('pic/store',      'PicController@store');       //保存添加图片方法
+    Route::post('pic/delAll',     'PicController@delAll');      //图片批量删除方法
+    Route::post('pic/sort',       'PicController@sort');        //图片无刷新排序方法
+    Route::delete('pic/destroy/{id}', 'PicController@destroy'); //图片单个删除方法
+    Route::get('pic/edit/{id}',   'PicController@edit');        //图片修改方法
+    //修改图片更新方法
+    Route::post('pic/update',     'PicController@update');
 });
 
 
