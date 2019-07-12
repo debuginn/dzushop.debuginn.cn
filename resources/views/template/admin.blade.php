@@ -87,16 +87,17 @@
                     <div class="collapse" id="ui-basic">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="/admin/admin">管理员列表</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="javascript:;" data-toggle="modal" data-target="#addAdmin">管理员添加</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                    <a class="nav-link" data-toggle="collapse" href="#ui-types" aria-expanded="false" aria-controls="ui-basic">
                         <span class="menu-title">菜单管理</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-settings menu-icon"></i>
                     </a>
-                    <div class="collapse" id="ui-basic">
+                    <div class="collapse" id="ui-types">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="/admin/types">菜单列表</a></li>
                             <li class="nav-item"> <a class="nav-link" href="/admin/types/create">菜单添加</a></li>

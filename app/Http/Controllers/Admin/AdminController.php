@@ -19,14 +19,19 @@ class AdminController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(){
+        // 查询管理员数目
         $count = DB::table('dzushop_admin')
             ->where('delstatus', '=', '0')
             ->count();
+        // 查询管理员数据
         $data = DB::table('dzushop_admin')
             ->where('delstatus', '=', '0')
             ->orderBy('id','asc')
             ->paginate(10);
-        return view("admin.admin.index")->with('data',$data)->with('count',$count);
+        // 返回视图并封装数据
+        return view("admin.admin.index")
+            ->with('data',$data)
+            ->with('count',$count);
     }
 
     /**

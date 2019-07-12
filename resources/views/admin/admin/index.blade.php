@@ -13,9 +13,9 @@
             <div class="col-md-4 col-sm-12">
                 <div class="admin-head-search">
                     <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="请输入要查询的ID">
+                        <input type="text" class="form-control" placeholder="请输入要查询的用户名称" name="searchUserName">
                         <div class="input-group-append">
-                            <button class="btn btn-gradient-primary" type="button">搜索</button>
+                            <button class="btn btn-gradient-primary" type="button" onclick="searchUserName()">搜索</button>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>姓名</th>
+                    <th>名称</th>
                     <th>创建时间</th>
                     <th>最后登录时间</th>
                     <th>状态</th>
@@ -187,6 +187,7 @@
             var pass = $.trim($('input[name="pass"]').val());
             var repass = $.trim($('input[name="repass"]').val());
             var status = $('input[name="status"]').val();
+            adminCheck();
             //判断是否接收到值
             if(name == ""){
                 bootbox.alert("管理员名称没有获取到");
@@ -328,6 +329,10 @@
             )
         }
 
+        /**
+         * 更新管理员信息
+         * @returns {boolean}
+         */
         function updateAdmin(){
             // 获取用户修改信息
             var uppass = $.trim($('input[name="uppass"]').val());
@@ -365,6 +370,24 @@
                 // 传输采用json
                 'json'
             );
+        }
+
+        /**
+         * 搜索信息框
+         */
+        function searchUserName(){
+            // //获取搜索信息
+            // var searchInfo = $.trim($('input[name="searchUserName"]').val());
+            // $.get(
+            //     '/admin/admin?searchInfo='+searchInfo,
+            //     {},
+            //     function(data){
+            //         if(data){
+            //             window.location.reload();
+            //             $('input[name="searchUserName"]').val(searchInfo);
+            //         }
+            //     }
+            // )
         }
     </script>
     {{--自定义ajax区域结束--}}

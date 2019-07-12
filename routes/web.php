@@ -60,23 +60,13 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
      */
     // 用户模块首页
     Route::get('user', 'UserController@index');
-    // 创建用户方法
-    Route::get('user/create', 'UserController@create');
-    // 保存创建用户方法
-    Route::post('user/store', 'UserController@store');
-    // 修改用户信息方法
-    Route::get('user/edit/{id}', 'UserController@edit');
-    // 用户修改信息保存方法
-    Route::post('user/update', 'UserController@update');
     // 用户状态选择方法
     Route::post('user/status', 'UserController@status');
-    // 删除用户方法
-    Route::get('user/destory', 'UserController@destory');
 
     /**
      * 分类管理方法设置
      */
-    // 用户模块首页
+    // 分类模块首页
     Route::get('types', 'TypesController@index');
     // 创建分类方法
     Route::get('types/create', 'TypesController@create');
@@ -86,10 +76,12 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     Route::get('types/edit/{id}', 'TypesController@edit');
     // 修改分类保存方法
     Route::post('types/update', 'TypesController@update');
-    // 分类状态选择方法
+    // 是否为楼层状态选择方法
     Route::post('types/status', 'TypesController@status');
     // 删除分类方法
     Route::delete('types/destroy/{id}', 'TypesController@destroy');
+    // 分类排序方法
+    Route::post('types/sort',  'TypesController@sort');
 
     /**
      * 用户图片管理设置

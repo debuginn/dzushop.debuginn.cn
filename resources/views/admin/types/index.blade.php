@@ -54,7 +54,7 @@
                             $arr = explode(',', $value->path);
                             $tot = count($arr)-2;
                         ?>
-                        <td>{{ str_repeat('|----',$tot) }}{{ $value->name }}</td>
+                        <td>{{ str_repeat('|-----',$tot) }}{{ $value->name }}</td>
                         <td>{{ $value->title }}</td>
                         <td>{{ $value->keywords }}</td>
                         <td>{{ $value->description }}</td>
@@ -63,15 +63,19 @@
                         </td>
                         <td>
                             @if($value->is_lou == 0)
-                                <span class="btn btn-sm btn-rounded btn-gradient-success" onclick="status(this, {{ $value->id }})">是</span>
+                                <span class="btn btn-sm btn-rounded btn-gradient-success" onclick="changeStatus(this, {{ $value->id }})">是</span>
                             @else
-                                <span class="btn btn-sm btn-rounded btn-gradient-danger" onclick="status(this, {{ $value->id }})">否</span>
+                                <span class="btn btn-sm btn-rounded btn-gradient-danger" onclick="changeStatus(this, {{ $value->id }})">否</span>
                             @endif
                         </td>
                         <td>
-                            <a href="/admin/types/create?pid={{ $value->id }}&path={{ $value->path }}{{ $value->id }},">
-                                <span class="btn btn-sm btn-rounded btn-gradient-primary">添加子类</span>
-                            </a>
+                            @if($tot >= 2)
+                                <span class="btn btn-sm btn-rounded btn-gradient-secondary">添加子类</span>
+                            @else
+                                <a href="/admin/types/create?pid={{ $value->id }}&path={{ $value->path }}{{ $value->id }},">
+                                    <span class="btn btn-sm btn-rounded btn-gradient-primary">添加子类</span>
+                                </a>
+                            @endif
                         </td>
                         <td>
                             <a class="btn btn-sm btn-gradient-success" href="/admin/types/edit/{{ $value->id }}">
@@ -85,9 +89,6 @@
                 @endforeach
                 </tbody>
             </table>
-            <div class="admin-page">
-                {{ $data->links() }}
-            </div>
         </div>
     </div>
     <script type="text/javascript">
@@ -155,12 +156,47 @@
                     'json'
                 );
             }else{
-                alert("格式有误，请重新输入数值");
+                bootbox.alert("格式有误，请重新输入数值");
                 setTimeout(function () {
                     window.location.reload();
                 },1000);
             }
         }
+
+        /**
+         * 修改是否为楼层状态值
+         * @param obj
+         * @param id
+         */
+        function changeStatus(obj, id){
+            var id = id;
+            bootbox.alert("确定要改变是否为楼层么？", function(){
+                $.post(
+                    //请求地址
+                    '/admin/types/status',
+                    //请求数据
+                    {'id':id, '_token':'{{ csrf_token() }}'},
+                    //回调函数
+                    function(res){
+                        if(res.code > 0){
+                            bootbox.alert("好像出错了，错误信息："+res.msg);
+                            setTimeout(function(){
+                                window.location.reload();
+                            },1000);
+                        }else{
+                            bootbox.alert('修改成功');
+                            setTimeout(function(){
+                                //当前页面刷新
+                                window.location.reload();
+                            },1000);
+                        }
+                    },
+                    //请求数据使用的方法
+                    'json'
+                );
+            })
+        }
+
 
     </script>
 @endsection
