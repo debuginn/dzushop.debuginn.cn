@@ -126,20 +126,6 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     //设置文件上传的方法
     Route::any('shangchuan', 'CommonController@upload');
 
-
-    /**
-     * 用户图片管理设置
-     */
-    // 图片管理方法
-    Route::get('pic',             'PicController@index');
-    Route::get('pic/create',      'PicController@create');      //图片添加方法
-    Route::post('pic/store',      'PicController@store');       //保存添加图片方法
-    Route::post('pic/delAll',     'PicController@delAll');      //图片批量删除方法
-    Route::post('pic/sort',       'PicController@sort');        //图片无刷新排序方法
-    Route::delete('pic/destroy/{id}', 'PicController@destroy'); //图片单个删除方法
-    Route::get('pic/edit/{id}',   'PicController@edit');        //图片修改方法
-    //修改图片更新方法
-    Route::post('pic/update',     'PicController@update');
 });
 
 
