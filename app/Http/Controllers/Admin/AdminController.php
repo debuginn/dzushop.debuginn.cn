@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use Symfony\Component\Console\Helper\Table;
 use Illuminate\Support\Facades\Crypt;
 
 /**
@@ -18,16 +17,33 @@ class AdminController extends Controller
      * 管理员控制首页
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(){
-        // 查询管理员数目
-        $count = DB::table('dzushop_admin')
-            ->where('delstatus', '=', '0')
-            ->count();
-        // 查询管理员数据
-        $data = DB::table('dzushop_admin')
-            ->where('delstatus', '=', '0')
-            ->orderBy('id','asc')
-            ->paginate(10);
+    public function index(Request $request){
+        $search = $request->input('search');
+
+        if($search){
+            // 查询管理员数目
+            $count = DB::table('dzushop_admin')
+                ->where('delstatus', '=', '0')
+                ->where('name','=', $search)
+                ->count();
+            // 查询管理员数据
+            $data = DB::table('dzushop_admin')
+                ->where('delstatus', '=', '0')
+                ->where('name','=', $search)
+                ->orderBy('id','asc')
+                ->paginate(10);
+        }else{
+            // 查询管理员数目
+            $count = DB::table('dzushop_admin')
+                ->where('delstatus', '=', '0')
+                ->count();
+            // 查询管理员数据
+            $data = DB::table('dzushop_admin')
+                ->where('delstatus', '=', '0')
+                ->orderBy('id','asc')
+                ->paginate(10);
+        }
+
         // 返回视图并封装数据
         return view("admin.admin.index")
             ->with('data',$data)

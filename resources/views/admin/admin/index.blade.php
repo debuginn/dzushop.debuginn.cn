@@ -12,12 +12,14 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="admin-head-search">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="请输入要查询的用户名称" name="searchUserName">
-                        <div class="input-group-append">
-                            <button class="btn btn-gradient-primary" type="button" onclick="searchUserName()">搜索</button>
+                    <form action="/admin/admin">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="请输入要查询的管理员名称" name="search">
+                            <div class="input-group-append">
+                                <button class="btn btn-gradient-primary" type="submit">搜索</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
@@ -39,6 +41,7 @@
                     <th>名称</th>
                     <th>创建时间</th>
                     <th>最后登录时间</th>
+                    <th>登录次数</th>
                     <th>状态</th>
                     <th></th>
                 </tr>
@@ -50,6 +53,7 @@
                         <td>{{ $value->name }}</td>
                         <td>{{ date("Y-m-d H:i:s", $value->time) }}</td>
                         <td>{{ date("Y-m-d H:i:s", $value->lasttime) }}</td>
+                        <td>{{ $value->count }}</td>
                         <td>
                             @if($value->status == 0)
                                 <span class="btn btn-sm btn-rounded btn-gradient-success" onclick="changeStatus(this, {{ $value->id }})">开启</span>

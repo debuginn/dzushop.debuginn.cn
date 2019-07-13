@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Gregwar\Captcha\CaptchaBuilder;
+use Illuminate\Support\Facades\Crypt;
 
 class LoginController extends Controller
 {
@@ -29,7 +30,7 @@ class LoginController extends Controller
         $yzm = $request->session()->get('captchaSession');
         //判断用户是否输入
         if($name == ''){
-            return back()->with("error", "用户名不存在");
+            return back()->with("error", "管理员不存在");
         }
         if($pass == ''){
             return back()->with("error", "密码不存在");
@@ -37,20 +38,37 @@ class LoginController extends Controller
         if($code == ''){
             return back()->with("error", "验证码不存在");
         }
-        //加密获取的数据
-        $md5Pass = md5($pass);
-        //验证数据库中是否有数据
-        $result = DB::table('user')->where([
-            ['name','=',$name],
-            ['pass','=',$md5Pass]
+        // 验证数据库中是否有数据
+        $result = DB::table('dzushop_admin')->where([
+            ['name','=',$name]
         ])->first();
-        //获取用户id
+        // 获取用户id 及密码 及状态 及登录次数
         $id = $result->id;
+        $SQLpass = $result->pass;
+        $status  = $result->status;
+        $count = $result->count;
+        // 获取当前时间
+        $lasttime = time();
+        // 解密密码
+        $dePass = Crypt::decrypt($SQLpass);
+
+        // 判断管理员是否被禁用
+        if($status == 1){
+            return back()->with("error", "该管理员被禁用，无法正常登录");
+        }
+
         // 验证验证码是否与存在session值一样
         if($code == $yzm){
             // 验证是否有该用户并且有效
-            if($result){
-                //向网站中存储数据
+            if($result && ($dePass == $pass)){
+                // 向数据库中记录数据
+                DB::table('dzushop_admin')
+                    ->where('id', '=', $id)
+                    ->update([
+                        'count' => $count+1,
+                        'lasttime' => $lasttime
+                    ]);
+                // 向网站中存储数据
                 $request->session()->put('adminUserInfo', ['name'=>$name, 'id'=>$id]);
                 return redirect('/admin');
             }else{
@@ -62,19 +80,20 @@ class LoginController extends Controller
     }
 
     /**
-     * 验证码
+     * 验证码生成操作
      * @return Response
      */
     public function captcha(Request $request){
         $builder = new CaptchaBuilder;
         $builder->build(150,47);
-        //获取验证码内容
+        // 获取验证码内容
         $phrase = $builder->getPhrase();
-        //把内容存入session 存储验证码
+        // 把内容存入session 存储验证码
         $request->session()->flash('captchaSession', $phrase);
-        //清除缓存
+        // 清除缓存
         ob_clean();
-        //把验证码数据以jpeg图片的格式输出
-        return response($builder->output())->header('Content-type','image/jpeg');
+        // 把验证码数据以jpeg图片的格式输出
+        return response($builder->output())
+            ->header('Content-type','image/jpeg');
     }
 }

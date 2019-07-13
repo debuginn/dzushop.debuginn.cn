@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
-                <form action="">
+                <form action="/admin/user">
                     <div class="admin-head-search">
                         <div class="input-group input-group-sm">
                             <input type="text" class="form-control" placeholder="请输入要查询的手机号码" name="search" />

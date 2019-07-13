@@ -11,14 +11,6 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
-                <div class="admin-head-search">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="请输入要查询的ID">
-                        <div class="input-group-append">
-                            <button class="btn btn-gradient-primary" type="button">搜索</button>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
                 <span>共有{{ $count }}个菜单</span>
