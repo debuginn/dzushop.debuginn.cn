@@ -128,7 +128,6 @@
                     <div class="collapse" id="ui-user">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="/admin/user">用户管理</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="/admin/user/create">用户添加</a></li>
                         </ul>
                     </div>
                 </li>

@@ -114,6 +114,7 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
      *  系统设置
      */
     Route::get('sys', 'SysController@index');
+    Route::post('sys/store', 'SysController@store');
 
     /*
      * 商品管理模块路由设置

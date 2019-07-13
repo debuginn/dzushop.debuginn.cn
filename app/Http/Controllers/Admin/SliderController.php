@@ -22,7 +22,7 @@ class SliderController extends Controller
         $count = DB::table('dzushop_slider')->count();
         // 获取数据
         $data = DB::table('dzushop_slider')
-            ->orderBy('sort', 'asc')
+            ->orderBy('sort', 'desc')
             ->get();
         // 返回试图并返回数据
         return view("admin.slider.index")

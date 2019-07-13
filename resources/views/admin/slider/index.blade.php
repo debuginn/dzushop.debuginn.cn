@@ -43,7 +43,7 @@
                             <td><a href="{{ $value->href }}">{{ $value->href }}</a></td>
                             <td><img src="{{ url($value->img) }}" alt="{{ $value->title }}"></td>
                             <td>
-                                <input type="text" name="sort" class="form-control form-control-sm" value="{{ $value->sort }}" onchange="change(this, {{ $value->id }})">
+                                <input type="number" name="sort" class="form-control form-control-sm" value="{{ $value->sort }}" onchange="change(this, {{ $value->id }})">
                             </td>
                             <td>
                                 <a class="btn btn-sm btn-gradient-success" href="/admin/slider/edit/{{ $value->id }}">
