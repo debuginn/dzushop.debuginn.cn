@@ -87,7 +87,20 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     /**
      * 轮播图管理方法
      */
+    // 轮播图首页展示方法
     Route::get('slider', 'SliderController@index');
+    // 轮播图添加页面方法
+    Route::get('slider/create', 'SliderController@create');
+    // 轮播图添加保存方法
+    Route::post('slider/store', 'SliderController@store');
+    // 修改轮播图信息方法
+    Route::get('slider/edit/{id}', 'SliderController@edit');
+    // 修改轮播图保存信息方法
+    Route::post('slider/update', 'SliderController@update');
+    // 删除轮播图方法
+    Route::delete('slider/destroy/{id}', 'SliderController@destroy');
+    // 轮播图排序方法
+    Route::post('slider/sort',  'SliderController@sort');
 
     /**
      *  广告管理方法

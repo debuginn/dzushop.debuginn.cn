@@ -163,6 +163,10 @@ class TypesController extends Controller
         return view('admin.types.edit')->with('data',$data[0]);
     }
 
+    /**
+     * 更新菜单数据操作
+     * @param Request $request
+     */
     public function update(Request $request){
         // 接收前台数据
         $id = $request->input('id');
