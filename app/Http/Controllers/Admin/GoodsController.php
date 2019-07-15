@@ -37,4 +37,61 @@ class GoodsController extends Controller
         // 创建商品页面 及向前台封装数据
         return view('admin.goods.create')->with('data', $data);
     }
+
+    /**
+     * 保存商品方法
+     * @param Request $request
+     */
+    public function store(Request $request){
+        $cid = $request->input('cid');
+        $title = $request->input('title');
+        $info = $request->input('info');
+        $img = $request->input('img');
+        $price = $request->input('price');
+        $num = $request->input('num');
+        $text = $request->input('text');
+        $config = $request->input('config');
+
+        if($cid == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取cid异常')));
+        }
+        if($title == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 标题 异常')));
+        }
+        if($info == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 描述 异常')));
+        }
+        if($img == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品图片 异常')));
+        }
+        if($price == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品价格 异常')));
+        }
+        if($num == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品库存数量 异常')));
+        }
+        if($text == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品详情信息 异常')));
+        }
+        if($config == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品配置信息 异常')));
+        }
+        // 执行插入操作
+        $result = DB::table('dzushop_goods')->insert([
+            'cid' => $cid,
+            'title'  => $title,
+            'info' => $info,
+            'img' => $img,
+            'price' => $price,
+            'num' => $num,
+            'text' => $text,
+            'config' => $config
+        ]);
+        // 返回结果值
+        if($result){
+            exit(json_encode(array('code'=>0, 'msg'=>'插入商品成功')));
+        }else{
+            exit(json_encode(array('code'=>1, 'msg'=>'插入商品异常')));
+        }
+    }
 }

@@ -1,6 +1,10 @@
 @extends('template.admin')
 @section('title', '添加商品')
 @section('main')
+    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/neditor.config.js') }}"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/neditor.all.min.js') }}"> </script>
+    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/neditor.service.js') }}"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/i18n/zh-cn/zh-cn.js') }}"></script>
     <div class="admin-content">
         <div class="row admin-head">
             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -38,7 +42,7 @@
                     </div>
                     <div class="form-group">
                         <label for="InputDescription">商品所属分类：</label>
-                        <select name="pid" id="" class="form-control">
+                        <select name="cid" id="" class="form-control">
                             <option value="">请选择所属分类</option>
                             @foreach($data as $value)
                                 @if($value->size == 3)
@@ -55,7 +59,7 @@
                     </div>
                     <div class="form-group">
                         <label for="InputNum">商品库存：</label>
-                        <input type="text" class="form-control" id="InputNum" name="num" placeholder="请输入商品库存数量">
+                        <input type="number" class="form-control" id="InputNum" name="num" placeholder="请输入商品库存数量">
                     </div>
                     <div class="form-group">
                         <label>上传商品图：</label>
@@ -74,14 +78,13 @@
                     </div>
                     <div class="form-group">
                         <label>商品详细信息：</label>
-                        <div id="editor">
-                        </div>
+                        <script id="editor1" type="text/plain" name="text" style="width:100%; height:200px;"></script>
                     </div>
                     <div class="form-group">
                         <label>商品配置信息：</label>
-                        <div id="editor1">
-                        </div>
+                        <script id="editor2" type="text/plain" name="config" style="width:100%; height:200px;"></script>
                     </div>
+
                     <hr>
                     <button type="submit" class="btn btn-gradient-primary mr-2" onclick="save();return false;">提交</button>
                     <input type="reset" class="btn btn-gradient-danger" value="重置">
@@ -89,7 +92,14 @@
             </div>
         </div>
     </div>
+
     <script type="text/javascript">
+        // 实例化编辑器
+        var ue1 = UE.getEditor('editor1');
+        UE.getEditor('editor1');
+        var ue2 = UE.getEditor('editor2');
+        UE.getEditor('editor2');
+
         /**
          * 上传商品图操作
          * @param file
@@ -139,41 +149,39 @@
          */
         function save() {
             // 接收表单传来的数据
-            var name = $('input[name="name"]').val();
             var title  = $('input[name="title"]').val();
-            var keywords   = $('input[name="keywords"]').val();
-            var description = $('input[name="description"]').val();
-            var sort = $('input[name="sort"]').val();
+            var info   = $('input[name="info"]').val();
+            var num = $('input[name="num"]').val();
+            var price = $('input[name="price"]').val();
+            var img = $('input[name="img"]').val();
 
             // 判断数据是否为空
-            if(name == ''){
-                bootbox.alert('请输入分类名称');
-                return false;
-            }
             if(title == ''){
-                bootbox.alert('请输入分类标题');
+                bootbox.alert('请输入商品名称');
                 return false;
             }
-            if(keywords == ''){
-                bootbox.alert('请输入分类关键字');
+            if(info == ''){
+                bootbox.alert('请输入商品简介');
                 return false;
             }
-            if(description == ''){
-                bootbox.alert('请输入分类描述');
+            if(isNaN(num)){
+                bootbox.alert('输入数值非法，请输入0-10000之内的整数');
                 return false;
             }
-            if(sort == ''){
-                bootbox.alert('请输入排序数值');
+            if(price == ''){
+                bootbox.alert('请输入商品价格');
                 return false;
             }
-            if(isNaN(sort)){
-                bootbox.alert('输入数值非法，请输入0-1000之内的整数');
+            if(img == ''){
+                bootbox.alert('请上传商品图片');
                 return false;
             }
+
+
             //ajax后台传输数据
             $.post(
                 //请求URL地址
-                '/admin/types/store',
+                '/admin/goods/store',
                 $('form').serialize(),
                 function(res){
                     if(res.code > 0){
@@ -181,24 +189,12 @@
                     }else{
                         bootbox.alert("保存成功，即将进入商品列表页面");
                         setTimeout(function(){
-                            window.location.href = "/admin/types";
+                            window.location.href = "/admin/goods";
                         }, 2000);
                     }
                 },
                 'json'
             );
         }
-    </script>
-    {{--引入富文本编辑器--}}
-    <script type="text/javascript" src="{{ asset('/js/wangEditor.min.js') }}"></script>
-    <script type="text/javascript">
-        // 声明富文本编辑器
-        var E = window.wangEditor;
-        // 定义编辑器区域
-        var editor = new E('#editor');
-        var editor1 = new E('#editor1');
-        // 创建编辑器
-        editor.create();
-        editor1.create();
     </script>
 @endsection
