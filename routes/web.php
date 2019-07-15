@@ -119,7 +119,12 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     /*
      * 商品管理模块路由设置
      */
+    // 商品管理首页
     Route::get('goods', 'GoodsController@index');
+    // 新增商品管理方法
+    Route::get('goods/create', 'GoodsController@create');
+    // 保存新增商品信息
+    Route::post('goods/store', 'GoodsController@store');
 
     /**
      * 公共路由设置方法

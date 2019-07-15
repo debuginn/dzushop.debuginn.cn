@@ -120,6 +120,18 @@
                     </div>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#ui-goods" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-title">商品管理</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-file-image menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="ui-goods">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="/admin/goods">商品管理</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#ui-user" aria-expanded="false" aria-controls="ui-basic">
                         <span class="menu-title">用户管理</span>
                         <i class="menu-arrow"></i>
