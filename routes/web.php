@@ -125,6 +125,10 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     Route::get('goods/create', 'GoodsController@create');
     // 保存新增商品信息
     Route::post('goods/store', 'GoodsController@store');
+    // 修改商品信息方法
+    Route::get('goods/edit/{id}', 'GoodsController@edit');
+    // 保存修改商品信息方法
+    Route::post('goods/update', 'GoodsController@update');
 
     /**
      * 公共路由设置方法

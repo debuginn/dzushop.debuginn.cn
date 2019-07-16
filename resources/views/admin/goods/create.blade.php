@@ -1,10 +1,9 @@
 @extends('template.admin')
 @section('title', '添加商品')
 @section('main')
-    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/neditor.config.js') }}"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/neditor.all.min.js') }}"> </script>
-    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/neditor.service.js') }}"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ asset('neditor/i18n/zh-cn/zh-cn.js') }}"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/ueditor.config.js') }}"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/ueditor.all.min.js') }}"> </script>
+    <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/lang/zh-cn/zh-cn.js') }}"></script>
     <div class="admin-content">
         <div class="row admin-head">
             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -78,11 +77,11 @@
                     </div>
                     <div class="form-group">
                         <label>商品详细信息：</label>
-                        <script id="editor1" type="text/plain" name="text" style="width:100%; height:200px;"></script>
+                        <script id="editor1" name="text" type="text/plain" style="width:100%;height:500px;"></script>
                     </div>
                     <div class="form-group">
                         <label>商品配置信息：</label>
-                        <script id="editor2" type="text/plain" name="config" style="width:100%; height:200px;"></script>
+                        <script id="editor2" name="config" type="text/plain" style="width:100%;height:500px;"></script>
                     </div>
 
                     <hr>
@@ -92,13 +91,12 @@
             </div>
         </div>
     </div>
+    <script>
 
+    </script>
     <script type="text/javascript">
-        // 实例化编辑器
         var ue1 = UE.getEditor('editor1');
-        UE.getEditor('editor1');
         var ue2 = UE.getEditor('editor2');
-        UE.getEditor('editor2');
 
         /**
          * 上传商品图操作

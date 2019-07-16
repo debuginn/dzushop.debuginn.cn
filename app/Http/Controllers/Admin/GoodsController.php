@@ -11,8 +11,19 @@ class GoodsController extends Controller
      * 后台商品管理页面方法
      */
     public function index(Request $request){
+        // 计算商品总数
+        $count = DB::table('dzushop_goods')->count();
+        // 加载数据库数据
+        $data = DB::table('dzushop_goods')
+            ->join('dzushop_types', 'dzushop_goods.cid', '=', 'dzushop_types.id')
+            ->select('dzushop_goods.id', 'dzushop_types.name as name', 'dzushop_goods.title', 'dzushop_goods.info', 'dzushop_goods.img', 'dzushop_goods.price', 'dzushop_goods.num')
+            ->orderBy('dzushop_goods.cid','desc')
+            ->paginate(10);
+
         // 加载页面
-        return view('admin.goods.index');
+        return view('admin.goods.index')
+            ->with('count', $count)
+            ->with('data', $data);
     }
 
     /**
@@ -50,10 +61,10 @@ class GoodsController extends Controller
         $price = $request->input('price');
         $num = $request->input('num');
         $text = $request->input('text');
-        $config = $request->input('config');
+        $config =$request->input('config');
 
         if($cid == ''){
-            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取cid异常')));
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 cid 异常')));
         }
         if($title == ''){
             exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 标题 异常')));
@@ -94,4 +105,34 @@ class GoodsController extends Controller
             exit(json_encode(array('code'=>1, 'msg'=>'插入商品异常')));
         }
     }
+
+    /**
+     * 获取编辑对应的数据渲染到前台页面
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function edit($id){
+        $data1 = DB::table('dzushop_types')
+            ->select(DB::raw('dzushop_types.*, concat(path,id) p'))
+            ->orderBy("p","asc")
+            ->get();
+        foreach ($data1 as $key => $value){
+            // 将分类进行判断处理，判断该分类为几级分类
+            $arr = explode(',', $value->path);
+            // 计算分类为几级
+            $size = count($arr);
+            // 计算分类的级数   按阿拉伯数字输出
+            $value -> size = $size-1;
+            // 根据所在几级分类进行封装数据
+            $value->html = str_repeat('|----', $size-2).$value->name;
+        }
+        $data = DB::table('dzushop_goods')
+            ->where('id','=',$id)
+            ->get();
+        return view('admin.goods.edit')
+            ->with('data',$data[0])
+            ->with('data1', $data1);
+    }
+
+
 }
