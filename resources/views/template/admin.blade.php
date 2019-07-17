@@ -152,7 +152,7 @@
                     <div class="collapse" id="ui-ads">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="/admin/ads">广告管理</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="/admin/typesads">分类广告管理</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="/admin/adstype">分类广告管理</a></li>
                         </ul>
                     </div>
                 </li>

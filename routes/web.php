@@ -107,8 +107,13 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
      */
     // 主体广告
     Route::get('ads', 'AdsController@index');
+    Route::get('ads/create', 'AdsController@create');
+    Route::post('ads/store', 'AdsController@store');
+    Route::get('ads/edit/{id}', 'AdsController@edit');
+    Route::post('ads/update', 'AdsController@update');
+
     // 分类广告
-    Route::get('typesads', 'TypesAdsController@index');
+    Route::get('adstypes', 'AdsTypesController@index');
 
     /**
      *  系统设置
