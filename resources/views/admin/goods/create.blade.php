@@ -1,9 +1,7 @@
 @extends('template.admin')
 @section('title', '添加商品')
 @section('main')
-    <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/ueditor.config.js') }}"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/ueditor.all.min.js') }}"> </script>
-    <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/lang/zh-cn/zh-cn.js') }}"></script>
+    <script type="text/javascript" charset="utf-8" src="//unpkg.com/wangeditor/release/wangEditor.min.js"></script>
     <div class="admin-content">
         <div class="row admin-head">
             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -30,7 +28,6 @@
                     请认真填写并提交
                 </p>
                 <form class="forms-sample">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group">
                         <label for="InputTitle">商品名：</label>
                         <input type="text" class="form-control" id="InputTitle" name="title" placeholder="请输入商品名">
@@ -41,7 +38,7 @@
                     </div>
                     <div class="form-group">
                         <label for="InputDescription">商品所属分类：</label>
-                        <select name="cid" id="" class="form-control">
+                        <select name="cid" id="cid" class="form-control">
                             <option value="">请选择所属分类</option>
                             @foreach($data as $value)
                                 @if($value->size == 3)
@@ -77,11 +74,11 @@
                     </div>
                     <div class="form-group">
                         <label>商品详细信息：</label>
-                        <script id="editor1" name="text" type="text/plain" style="width:100%;height:500px;"></script>
+                        <div id="text"></div>
                     </div>
                     <div class="form-group">
                         <label>商品配置信息：</label>
-                        <script id="editor2" name="config" type="text/plain" style="width:100%;height:500px;"></script>
+                        <div id="config"></div>
                     </div>
 
                     <hr>
@@ -95,8 +92,13 @@
 
     </script>
     <script type="text/javascript">
-        var ue1 = UE.getEditor('editor1');
-        var ue2 = UE.getEditor('editor2');
+        // 初始化编辑器
+        var E = window.wangEditor
+        var editor1 = new E('#text')
+        editor1.create();
+        var editor2 = new E('#config')
+        editor2.create();
+
 
         /**
          * 上传商品图操作
@@ -147,13 +149,20 @@
          */
         function save() {
             // 接收表单传来的数据
+            var cid  = $("#cid option:selected").val();
             var title  = $('input[name="title"]').val();
-            var info   = $('input[name="info"]').val();
+            var info   = $('#InputInfo').val();
             var num = $('input[name="num"]').val();
             var price = $('input[name="price"]').val();
             var img = $('input[name="img"]').val();
+            var text = editor1.txt.html();
+            var config = editor2.txt.html();
 
             // 判断数据是否为空
+            if(cid == ''){
+                bootbox.alert('请选择商品对应菜单');
+                return false;
+            }
             if(title == ''){
                 bootbox.alert('请输入商品名称');
                 return false;
@@ -174,13 +183,30 @@
                 bootbox.alert('请上传商品图片');
                 return false;
             }
-
+            if(text == ''){
+                bootbox.alert('请上传商品信息');
+                return false;
+            }
+            if(config == ''){
+                bootbox.alert('请上传商品配置信息');
+                return false;
+            }
 
             //ajax后台传输数据
             $.post(
                 //请求URL地址
                 '/admin/goods/store',
-                $('form').serialize(),
+                {
+                    '_token' : '{{csrf_token()}}',
+                    'cid' : cid,
+                    'title' : title,
+                    'info' : info,
+                    'num' : num,
+                    'price' : price,
+                    'img' : img,
+                    'text' : text,
+                    'config' : config
+                },
                 function(res){
                     if(res.code > 0){
                         bootbox.alert("保存出错，错误信息为:"+res.msg);

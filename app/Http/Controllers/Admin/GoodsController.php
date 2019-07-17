@@ -54,14 +54,14 @@ class GoodsController extends Controller
      * @param Request $request
      */
     public function store(Request $request){
-        $cid = $request->input('cid');
-        $title = $request->input('title');
-        $info = $request->input('info');
-        $img = $request->input('img');
-        $price = $request->input('price');
-        $num = $request->input('num');
-        $text = $request->input('text');
-        $config =$request->input('config');
+        $cid = $request->cid;
+        $title = $request->title;
+        $info = $request->info;
+        $img = $request->img;
+        $price = $request->price;
+        $num = $request->num;
+        $text = $request->text;
+        $config =$request->config;
 
         if($cid == ''){
             exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 cid 异常')));
@@ -134,5 +134,64 @@ class GoodsController extends Controller
             ->with('data1', $data1);
     }
 
-
+    /**
+     * 更新操作
+     * @param Request $request
+     */
+    public function update(Request $request){
+        // 获取前台数据
+        $id = $request->id;
+        $cid = $request->cid;
+        $title = $request->title;
+        $info = $request->info;
+        $img = $request->img;
+        $price = $request->price;
+        $num = $request->num;
+        $text = $request->text;
+        $config =$request->config;
+        // 判断数值是否合法
+        if($cid == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 cid 异常')));
+        }
+        if($title == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 标题 异常')));
+        }
+        if($info == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 描述 异常')));
+        }
+        if($img == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品图片 异常')));
+        }
+        if($price == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品价格 异常')));
+        }
+        if($num == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品库存数量 异常')));
+        }
+        if($text == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品详情信息 异常')));
+        }
+        if($config == ''){
+            exit(json_encode(array('code'=>1, 'msg'=>'服务器获取 商品配置信息 异常')));
+        }
+        // 执行更新操作
+        $result = DB::table('dzushop_goods')
+            ->where('id','=', $id)
+            ->update([
+                'cid' => $cid,
+                'title'  => $title,
+                'info' => $info,
+                'img' => $img,
+                'price' => $price,
+                'num' => $num,
+                'text' => $text,
+                'config' => $config
+            ]);
+        // 返回结果值
+        if($result){
+            exit(json_encode(array('code'=>0, 'msg'=>'更新商品成功')));
+        }else{
+            exit(json_encode(array('code'=>1, 'msg'=>'更新商品异常')));
+        }
+    }
 }
