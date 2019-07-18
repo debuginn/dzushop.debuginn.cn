@@ -64,6 +64,9 @@
                     @endforeach
                 </tbody>
             </table>
+            <div class="admin-page">
+                {{ $data->links() }}
+            </div>
         </div>
     </div>
     <script type="text/javascript">
@@ -80,7 +83,7 @@
                 callback: function(result){
                     $.post(
                         //请求地址及参数
-                        '/admin/slider/destroy/'+id,
+                        '/admin/ads/destroy/'+id,
                         //数据 & 方式 & CSRF认证
                         {'id':id, '_method':'delete', '_token':'{{ csrf_token() }}'},
                         //回调结果处理函数
@@ -113,7 +116,7 @@
             if(!isNaN(val)){
                 $.post(
                     /*请求地址*/
-                    '/admin/slider/sort',
+                    '/admin/ads/sort',
                     /*请求数值 方式  及 CSRF认证*/
                     {'id':id, 'val':val, '_method':'post', '_token':'{{ csrf_token() }}'},
                     /*请求回调方法*/

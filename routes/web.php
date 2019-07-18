@@ -107,10 +107,18 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
      */
     // 主体广告
     Route::get('ads', 'AdsController@index');
+    // 创建广告方法
     Route::get('ads/create', 'AdsController@create');
+    // 保存创建广告方法
     Route::post('ads/store', 'AdsController@store');
+    // 修改广告信息方法
     Route::get('ads/edit/{id}', 'AdsController@edit');
+    // 更新广告信息方法
     Route::post('ads/update', 'AdsController@update');
+    // 删除广告方法
+    Route::delete('ads/destroy/{id}', 'AdsController@destroy');
+    // 广告排序方法
+    Route::post('ads/sort',  'AdsController@sort');
 
     // 分类广告
     Route::get('adstypes', 'AdsTypesController@index');

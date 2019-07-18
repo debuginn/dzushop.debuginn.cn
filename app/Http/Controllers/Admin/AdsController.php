@@ -33,6 +33,25 @@ class AdsController extends Controller
     }
 
     /**
+     * 无刷新排序操作
+     * @param Request $request
+     */
+    public function sort(Request $request){
+        $id  = $request->input('id');
+        $val = $request->input('val');
+        $db = DB::table('dzushop_ADS')
+            ->where('id', '=', $id)
+            ->update([
+                'sort'=>$val
+            ]);
+        if($db){
+            exit(json_encode(array('code'=>0, 'msg'=>'排序修改成功')));
+        }else{
+            exit(json_encode(array('code'=>1, 'msg'=>'排序修改异常')));
+        }
+    }
+
+    /**
      * 创建广告页面方法
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -87,9 +106,9 @@ class AdsController extends Controller
      */
     public function destroy(Request $request){
         $id = $request->input('id');
-        $sql = DB::table('dzushop_admin')
-            ->where('id',$id)
-            ->update(['delstatus'=>1]);
+        $sql = DB::table('dzushop_ADS')
+            ->where('id', '=', $id)
+            ->delete();
         if($sql){
             exit(json_encode(array('code'=>0, 'msg'=>'删除成功')));
         }else{
