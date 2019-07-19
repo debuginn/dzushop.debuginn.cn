@@ -1,5 +1,5 @@
 @extends('template.admin')
-@section('title', '广告管理')
+@section('title', '分类广告管理')
 @section('main')
     <div class="admin-content">
         <div class="row admin-head">
@@ -7,17 +7,17 @@
                 <div class="admin-head-left">
                     <a href="/admin"><text class="text-primary">首页</text></a>
                     <text class="text-muted">&nbsp;&nbsp;/&nbsp;&nbsp;</text>
-                    <a href="/admin/ads"><text class="text-info">广告列表</text></a>
+                    <a href="/admin/adstype"><text class="text-info">分类广告列表</text></a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
-                <span>共有{{ $count }}个广告</span>
+                <span>共有{{ $count }}个分类广告</span>
             </div>
             <div class="col-md-2 col-sm-12">
                 <div class="admin-head-right">
-                    <a href="/admin/ads/create">
+                    <a href="/admin/adstype/create">
                         <button class="btn btn-sm btn-gradient-primary admin-head-btn">添加</button>
                     </a>
                 </div>
@@ -31,7 +31,7 @@
                         <th>标题</th>
                         <th>链接</th>
                         <th>图片</th>
-                        <th>排序</th>
+                        <th>广告图片大小类型</th>
                         <th>操作</th>
                     </tr>
                 </thead>
@@ -49,11 +49,14 @@
                                 <img src="{{ url($value->img) }}" alt="{{ $value->title }}">
                             </td>
                             <td>
-                                <input type="text" value="{{ $value->sort }}" class="form-control form-control-sm"
-                                 onchange="change(this, {{ $value->id }})">
+                                @if( $value->type == 0 )
+                                    <span class="text-primary">大图片</span>
+                                @else
+                                    <span class="text-success">小图片</span>
+                                @endif
                             </td>
                             <td>
-                                <a class="btn btn-sm btn-gradient-success" href="/admin/ads/edit/{{ $value->id }}">
+                                <a class="btn btn-sm btn-gradient-success" href="/admin/adstype/edit/{{ $value->id }}">
                                     修改
                                 </a>
                                 <button class="btn btn-sm btn-gradient-danger" href="javascript:;" onclick="del(this, {{ $value->id }})">
@@ -71,7 +74,7 @@
     </div>
     <script type="text/javascript">
         /**
-         *  无刷新删除广告
+         *  无刷新删除分类广告
          */
         function del(obj, id){
             //获取id
@@ -83,7 +86,7 @@
                 callback: function(result){
                     $.post(
                         //请求地址及参数
-                        '/admin/ads/destroy/'+id,
+                        '/admin/adstype/destroy/'+id,
                         //数据 & 方式 & CSRF认证
                         {'id':id, '_method':'delete', '_token':'{{ csrf_token() }}'},
                         //回调结果处理函数
@@ -103,42 +106,6 @@
                     );
                 }
             })
-        }
-        /**
-         * 无刷新修改排序值
-         */
-        function change(obj, id){
-            //获取id
-            var id = id;
-            //获取用户改变的值
-            var val = $(obj).val();
-            //判断获取值是否为证书并且获取值是否操作
-            if(!isNaN(val)){
-                $.post(
-                    /*请求地址*/
-                    '/admin/ads/sort',
-                    /*请求数值 方式  及 CSRF认证*/
-                    {'id':id, 'val':val, '_method':'post', '_token':'{{ csrf_token() }}'},
-                    /*请求回调方法*/
-                    function(res){
-                        if(res.code > 0 ){
-                            bootbox.alert("排序失败，错误信息："+res.msg);
-                        }else{
-                            bootbox.alert("排序成功");
-                            //页面自动刷新
-                            setTimeout(function () {
-                                window.location.reload();
-                            },1000);
-                        }
-                    },
-                    'json'
-                );
-            }else{
-                bootbox.alert("格式有误，请重新输入数值");
-                setTimeout(function () {
-                    window.location.reload();
-                },1000);
-            }
         }
 
     </script>

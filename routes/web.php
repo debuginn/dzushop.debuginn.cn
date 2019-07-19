@@ -121,7 +121,17 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
     Route::post('ads/sort',  'AdsController@sort');
 
     // 分类广告
-    Route::get('adstypes', 'AdsTypesController@index');
+    Route::get('adstype', 'AdsTypeController@index');
+    // 创建分类广告方法
+    Route::get('adstype/create', 'AdsTypeController@create');
+    // 保存创建分类广告方法
+    Route::post('adstype/store', 'AdsTypeController@store');
+    // 修改分类广告信息方法
+    Route::get('adstype/edit/{id}', 'AdsTypeController@edit');
+    // 更新分类广告信息方法
+    Route::post('adstype/update', 'AdsTypeController@update');
+    // 删除分类广告方法
+    Route::delete('adstype/destroy/{id}', 'AdsTypeController@destroy');
 
     /**
      *  系统设置
