@@ -62,7 +62,7 @@
                         </td>
                         <td>
                             @if($tot >= 2)
-                                <span class="btn btn-sm btn-rounded btn-gradient-secondary">添加子类</span>
+                                <span class="btn btn-sm btn-rounded btn-secondary">添加子类</span>
                             @else
                                 <a href="/admin/types/create?pid={{ $value->id }}&path={{ $value->path }}{{ $value->id }},">
                                     <span class="btn btn-sm btn-rounded btn-gradient-primary">添加子类</span>
