@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrdersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/addrlist.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/lists.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/GoodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/GoodsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/orders/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+            <state relative-caret-position="180">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="e#353#359#0#HTML" expanded="true" />
                 <element signature="e#359#365#0#HTML" expanded="true" />
@@ -500,7 +492,7 @@
       <workItem from="1563452926678" duration="10000" />
       <workItem from="1563453481211" duration="725000" />
       <workItem from="1563519172479" duration="7315000" />
-      <workItem from="1563581729199" duration="16308000" />
+      <workItem from="1563581729199" duration="17592000" />
     </task>
     <task id="LOCAL-00001" summary="修改readme文件为laravel，后期加上readme文件">
       <created>1561460857044</created>
@@ -684,11 +676,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563540824633</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="订单管理完成">
+      <created>1563610494758</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1563610494758</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207302000" />
+    <option name="totallyTimeSpent" value="208586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,7 +733,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.config" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修整路由，开始开工" />
     <MESSAGE value="前台页面设计" />
     <MESSAGE value="前台页面汉化，管理员添加功能模态窗" />
     <MESSAGE value="添加管理员功能及管理员列表展现及分页" />
@@ -759,7 +757,8 @@
     <MESSAGE value="广告功能完成" />
     <MESSAGE value="分类广告功能完成" />
     <MESSAGE value="修复已知bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复已知bug" />
+    <MESSAGE value="订单管理完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单管理完成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PicController.php" />
@@ -1050,8 +1049,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/orders/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="e#353#359#0#HTML" expanded="true" />
             <element signature="e#359#365#0#HTML" expanded="true" />

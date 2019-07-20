@@ -56,11 +56,10 @@
                             </td>
                             <td>
                                 @if($value->sid > 5)
-                                    <a href="javascript:;" class="btn btn-sm btn-gradient-light">更改状态</a>
+                                    <button class="btn btn-sm btn-gradient-light">此订单已结单</button>
                                 @else
                                     <a href="/admin/orders/changestatus?code={{ $value->code }}&sid={{ $value->sid }}" class="btn btn-sm btn-gradient-primary">更改状态</a>
                                 @endif
-
                             </td>
                         </tr>
                     @endforeach
