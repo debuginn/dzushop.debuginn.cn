@@ -17,7 +17,7 @@ class GoodsController extends Controller
         $data = DB::table('dzushop_goods')
             ->join('dzushop_types', 'dzushop_goods.cid', '=', 'dzushop_types.id')
             ->select('dzushop_goods.id', 'dzushop_types.name as name', 'dzushop_goods.title', 'dzushop_goods.info', 'dzushop_goods.img', 'dzushop_goods.price', 'dzushop_goods.num')
-            ->orderBy('dzushop_goods.cid','desc')
+            ->orderBy('dzushop_goods.cid','asc')
             ->paginate(10);
 
         // 加载页面

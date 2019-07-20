@@ -34,6 +34,7 @@
                 <tr>
                     <th>ID</th>
                     <th>邮箱</th>
+                    <th>昵称</th>
                     <th>电话</th>
                     <th>注册时间</th>
                     <th>状态</th>
@@ -45,6 +46,7 @@
                         {{--按序号输出数值--}}
                         <td>{{ $value->id }}</td>
                         <td>{{ $value->email }}</td>
+                        <td>{{ $value->name }}</td>
                         <td>{{ $value->tel }}</td>
                         <td>{{ $value->time }}</td>
                         <td>
