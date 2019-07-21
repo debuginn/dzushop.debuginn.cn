@@ -166,6 +166,14 @@ Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin
         Route::any('orders/changestatus', 'OrdersController@changestatus');
 
     /**
+     * 评论管理模块
+     */
+    // 评论管理列表
+    Route::get('comment', 'CommentController@index');
+        // 修改当前评论
+        Route::post('comment/status', 'CommentController@status');
+
+    /**
      * 公共路由设置方法
      */
     //设置文件上传的方法

@@ -13,7 +13,7 @@
             <div class="col-md-4 col-sm-12">
             </div>
             <div class="col-md-2 col-sm-12 admin-head-user-count">
-                <span>共有{{ 111 }}个订单</span>
+                <span>共有{{ count($data) }}个订单</span>
             </div>
             <div class="col-md-2 col-sm-12">
             </div>
