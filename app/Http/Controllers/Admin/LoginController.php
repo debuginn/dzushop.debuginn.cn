@@ -96,4 +96,15 @@ class LoginController extends Controller
         return response($builder->output())
             ->header('Content-type','image/jpeg');
     }
+
+    /**
+     * 用户退出操作
+     * @param Request $request
+     */
+    public function logout(Request $request){
+        // 清除session值
+        $request->session()->flush();
+        // 重定向至登陆界面
+        return redirect('admin/login');
+    }
 }

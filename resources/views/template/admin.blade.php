@@ -33,7 +33,7 @@
                             <img src="{{ asset('images/faces/face1.jpg')}}" alt="image">
                         </div>
                         <div class="nav-profile-text">
-                            <p class="mb-1 text-black">张三</p>
+                            <p class="mb-1 text-black">{{ session('adminUserInfo.name') }}</p>
                         </div>
                     </a>
                     <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
@@ -46,7 +46,7 @@
                             前台首页
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/admin/logout">
                             <i class="mdi mdi-logout mr-2 text-primary"></i>
                             退出
                         </a>

@@ -28,6 +28,8 @@ Route::get('admin/login',"Admin\LoginController@index");
 Route::post('admin/check',"Admin\LoginController@check");
 // 登录验证码
 Route::get('admin/captcha',"Admin\LoginController@captcha");
+// 用户退出操作
+Route::get('admin/logout', "Admin\LoginController@logout");
 
 // 通过路由组进行提取 提取公共命名空间 公共的前缀 中间件
 Route::group(['namespace'=>'Admin', 'prefix'=>'admin', 'middleware'=>'adminLogin'], function(){
