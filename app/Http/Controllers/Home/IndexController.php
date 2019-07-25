@@ -17,7 +17,14 @@ class IndexController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(){
-        return view("home.index");
+        // 查询轮播图广告
+
+        // 查询广告并排序
+        $slider = DB::table('dzushop_slider')
+            ->orderBy('sort', 'desc')
+            ->get();
+
+        return view("home.index")->with('slider', $slider);
     }
 
 }

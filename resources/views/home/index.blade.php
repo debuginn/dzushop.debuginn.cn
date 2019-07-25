@@ -953,30 +953,19 @@
                         <div class="row">
                             <div class="col-lg-8 col-md-8">
                                 <div class="main-slider slider-navigation_style-1">
+                                    @foreach($slider as $slider_v)
                                     <div class="single-slide animation-style-03 bg-5">
                                         <div class="container">
                                             <div class="slider-content">
-                                                <h4>只有一天</h4>
-                                                <h3>鸡蛋椅</h3>
-                                                <span>选定客厅的10%</span>
+                                                <h3>{{ $slider_v->title }}</h3>
+                                                <span>--------</span>
                                                 <div class="umino-btn-ps_left slide-btn">
-                                                    <a class="umino-slider_btn" href="shop-left-sidebar.html">立即选购</a>
+                                                    <a class="umino-slider_btn" href="{{ $slider_v->href }}">立即选购</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="single-slide animation-style-03 bg-6">
-                                        <div class="container">
-                                            <div class="slider-content">
-                                                <h4>只有一天</h4>
-                                                <h3>新沙发</h3>
-                                                <span>选定客厅的10</span>
-                                                <div class="umino-btn-ps_left slide-btn">
-                                                    <a class="umino-slider_btn" href="shop-left-sidebar.html">立即选购</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 umi-custom_offset">
@@ -1006,6 +995,7 @@
         <div class="umino-banner_area umino-banner_area-5">
             <div class="container">
                 <div class="row">
+
                     <div class="col-lg-6 col-md-6">
                         <div class="banner-item img-hover_effect">
                             <div class="banner-content">
