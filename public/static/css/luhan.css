@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{background-image:url(about:blank);background-attachment:fixed;}
+
+#giftBox {position:fixed; z-index:999; width:400px; padding:12px;top:200px; left:50%; margin-left:-200px;  border:1px solid #C01114; box-shadow:0px 0px 25px rgba(0,0,0,0.44); display:none; background: #fff;}
+#giftBox .msg { line-height:300%; text-align:center; font-size: 24px;}
+#giftBox button  { position:absolute; right:0; top:0; border:0; background:#C01114; width:32px; height:32px; overflow:hidden; line-height:32px; text-align:center; font-size:18px; color:#fff;}
+#giftBox.wap { width:90%; margin-left:-47%; left:50%;padding: 2%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

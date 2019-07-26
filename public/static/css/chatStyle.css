@@ -1,0 +1,928 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	width:100%;
+}
+
+body {
+	margin: 0;
+	width:100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+
+/* 去掉各 Table  cell 的边距并让其边重合 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 去除默认边框 */
+
+fieldset,
+img {
+	border: 0;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+/* 一致的 del 样式 */
+
+del {
+	text-decoration: line-through;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+	font-style: normal;
+	font-weight: 500;
+}
+
+
+/* 去掉列表前的标识, li 会继承 */
+
+ol,
+ul {
+	list-style: none;
+}
+
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+
+caption,
+th {
+	text-align: left;
+}
+
+
+/* 来自 yahoo, 让标题都自定义, 适应多个系统应用 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 500;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+
+/* 统一上标和下标 */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+
+/* 正常链接 未访问 */
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+
+/*通用样式*/
+
+
+/*全局样式*/
+
+html {
+	font-size: 12px;
+	font-family: 微软雅黑, 宋体, Arial, Helvetica;
+	background: #ffffff;
+}
+
+body {
+	min-width: 1000px;
+}
+
+.container {
+	width: 1000px;
+}
+
+
+/*文本超出部分显示省略号*/
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*禁用选中*/
+
+.no-select {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+
+/*清除浮动*/
+
+.clear:before,
+.clear:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.clear:after {
+	clear: both;
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+	width: 1000px;
+}
+
+.container {
+	*zoom: 1;
+}
+
+.container:before,
+.container:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.container:after {
+	clear: both;
+}
+
+.row {
+	margin-left: -15px;
+}
+
+.row {
+	*zoom: 1;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.row:after {
+	clear: both;
+}
+
+.box {
+	float: left;
+	margin-left: 15px;
+}
+
+.box-small,
+.box-big {
+	margin-top: 15px;
+}
+
+.icons {
+	background: url(../image/icons1.png) no-repeat;
+}
+
+.icon-00,
+.icon-01,
+.icon-02,
+.icon-03,
+.icon-04,
+.icon-07,
+.icon-08 {
+	background-image: url("../image/chat.png");
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+.css_stamp {
+	content: "20160415142543";
+}
+
+.icon-00 {
+	background-position: -77px 0;
+	width: 46px;
+	height: 28px;
+}
+
+.icon-01 {
+	background-position: -28px -41px;
+	width: 21px;
+	height: 33px;
+}
+
+.icon-02 {
+	background-position: -41px 0;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-03 {
+	background-position: 0 -41px;
+	width: 26px;
+	height: 34px;
+}
+
+.icon-04 {
+	background-position: 0 -77px;
+	width: 39px;
+	height: 32px;
+}
+.icon-044 {
+	background-image: url("../image/icon_06.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin-top: 35px;
+}
+.icon-012 {
+	background-image: url("../image/icon_031.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 41px;
+	height: 42px;
+	margin-top: 31px;
+}
+
+.icon-045 {
+	background-image: url("../image/user_score.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin-top: 35px;
+}
+
+
+/* .icon-05 {
+  background-position: 0 0;
+  width: 39px;
+  height: 39px;
+} */
+
+.icon-05 {
+	background-image: url("../image/ic_phone_pc.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 35px;
+	height: 39px;
+}
+
+
+.icon-06 {
+	background-image: url(../image/pic-smart-pro1.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    margin-top: 34px;
+}
+
+/* .icon-06 {
+	background-image: url("../images/pic-life.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+} */
+
+.icon-066 {
+	background-image: url("../image/pic-speaker.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+}
+
+.icon-07 {
+	background-position: -89px -38px;
+	width: 34px;
+	height: 35px;
+}
+
+.icon-08 {
+	background-position: -48px -81px;
+	width: 68px;
+	height: 24px;
+	margin-top: 42px;
+}
+
+.icon-088 {
+	background-image: url("../image/pic-smart-pro2.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 68px;
+	height: 30px;
+	margin-top: 40px;
+}
+
+
+.msg-panel {
+	height: 30px;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	border: 1px solid #e5e5e5;
+	background: url(../image/msg-bg1.jpg) repeat-x;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.service-panel {
+	width: 865px;
+	margin: 50px auto 0;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+	height: 56px;
+	background-color: #333333;
+	color: #fff;
+	overflow: hidden;
+}
+
+.header.think-header {
+	background-color: #000;
+}
+
+.header .logo {
+	width: 124px;
+	height: 19px;
+	/* float: left; */
+	margin: 18px 10px 0 100px;
+	/* background-position: 0 -67px; */
+	background: url(../image/title_04.png) no-repeat;
+}
+
+.header.think-header .logo {
+	width: 130px;
+	height: 30px;
+	background-position: 0 -116px;
+}
+
+.header h3 {
+	float: left;
+	line-height: 56px;
+	font-size: 20px;
+}
+
+.header .header-btns {
+	height: 15px;
+	float: right;
+	margin: 20px 20px 0 0;
+}
+
+.header .header-btns a {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-left: 14px;
+	text-indent: -9999em;
+	overflow: hidden;
+}
+
+.btn-minimize {
+	background-position: 0 -169px;
+}
+
+.btn-maximize {
+	background-position: -25px -169px;
+}
+
+.btn-close {
+	background-position: -49px -169px;
+}
+
+img.src_logo{
+	width: 60px;
+	height: 180px;
+	position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+#chatPanel {
+	width:100%;
+	height: 100%;
+/* 	height: 583px;
+	width: 863px; */
+	/* margin-top: 50px;
+	margin-bottom: 50px; */
+	/* border: 1px solid #eaeaea; */
+	background: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	/* -webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #ccc; */
+}
+
+#chatPanel .header {
+	height: 55px;
+	background-color: #333333;
+	/* width: 865px; */
+}
+
+#chatPanel .content {
+	padding-top: 130px;
+}
+
+#chatPanel .content .list {
+	text-align: center;
+	width: 1230px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+#chatPanel .content .list a {
+	display: inline-block;
+	height: 126px;
+	width: 126px;
+	/* margin-right: 65px; */
+	font-size: 16px;
+	color: #000000;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-ms-border-radius: 100%;
+	border-radius: 100%;
+	background-color: #e6e6e6;
+	overflow: hidden;
+	position: relative;
+	/* float: left; */
+}
+
+
+/* #chatPanel .content .list a.last {
+  margin-right: 0px;
+} */
+
+#chatPanel .content .list1 a {
+	margin-right: 44px;
+	margin-left: 44px;
+}
+
+#chatPanel .content .list2 a {
+	margin-right: 23px;
+	margin-left: 23px;
+}
+
+#chatPanel .content .list a .icon-00 {
+	margin-top: 36px;
+}
+
+#chatPanel .content .list a .icon-01 {
+	margin-top: 32px;
+}
+
+#chatPanel .content .list a .icon-02 {
+	margin-top: 34px;
+}
+
+#chatPanel .content .list a .icon-03 {
+	margin-top: 31px;
+}
+
+#chatPanel .content .list a .icon-04 {
+	margin-top: 34px;
+}
+
+#chatPanel .content .list a .icon-05 {
+	margin-top: 27px;
+}
+
+#chatPanel .content .list a .icon-06 {
+	margin-top: 34px;
+}
+
+#chatPanel .content .list a .icon-066 {
+	margin-top: 34px;
+}
+
+#chatPanel .content .list a .icon-07 {
+	margin-top: 34px;
+}
+
+#chatPanel .content .list a.a00:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#55b8ea), to(#2763d0));
+	background: -ms-linear-gradient(top, #2763d0, #2763d0);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #2763d0, #2763d0);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#2763d0, endColorStr=#2763d0);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a01:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#72c450), to(#72c450));
+	background: -ms-linear-gradient(top, #72c450, #72c450);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #72c450, #72c450);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#72c450, endColorStr=#72c450);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a02:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d0ab75), to(#d0ab75));
+	background: -ms-linear-gradient(top, #d0ab75, #d0ab75);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #d0ab75, #d0ab75);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#d0ab75, endColorStr=#d0ab75);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a03:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d3c5e0), to(#a487c0));
+	background: -ms-linear-gradient(top, #a487c0, #a487c0);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #a487c0, #a487c0);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#a487c0, endColorStr=#a487c0);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a04:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bf8c4c), to(#f25048));
+	background: -ms-linear-gradient(top, #f25048, #f25048);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #f25048, #f25048);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#f25048, endColorStr=#f25048);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a05:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2d41a), to(#f2d41a));
+	background: -ms-linear-gradient(top, #f2d41a, #f2d41a);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #f2d41a, #f2d41a);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#f2d41a, endColorStr=#f2d41a);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a06:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f193cd), to(#e14492));
+	background: -ms-linear-gradient(top, #e14492, #e14492);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #e14492, #e14492);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#e14492, endColorStr=#e14492);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a066:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#067a7a), to(#067a7a));
+	background: -ms-linear-gradient(top, #067a7a, #067a7a);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #067a7a, #067a7a);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#067a7a, endColorStr=#067a7a);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a.a07:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fd9d03), to(#fd9d03));
+	background: -ms-linear-gradient(top, #fd9d03, #fd9d03);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #fd9d03, #fd9d03);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#fd9d03, endColorStr=#fd9d03);
+	/*IE 6 7 8*/
+}
+
+
+#chatPanel .content .list a.a11:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d6ed7e), to(#a6d93a));
+	background: -ms-linear-gradient(top, #d6ed7e, #a6d93a);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #d6ed7e, #a6d93a);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#d6ed7e, endColorStr=#a6d93a);
+	/*IE 6 7 8*/
+}
+#chatPanel .content .list a.a12:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#65d7eb), to(#2fa9d5));
+	background: -ms-linear-gradient(top, #65d7eb, #2fa9d5);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #65d7eb, #2fa9d5);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#65d7eb, endColorStr=#2fa9d5);
+	/*IE 6 7 8*/
+}
+#chatPanel .content .list a.a13:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fe7827), to(#fc4014));
+	background: -ms-linear-gradient(top, #fe7827, #fc4014);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #fe7827, #fc4014);
+	/*火狐*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#fe7827, endColorStr=#fc4014);
+	/*IE 6 7 8*/
+}
+
+#chatPanel .content .list a .name {
+	/* position: absolute; */
+	margin-top: 5px;
+	text-align: center;
+	width: 100%;
+}

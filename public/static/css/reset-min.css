@@ -1,0 +1,128 @@
+/* 
+ html5doctor.com Reset Stylesheet
+ v1.4.1 
+ 2010-03-01
+ Author: Richard Clark - http://richclarkdesign.com
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    /*line-height:1;*/
+	font-family:verdana,"宋体",Arial,Helvetica,sans-serif;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+select, input, button, textarea {
+    font: 100% Tahoma,Helvetica,Arial,sans-serif;
+	vertical-align:middle;
+}
+li{list-style:none}
+h1 {font-family:verdana,Arial,Helvetica,sans-serif;font-size: 20px;}h2 {font-size: 14px;}h3 {font-size: 14px;}h4 {font-size: 12px;}h5 {font-size: 12px;}h6 {font-size: 12px;}.fl{float:left}.fr{float:right}
+
+/*清浮动*/
+.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac */
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clear{clear:both;height:0;font:0/0 Arial;visibility:hidden;}
+/*清浮动*/
+
+#backtofirst{padding-left:21px; padding-top:10px;}
+#backtofirst span{
+ background: url("../image/home.jpg") no-repeat scroll 0 0 transparent;
+    padding-left: 33px;
+	   display: block;
+    height: 29px;
+    padding-left: 33px;
+    padding-top: 5px;
+}
+#backtofirst span a{
+
+	  color: #282828;
+	  font-size:12px;
+	  text-decoration:none;
+	

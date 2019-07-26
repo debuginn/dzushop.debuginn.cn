@@ -1,0 +1,24 @@
+@charset "utf-8";
+.footer131209 { margin: 0px auto; width: 1003px; clear: both}
+.footer131209_link { height: 30px; font-size: 12px; line-height: 30px; color: #333; border-bottom: 1px solid #ccc; padding: 10px 15px 0px; }
+.footer131209_link_tohome { float: left; color: #555; text-decoration: none; display: block; }
+.footer131209_link_tohome:hover { color: #777; text-decoration: none; }
+.footer131209_link_news { float: left; }
+.footer131209_link_tomap { float: right; color: #555; display: block; text-decoration: none; }
+.footer131209_link_tomap:hover { color: #777; text-decoration: none; }
+.footer131209_copyright { height: 50px; padding: 0px 5px; }
+.footer131209_copyright_left { font-size: 12px; line-height: 30px; color: #888; float: left; height: 30px; }
+.footer131209_copyright_left_a { color: #555; text-decoration: none; }
+.footer131209_copyright_left_a:hover { text-decoration: none; color: #222; }
+.footer131209_copyright_right { font-size: 12px; line-height: 30px; color: #888; float: right; height: 30px; }
+.footer131209_copyright_right_a { color: #555; text-decoration: none; }
+.footer131209_copyright_right_a:hover { text-decoration: none; color: #222; }
+.pic {background-image:url(../image/yijianfankui.png);width:16px;height:14px;clear:both;position:absolute;right:99px;top:10px;}
+.backold{
+    color:#555;
+    position: absolute;
+    left:5px;
+}
+.backold:hover{color:red;}
+
+.root {background-image:url(../image/Rooter.png);width:16px;height:14px;clear:both;position:absolute;right:65px;top:10px;}

@@ -1,0 +1,134 @@
+body{background: #f5f6f8;font-family: "microsoft yahei"}
+.newpost_mark_wrap{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#55000000,endColorstr=#55000000);
+	z-index:99;
+}
+.newpost_markbox{
+    width: 561px;
+    height: 372px;
+    background: #fff;
+    position: fixed;
+    top:50%;
+    margin-top: -186px;
+    left: 50%;
+    margin-left:-281px;
+    border-radius: 6px;
+}
+.newpost_markbox h1{
+    height:42px;
+    line-height: 42px;
+    background:#fafafa ;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 14px;
+    color:#333;
+    padding-left: 30px;
+}
+.newpost_markbox h1 span{
+    float: right;
+    cursor: pointer;
+}
+.newpost_markbox h1 span img{
+    vertical-align: middle;
+    padding-right: 16px;
+}
+.newpost_markbox ul{
+    margin-left: 25px;
+    height: 56px;
+}
+.newpost_markbox ul li{
+    float: left;
+    margin-left: 5px;
+    line-height: 56px;
+    font-size: 12px;
+}
+.newpost_markbox ul li a{
+   color:#333;
+}
+.newpost_markbox ul li a:hover{
+    color:#e2231a!important;
+}
+.newpost_markbox_li a{
+    color:#e2231a!important;
+}
+.newpost_markbox_inall{
+    height: 200px;
+    width: 520px;
+    border: 1px solid #ebebeb;
+    margin:0px auto;
+    border-radius: 6px;
+}
+.newpost_markbox_btn{
+    width: 100%;
+}
+.newpost_markbox_btn span{
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #ff6163;
+    width: 90px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 19px;
+    margin-right: 24px;
+}
+.newpost_markbox_btn span a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color:#fff;
+    font-size: 16px;
+}
+.newpost_markbox_inallone{
+    float: left;
+    width: 50%;
+    /** width: 172px; */
+    height:100%;
+    /** border-right: 1px solid #ebebeb; */
+}
+.newpost_markbox_inallone ol{
+    height: 170px;
+    width: 100%;
+    margin: 16px auto;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.newpost_markbox_inallone ol li{
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+    font-size: 12px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+}
+.newpost_markbox_inallone ol li a{
+    display: inline-block;
+    height: 100%;
+    width:100%;
+    color:#333;
+}
+.newpost_markbox_inallone ol li:hover{
+    background: #fafafa;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+}
+.newpost_markbox_inallone ol li a img{
+    vertical-align: middle;
+    float: right;
+    padding-right: 20px;
+    padding-top: 7.5px;
+}
+.newpost_inallone_hili{
+    background: #fafafa;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+}

@@ -1,0 +1,23 @@
+body{font-family: "microsoft yahei"}
+.pub_footer{
+    height: 120px;
+    width: 100%;
+    background: #434343;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px;
+}
+.pub_footer_top{
+    padding-top:38px ;
+}
+.pub_footer_bottom{
+    padding-top:15px
+}
+.pub_footer a{
+    color: #CCC;
+}
+.pub_footer span{
+    color: #CCC;
+    padding-left: 5px;
+    padding-right: 5px;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,em{margin:0;padding:0;list-style: none;}
+a,a:focus{outline:none !important;text-decoration: none;}
+img,a img{border: 0;vertical-align: top;}
+.clearfix:after{display: block;clear: both;height: 0;visibility: hidden;font-size: 0;line-height: 0;content: "";}
+.clearfix{zoom:1;}
+body,input,textarea{font-size:12px;font-family:arial,"微软雅黑",sans-serif;}
+
+.try_banner{position:relative;width: 1200px;height:465px;margin:0 auto;z-index: 1;line-height: 1.5em;color: #3f3f3f;}
+.try_banner .banner_img {height: 465px;}
+.try_banner .banner_img .banner_li {position:absolute;width:1200px;height:465px;z-index: 2;display:none;}
+.try_banner .banner_img .banner_li img{width: 1200px;height: 465px;}
+.try_banner .banner_bt {position:absolute;z-index:3;bottom:10px;text-align: center;left: 50%;}
+.try_banner .banner_bt a {display: inline-block;width:16px;height:16px;background:url(../image/try.png) -34px -8px;margin:0 5px;position: relative;left: -50%;}
+.try_banner .banner_bt a.now {background:url(../image/try.png) -8px -8px;}
+.try_banner .try_ban_opacity{position: absolute;right: 0;top: 0;width: 465px;height: 465px;background: #fff;opacity: 0.8;filter:alpha(opacity:80);}
+.try_banner .try_ban_detail{position: absolute;right: 0;top: 0;width: 405px;height: 465px; z-index: 4;padding:0 30px;}
+.try_banner .try_ban_phase{padding-top: 20px;}
+.try_banner .try_ban_phase p{color: #000;}
+.try_banner .try_ban_phase p b{color: #e2231b;margin: 0 2px;}
+.try_banner .try_ban_phase .try_ongoing{width: 110px;height: 20px;line-height: 20px;text-align: center;background: #3f3f3f;color: #fff;letter-spacing: 6px;}
+.try_banner .try_ban_pro{padding: 30px 0 0 0;height: 179px;overflow: hidden;}
+.try_banner .try_ban_pro h3{font-size: 35px;font-weight: normal;height: 52px;line-height: 52px;overflow: hidden;}
+.try_banner .try_ban_pro p{padding-top: 5px;min-height: 54px;overflow: hidden;}
+.try_banner .try_ban_apply{padding-bottom: 25px;border-bottom: 1px solid #d2d2d2;}
+.try_banner .try_ban_apply .try_ban_btn{float: left;}
+.try_banner .try_ban_apply .try_ban_btn a{display: block;width: 218px;height: 43px;line-height: 43px;font-size: 18px;text-align: center;border-radius: 2px;}
+.try_banner .try_ban_apply .try_ban_btn .try_freeapply{background: #e2231b;color: #fff;border:1px solid #e2231b;}/*免费申请*/
+.try_banner .try_ban_apply .try_ban_btn .try_stay{background: #969696;color: #fff;border:1px solid #969696;}/*敬请期待*/
+.try_banner .try_ban_apply .try_ban_btn .try_see{background: #fff;color: #e2231b;border:1px solid #e2231b;}/*查看*/
+.try_banner .try_ban_apply .try_ban_share{float: left;padding: 7px 25px;position: relative;z-index: 9;}
+.try_banner .try_ban_apply .try_ban_share .try_share_icon{display: block;width: 30px;height: 30px;background: url(../image/try.png) -9px -36px;text-indent: -9999px;}
+.try_banner .try_ban_share ul{position: absolute;left: 22px;top: 40px;width: 102px;height: 250px; background: #f7f7f8;z-index: 9;border: 1px solid #d2d2d3;border-radius: 2px;overflow: hidden;display: none;}
+.try_banner .try_ban_share ul li{padding: 7px 0 7px 5px;}
+.try_banner .try_ban_share ul .try_jia_title{padding: 0;}
+.try_banner .try_ban_share ul .try_jia_spe{padding-left: 11px;}
+.try_banner .try_ban_share ul li a,.try_banner .try_ban_share ul li span{color: #434343;}
+.try_banner .try_ban_share ul li h4{height: 32px;line-height: 32px;padding-left: 10px;background: #d7d7d7;font-size: 14px;color: #434343;}
+.try_banner .try_ban_apply .try_ban_how{float: left;height: 45px;line-height: 45px;}
+.try_banner .try_ban_apply .try_ban_how a{text-decoration: underline;color: #434343;}
+.try_banner .try_num{font-size: 14px;color: #010101;margin-top: 25px;}
+.try_banner .try_num span{margin-right: 20px;}
+.try_banner .try_num b{font-size: 18px;}
+/*倒计时*/
+.try_countdown{font-size: 14px;color: #010101;margin-top: 25px; display:none;}
+.try_countdown .try_fl{float: left;width: 70px;height: 35px;line-height: 35px;}
+#countdown_dashboard {height: 35px;float: left;width: 320px;}
+.dash {width: 79px;height: 35px;float: left;position: relative;}
+.dash .digit {font-size: 26px;font-weight: bold;font-family:Arial,sans-serif;float: left;width: 25px;height:35px;line-height: 35px; background: #3f3f3f;border-radius: 2px;color: #fff; text-align: center;position: relative;margin: 0 1px;}
+.dash_title {float:left;display: block;height: 35px;line-height: 35px;padding: 0 5px;}
+
+/*申请问卷*/
+#try_question .error{float: left;color: #e2231b;}
+#try_question .try_ques_form li .error{height: 34px;line-height: 34px;}
+.try_body{background: #f6f6f6;}
+.try_question{width: 1150px;margin: 0 auto;padding: 30px 25px;color: #434343;font-size: 14px;}
+.try_question .try_ques_list{margin-top: 50px;}
+.try_question .try_ques_list p{line-height: 24px;}
+.try_question .try_ques_list p span{float: left;}
+.try_question .try_ques_list p i{color: #e2231b;float: left;margin-right: 10px;}
+.try_question .try_ques_option label{display: block;float: left;padding: 12px 32px 0px 25px;}
+.try_question .try_ques_option label input{float: left;margin: 4px 5px 0 0;}
+.try_question .try_ques_option label span{float: left;}
+.try_question .try_ques_form{padding: 30px 0; position:relative;}
+.try_question .try_ques_form li{height: 34px;padding-top: 20px;} 
+.try_question .try_ques_form li span{display: block;float: left;height: 34px;line-height: 34px;width: 70px;text-align: right;}
+.try_question .try_ques_form li span i{margin-right: 5px;color: #e2231b;}
+.try_question .try_ques_form li input[type="text"]{width: 210px;height: 32px;line-height: 32px;border: 1px solid #d2d2d2;border-radius: 2px;background: #fff;padding: 0 5px;font-size: 14px;color: #434343;outline: none;margin: 0 10px;float: left;}
+.try_question .try_ques_form li p{float: left;height: 34px;line-height: 34px;}
+.try_question .try_ques_form .try_form_btn{padding: 36px 0 0 80px;}
+.try_question .try_ques_form .try_form_btn input{width: 125px;height: 45px;line-height: 45px;text-align: center;color: #fff;font-size: 20px;border: 0;border-radius: 2px;outline: none;cursor: pointer;}
+.try_question .try_ques_form .try_form_btn .try_btn_sure{background:#e2231b;margin-right: 66px;}
+.try_question .try_ques_form .try_form_btn .try_btn_cancel{background:#aeaeae;}
+.try_question .tryreason_box { position:absolute; right:0; width:500px; top:58px;}
+.try_question .tryreason_box textarea { width:480px; height:151px; margin-top:10px;border: 1px solid #d2d2d2;}
+
+/*填写报告*/
+#try_report label.error{display: block;padding:5px 0 0 100px;color: #e2231b;float: left;width: 1040px;}
+#try_report .try_report_hidden label.error{position: relative;top: -25px;}
+.try_report{width: 1140px;padding:0 30px 30px 0;margin: 0 auto;font-size: 14px;color: #000;}
+.try_report h3{font-size: 36px;font-weight: normal;text-align: center;height: 180px;line-height: 218px;}
+.try_report .try_report_list{padding-top: 38px;}
+.try_report .try_report_list span{display: block;float: left;width: 100px;height: 42px;line-height: 42px;}
+.try_report .try_report_list input[type="text"],.try_report .try_report_list textarea{float: left;width: 1018px;border: 1px solid #d2d2d2;border-radius: 5px;font-size: 14px;color: #000;outline: none;}
+.try_report .try_report_list input[type="text"]{height: 40px;line-height: 40px;padding: 0 10px;}
+.try_report .try_report_list textarea{padding: 10px;height: 880px;resize:none;line-height: 26px;}
+.try_report .try_report_list input[type="file"]{float: left;margin-top: 11px;width: 64px;overflow: hidden;}
+.try_report .try_report_hidden input{outline: none;height: 10px;padding: 0;border: 0 none;opacity: 0;filter:alpha(opacity:0);}
+.try_report .try_report_tip{padding-left: 100px;}
+.try_report .try_report_tip a{color: #000;}
+.try_report .try_report_btn{padding: 38px 0 0 100px;}
+.try_report .try_report_btn input{width: 125px;height: 45px;line-height: 45px;text-align: center;color: #fff;font-size: 20px;border: 0;border-radius: 2px;outline: none;}
+.try_report .try_report_btn .try_btn_sure{background:#e2231b;margin-right: 120px;}
+.try_report .try_report_btn .try_btn_cancel{background:#aeaeae;}

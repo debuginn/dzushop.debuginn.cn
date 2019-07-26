@@ -1,0 +1,295 @@
+@import "global.css"; 
+#wrap {width:1003px;margin:0 auto}
+.mina {
+	width: 1003px;
+	margin:0 auto
+}
+.mina_boot {
+    color: #282828;
+    font-size: 12px;
+    height: 22px;
+    padding-left: 10px;
+    padding-top: 9px;
+    width: 993px;
+	margin:0 auto
+}
+.mina_boot a {
+	color: #282828;
+	text-decoration: none;
+}
+.mina_boot a:hover {
+	color: #282828;
+	text-decoration: underline;
+}
+
+.content {
+	float: left;
+	width: 790px;
+	padding-left: 11px;
+}
+.mina_right_banner {
+	height: 126px;
+	width: 790px;
+	padding-bottom: 10px;
+}
+.mina_right_box01 {
+	border: 1px solid #D7D6D6;
+	background-image: url(../image/mina_number01_bj.gif);
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	background-color: #FFFFFF;
+	padding-bottom: 40px;
+	height:200px;	
+}
+.content .htitle {
+    background: url("../image/whiteJian.png") no-repeat scroll 10px center #595A5E;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 26px;
+    position: relative;
+	margin-bottom:-1px;
+}
+.mina_right_box01 h1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2b2b2b;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-top: 50px;
+}
+.mina_right_box01 td {
+	padding: 5px;
+	height: 38px;
+	vertical-align: top;
+}
+
+.mina_right_box01 input {
+	height: 30px;
+	width: 350px;
+	border: 3px solid #A5A5A5;
+	border-radius: 7px;
+	moz-border-radius: 7px;
+	webkit-border-radius: 7px;
+	font-size: 12px;
+	color: #2b2b2b;
+	line-height: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.mina_right_box01 p {
+	padding-top: 10px;
+	font-size: 12px;
+	color: #1790CE;
+	padding-left: 10px;
+}
+.mina_right_box01 p a {
+	color: #1790CE !important;
+	text-decoration: none;
+}
+.mina_right_box01 p a:hover {
+	color: #1790CE;
+	text-decoration: underline;
+}
+.mina_right_box01 p b {
+	padding-right: 30px;
+	font-weight: normal;
+}
+.mina_right_box01 p img {
+	vertical-align: middle;
+}
+.mina_right_box02 {
+	background-color: #FFFFFF;
+	background-image: url(../image/mina_number02_bj.png);
+	background-repeat: no-repeat;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #D7D6D6;
+	border-bottom-color: #D7D6D6;
+	border-left-color: #D7D6D6;
+	padding-left: 70px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.mina_right_box02 h1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2b2b2b;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+.mina_right_box02 h1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 14px;
+	background-image: url(../image/reddownload.png);
+	background-repeat: no-repeat;
+	display: block;
+	height:31px;
+	width: 184px;
+	font-weight: bold;
+	padding-left: 39px;
+	line-height:31px;
+}
+/*
+.mina_right_box02 h1 a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 14px;
+	background-image: url(../images/downloadhover.png);
+	background-repeat: no-repeat;
+	display: block;
+	font-weight: bold;
+}*/
+.mina_right_box02 p {
+	clear: left;
+	font-size: 12px;
+	line-height: 22px;
+	padding-top: 10px;
+	color: #939496;
+}
+.mina_right_box02 p a {
+	color: #1790CE;
+	text-decoration: none;
+}
+.mina_right_box02 p a:hover {
+	color: #1790CE;
+	text-decoration: underline;
+}
+.mina_right_box02 p b {
+	color: #1790CE;
+	font-weight: normal;
+}
+.mina_right_box03 {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #D7D6D6;
+	border-bottom-color: #D7D6D6;
+	border-left-color: #D7D6D6;
+	background-color: #FFFFFF;
+	background-image: url(../image/mina_number03_bj.gif);
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	padding-left: 70px;
+	padding-bottom: 20px;
+}
+.mina_right_box03 p {
+	font-size: 12px;
+	color: #178FCD;
+}
+.mina_right_box03 p strong {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2b2b2b;
+	padding-right: 10px;
+}
+.mina_right_box03 p a {
+	color: #1790CE !important;
+	text-decoration: none;
+}
+.mina_right_box03 p a:hover {
+	color: #1790CE;
+	text-decoration: underline;
+}
+.mina_right_box04 {
+	background-color: #FFFFFF;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #D7D6D6;
+	border-bottom-color: #D7D6D6;
+	border-left-color: #D7D6D6;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 70px;
+}
+#video_list dl{
+  margin-right:60px;
+  float:left;
+  text-align:center;
+  border: 1px solid #d4d4d4;
+  padding:5px;
+}
+#video_list dl dd span{
+   padding-top:5px;
+   font-weight:bold;
+}
+#video_list dl dd span a{
+  color:#282828;
+}
+#video_list dl dd span a:hover{
+  color:#1D83B4;
+  text-decoration:underline;
+}
+#text_help{
+  clear:both;
+  padding-top:20px;
+  *padding-top:10px;
+}
+.mina_right_box04 p {
+	font-size: 12px;
+	color: #939496;
+	background: url(../image/why.png) no-repeat scroll 0 3px transparent;
+	padding-left:18px;
+}
+.mina_right_box04 p a {
+	color: #1790CE;
+	text-decoration: none;
+}
+.mina_right_box04 a:hover {
+	color: #1790CE;
+	text-decoration: underline;
+}
+
+.mina_down {
+	font-size: 1px;
+	line-height: 1px;
+	height: 20px;
+	clear: left;
+}
+/*
+.eglish_text{
+ font-family:verdana;
+}*/
+
+.mina_right_box03 ul
+{
+  margin-top:5px;
+  display: inline-block;
+}
+.mina_right_box03 ul li
+{
+  float:left;
+  width:160px;
+  margin-bottom:12px;
+}
+
+
+.check_info
+{
+  background:url(../image/driverdownload_banner_button.png) no-repeat scroll 0 0 transparent;
+  display:block;
+  width:90px;
+  height:41px;
+  position:relative;
+  top:-80px;
+  left:662px;
+}
+.check_info:hover
+{
+  background:url(../image/driverdownload_banner_button.png) no-repeat scroll 0 -41px transparent;
+}

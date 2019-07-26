@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* MainBody  right*/
+/* drivertree */
+.drivertree {}
+.treeplace {padding:7px 0px 7px 4px;color:#000;}
+.drivertreetype {background-position: right bottom;		height:285px;}
+.drivertreetext {padding:8px 8px 8px 29px;color:#006699;font-weight:bold;}
+.drivertreetext .divplace {width:232px;float:left;}
+.drivertreeleftpadding {padding-left:10px;}
+.drivertreeleftpadding a {text-decoration:none;}
+#perview {height:237px; width:24px;	background-image:url(../image/drivertreeleft.jpg);	background-repeat: no-repeat;	margin-right:11px;float:left;}
+#branch1 {width:230px;height:234px;border:solid 1px #cfdae0;overflow:auto;float:left;margin-right:11px;	color:#2F2F2F;}
+#branch2 {width:256px;height:234px;	border:solid 1px #cfdae0;overflow: auto;float:left;	color:#2F2F2F;}
+.marigntype {position:absolute;margin:-213px 0px 0px 15px;}
+.listoff {height:12px;padding:3px 2px 3px 2px;cursor:pointer;overflow:hidden;}
+.liston {height:12px;padding:3px 2px 3px 2px;background-color:#B6EDDB;cursor:pointer;overflow:hidden;}
+.infotext {padding:10px 20px 10px 0px;color:#333333;line-height:1.7em;}
+.infotop {font-weight:bold;font-size:14px;}
+.infotexta {padding:10px 20px 10px 20px;color:#333333;line-height:1.7em;}
+.infotopa {font-weight:bold;font-size:14px;padding-left:20px;}
+.driver_inquire {padding:20px 0px 20px 0px;}
+.driver_inquire_center {padding-left:20px;}
+.driver_inquire_top {padding:14px 0px 10px 20px;color:#006699;font-weight:bold;}
+.driver_inquire_topa {padding:10px 0px 10px 20px;color:#333333;font-weight:bold;background:#FAFAFA;}
+.inquire_means {width:100%px;}
+.inquire_means li {float:left;width:50%;height:30px;}
+.inquire_means .width100 {float:left;width:100%;height:30px;}
+.inquire_means li label {color:#2F2F2F;}
+.means_condition {width:266px;border:1px #6799CC solid;color:#666666;}
+.inquire_means p {margin:0px;padding:0px;width:20%;height:40px;display:bloack;float:left;}
+.pagetable {height:29px;background:#F5F5F5;font-size:12px;padding-right:20px;}
+.pagetable li {margin:5px 0 5px 5px;float:right;}
+.borderall {border:solid 1px #CCC;}
+.borderall .umc_c_t{font-size:12px;font-weight:bold;color:#FFF;background:#6699CC;padding:4px 10px 2px 10px;height:14px;width:750px;}
+.borderall .umc_c_t a {text-decoration:none;color:#FFF;}
+.borderall .umc_c_t a:hover {text-decoration:underline}
+.borderno {border-style:none;}
+.bordertablerl {font-size:12px; border-bottom-style:none;}
+.bordertablerl .umc_c_t{font-size:12px;font-weight:bold;color:#FFF;background:#cdd9df;padding:4px 10px 2px 10px;height:14px;width:750px;}
+.bordertablerl .umc_c_t a {text-decoration:none;color:#FFF;}
+.bordertablerl .umc_c_t a:hover {text-decoration:underline}
+.bordertablerl td {border-bottom:1px solid #CCC;text-align:center;height:13px;padding:5px 3px 5px 3px;color:#333;}
+.bordertablerl .tdc {color:#006699;font-weight:bold;}
+.bordertablerl .tdca {color:#006699;font-weight:bold;}
+.bordertablerl .tdcb {}
+.bordertablerl table a {color:#006699; text-decoration:underline;}
+.driver_type {padding:10px 20px 10px 20px;}
+.driver_type ul {width:100%;}
+.driver_type li {width:50%;float:left;height:30px;color:#333333;}
+.driver_type li label {display:block;width:80px;height:30px;float:left;color:#006699;}
+.show_text {padding:5px 20px 5px 20px;margin-bottom:10px;color:#333333;}
+.show_type {background:#EFEFEF;padding:10px;}
+.show_type a {color:#666666; text-decoration:underline;}
+.inputh {width:239px;_width:233px;background-image:url(../image/inputh.jpg);background-repeat:no-repeat;height:19px;_height:13px;_padding:3px;}
+*+html .inputh {background-image:none;}
+.margintop10 {margin-top:10px;}
+.means_conditiona {width:324px;border:1px #6799CC solid;color:#666666;}
+.inputj {width:424px;_width:418px;	background-image:url(../image/inputj.jpg);	background-repeat:no-repeat;height:19px;_height:13px;	_padding:3px;}
+.div_move_a { margin-left:150px; width:220px;border:1px solid #CCCCCC;background-color:#0099FF;	padding-left:2px;}
+.div_move_a li {height:20px;line-height:20px;border-bottom:1px solid #FFF;}
+.div_move_a li a {display:block;width:210px;height:20px;background-color:#EFEFEF;padding-left:10px;overflow: hidden;}
+.div_move_a li a:hover {background-color:#0099FF;color:#FFF;text-decoration:none;}
+.tdndownload {background-color:#FFFFFF;color:#006699; text-decoration:underline;}
+.showattestation {position:absolute; width:300px;line-height:15px;border:4px solid #CCCCCC;background:#FFFFFF;padding:4px; z-index:1002;font-weight:normal;color:#333333;margin-top:-300px;}
+.showattestation ul {padding-left:25px;}
+.showattestation li {padding-left:10px;list-style-type: disc;}
+.hiddenattestation {display:none;}
+.margin_top {margin-top:12px;}
+
+.border_bottom td {border-left:none;border-right:none;border-top:none;border-bottom:1px solid #CCCCCC;}
+/*驱动详细表*/
+.drivers_type {width:100%;border-top:solid #CCCCCC 1px;border-left:solid #CCCCCC 1px;line-height:20px;font-size:12px;color:#333333;}
+.drivers_type td {border-bottom:solid #CCCCCC 1px;border-right:solid #CCCCCC 1px;}
+.drivers_type .driver_td1 {	white-space: nowrap; font-weight:bold;color:#000000; text-align:center;padding:0px 5px 0px 5px;}

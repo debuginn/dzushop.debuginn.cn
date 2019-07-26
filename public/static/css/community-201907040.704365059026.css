@@ -1,0 +1,275 @@
+ul,li{
+    list-style: none;
+}
+.stackSearch .years{
+    width: 100%;
+    height: 53px;
+    background-color: #fff;
+    margin-bottom: 10px;
+} 
+
+.stackSearch .years ul{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.stackSearch .years li{
+    float: left;
+    height: 100%;
+    line-height: 53px;
+    font-size: 16px;
+    color: #474747;
+    letter-spacing: 0;
+    text-align: right;
+    margin-right: 115px;
+}
+
+.stackSearch .years li:hover a{
+    color: #395782;
+    font-weight: 600;
+}
+
+.stackSearch .years li a{
+    font-size: 16px;
+    color: #474747;
+    letter-spacing: 0;
+    text-align: right;
+}
+
+.stackSearch .years li:first-child{
+    width: auto;
+    font-size: 16px;
+    color: #B4B4B4;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+    margin-right: 24px;
+}
+
+.stackSearch .years li:last-child{
+    margin-right:0; 
+}
+
+
+.stackSearch .container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.stackSearch .oprationContent {
+    width: 100%;
+    min-height: 130px;
+}
+
+.stackSearch .oprationContent .info {
+    box-shadow: 0px 8px 10px -4px rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.stackSearch .oprationContent .contentList .contentUl {
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 25px;
+    overflow: hidden;
+    padding: 0 32px;
+    padding-bottom: 68px;
+    background-color: #fff;
+}
+
+.stackSearch .oprationContent .contentList .contentUl .content-item {
+    float: left;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.stackSearch .oprationContent .contentList .contentUl .content-item:last-child {
+    border-bottom: 0;
+}
+
+.stackSearch .oprationContent .contentUl .caption {
+    font-size: 22px;
+    color: #434A54;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.stackSearch .oprationContent .contentUl .caption a:hover{
+    color: #395782;
+}
+
+.stackSearch .oprationContent .contentUl .caption a em{
+    color: #1A76A1;
+}
+
+.stackSearch .oprationContent .contentUl .introduce {
+    font-size: 16px;
+    width: 969px;
+    color: #707070;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 14px;
+    height: 46px;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.stackSearch .oprationContent .contentUl .timeList, .stackSearch .oprationContent .contentUl .viewNum {
+    font-size: 14px;
+    color: #BAB7B7;
+    letter-spacing: 0;
+    text-align: right;
+}
+
+.stackSearch .oprationContent .contentUl .timeList li, .stackSearch .oprationContent .contentUl .viewNum li {
+    float: left;
+    padding: 0 11px;
+    height: 14px;
+    border-right: 1px solid #BAB7B7;
+    font-size: 14px;
+    color: #BAB7B7;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: right;
+}
+
+.stackSearch .oprationContent .contentUl .viewNum {
+    float: right;
+}
+
+.stackSearch .oprationContent .contentUl .timeList li:first-child {
+    padding-left: 0;
+}
+
+.stackSearch .oprationContent .contentUl .timeList li:last-child {
+    border-right: none;
+}
+
+.stackSearch .oprationContent .contentUl .viewNum li{
+    border: none;
+    margin-right: 26px;
+    padding: 0;
+}
+
+.stackSearch .oprationContent .contentUl .viewNum li.msg::before{
+    width: 20px;
+    height: 14px;
+    vertical-align: middle;
+    content: "";
+    background: url(../image/view.png) 0 -4px no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.stackSearch .oprationContent .contentUl .viewNum li.msg{
+    margin-right: 0;
+}
+
+.stackSearch .oprationContent .contentUl .viewNum li.view::before{
+    width: 20px;
+    height: 14px;
+    vertical-align: middle;
+    content: "";
+    background: url(../image/comments.png) 0 -4px no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.stackSearch .oprationContent .paging{
+	height: 152px;
+}
+
+.stackSearch .oprationContent .paging nav{
+	text-align: center;
+    height: 152px;
+    line-height: 152px;
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.stackSearch .pagination>li>a, .pagination>li>span{
+	border: none;
+	background-color: #f5f5f5;
+}
+
+.stackSearch .oprationContent .paging nav .pagination{
+    font-size: 18px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 30px;
+}
+
+.stackSearch .oprationContent .paging nav .pagination li{
+	width: auto;
+	float: left;
+}
+
+.stackSearch .oprationContent .paging nav .pagination a{
+	/* width: 48px;
+	height: 30px;
+	display: inline-block;
+	line-height: 30px;
+	padding: 0;
+    color: #000; */
+    display: inline-block;
+    line-height: 30px;
+    padding: 0;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid red;
+    margin: 0 8px;
+    border-radius: 2px;
+    background: #FFFFFF;
+    border: 1px solid #B0B0B0;
+    font-size: 14px;
+    color: #757575;
+}
+
+
+.stackSearch .oprationContent  .pagination li.onPage a{
+    width: 64px;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(0,0,0,0.20);
+    color: #fff;
+    border: none;
+}
+
+.stackSearch .oprationContent  .pagination li.nextPage a{
+    width: 64px;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(0,0,0,0.20);
+    color: #fff;
+    border: none;
+}
+
+.stackSearch .oprationContent  .pagination li.nextPage a:hover,
+.stackSearch .oprationContent  .pagination li.onPage a:hover{
+    background-color: #fff;
+    color:#E31F03;
+    width: 62px !important;
+}
+
+.stackSearch .oprationContent .paging nav .pagination .active a{
+	border: 1px solid #fff;
+    color: #E31F03;
+}
+
+.stackSearch .oprationContent .paging nav .pagination a:hover{
+    border: 1px solid #fff;
+    color: #E31F03;
+}

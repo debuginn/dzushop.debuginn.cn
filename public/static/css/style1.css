@@ -1,0 +1,28 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none}
+a,img{border:0;}
+body{font:13px/20px "Hiragino Sans GB", "Microsoft Yahei", "SimHei";background:#fff}
+a:link, a:visited{outline:none;text-decoration:none;color:#7f7f7f;}
+a:hover, a:focus{text-decoration:none;color:#000;}
+a img, :link img, :visited img{border:0;}
+
+
+/* 轮播 */
+.whj{height: 100%;width: 100%;}
+.banner{position:relative;overflow:auto;width:100%;margin:0 auto;}
+.banner ul li{float:left;}
+.banner ul li a img{width: 100%;height: 100%;}
+.banner .arrows{display:none;}
+.banner:hover .arrows,
+.banner.hover .arrows{display:block;}
+.banner .arrows{position:absolute;z-index:20;}
+
+.banner .arrows{top:270px;}
+.dots{position:absolute;width:100%;height:auto;bottom:5px;text-align:center;font-size:15px; overflow:hidden; height:60px;opacity: 0.9;margin: 0 auto;}
+.dots div{width: 420px;margin: 0 auto;}
+.banner  .dot{float:left;line-height:40px;width:195px;border-bottom:2px solid;cursor:pointer;height:60px; margin-top:20px;background:rgb(234,234,234);}
+.dot1{color:rgb(17,17,17);}
+.dot.active{ height:63px; line-height:63px;margin-top:0}
+.dot2{color:rgb(17,17,17);margin-left: 20px;}
+.zxz{height: 100%;width: 100%;}
+.zxz img{height: 100%;width: 100%;}

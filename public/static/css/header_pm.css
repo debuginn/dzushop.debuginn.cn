@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/*****************************整体布局、样式******************************/
+
+
+.phone_hov .title{padding:0!important;font-weight: 400!important; line-height: 19px!important;overflow: visible!important;}
+.cj-message2-box {
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+.cj-message2-box .message2 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url('../image/message.png') no-repeat;
+  background-size: 100% 100%;
+}
+.cj-message2-box .have-msg {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  width: 5px;
+  height: 5px;
+  background: #f00;
+  border-radius: 50%;
+}
+.header_2018 .header_box.header_min .cj-message2-box{
+  display: none;
+}

@@ -1,0 +1,45 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,a,input,textarea,th,td{margin:0;padding:0;font-family: "微软雅黑";}
+a{ color:#333;  text-decoration:none}
+a:hover{ color:#F00;text-decoration:none}
+ul{ list-style:none}
+img{ border:none}
+a:hover{ text-decoration:none}
+
+.coupon{margin: 19px 15px 0 0;}
+.coupon_div{width: 1030px;margin: 0 auto;}
+.coupon{width: 320px;height: 150px;float: left;background: #f39800;color: white;}
+.coupon .coupon_left{width:5px;background: url(../image/left_bg1.jpg) repeat-y;float: left;height:150px;}
+.coupon .coupon_con{width:218px;float: left;}
+.coupon .coupon_con .coupon_conTop{width:218px;float: left;margin-left: 12px;}
+.coupon .coupon_top{height:50px;width: 100%;border-bottom: #fff solid 1px;}
+.coupon .coupon_sign{font-size: 18px;float: left;margin-top: 20px;}
+.coupon .coupon_money{font-size: 38px;}
+.coupon .coupon_title{font-size: 14px;margin-top: 5px;}
+.coupon .coupon_info{font-size: 12px;}
+.coupon .coupon_describe{margin-top: 2px;}
+.coupon .coupon_range{margin-top: 2px;}
+.coupon .coupon_time{font-size: 12px;margin: 12px 0 0 12px;float: left;}
+/*412723196712071631*/
+.coupon .coupon_center{width: 13px;float: left;text-align: center;margin-left: 17px;}
+.coupon .coupon_center .coupon_circle1{width: 13px;height:13px;background-color: white;border-radius: 50%;margin-top: -50%;}
+.coupon .coupon_center .circle_bg{background:url(../image/circle_bg.jpg) repeat-y;width:5px;height: 136px;margin-left: 4px;}
+.coupon .coupon_center .coupon_circle2{width:13px;height:13px;background-color: white;border-radius: 50%;margin-bottom: -50%;}
+.coupon .operate_div{width:64px;float: left;font-size:18px;float: left;text-align: center;cursor: pointer;margin-top: 53px;}
+.coupon .operate_coupon{margin-top: 44px;display: none;}
+.coupon .userd_bg{width: 66px;height: 66px;margin-top: 42px;background: url(../image/used.png) no-repeat;display:none}
+.tab_coupon{color: #910000;font-size: 14px;float:right;margin-right: 17px;display: none;}
+.coupon_searchBtn{width: 74px;height: 24px;background: url(../image/search_btn.png) no-repeat;display: inline-block;margin: 8px 17px 0 0;float: right;display: none;}
+.shopId, .couponId{display: none;}
+.page_number{position: static;float:right;margin-top: 20px;}
+.yhj_successDiv{width: 100%;height: 100%;background: rgba(0,0,0,.8);position:fixed;left: 0;top: 0px;z-index: 1000;display: none;}
+.yhj_successDiv{width: 100%;height: 100%;background: rgba(0,0,0,.8);position:fixed;left: 0;top: 0px;z-index: 10000;display: none;}
+.yhj_successCon{width:340px;height:280px;background: white;border-radius:10px;position: fixed;top: 50%;left: 50%;margin-top: -140px;margin-left: -170px;display: none;z-index: 10000;}
+.yhj_successCon .yhj_ico{margin-top: 74px;text-align: center;}
+.yhj_successCon .yhj_ico img{width: 154px;height: 128px;}
+.yhj_successCon .success_info{font-size: 20px;text-align: center;margin-top: 0.5rem;}
+button{outline: 0;}
+.user_comment .comment_list{border: none;}
+.user_comment .comment_table{border: none;}
+.all_list{min-height: 602px;}
+#coupon{height: auto;overflow: hidden;}
+.coupon_info div{width:210px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

@@ -1,0 +1,78 @@
+
+#outerBody{
+    overflow-x: hidden;
+    background: #120055;
+}
+.con_title{
+    background-color: transparent !important ;
+}
+.con_right2,.con_left3,.con_right,.con_left_liaotian {
+    background: #fff;
+}
+.content{
+    box-shadow: none;
+    position: relative;
+
+}
+/***/
+.advert_right_bottom{
+    display: block;
+    width: 187px;
+    height: 365px;
+    background:url("../image/advert-show.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    right: -187px;
+    bottom: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.advert_right_bottom>button{
+    display: inline-block;
+    width: 92px;
+    height: 32px;
+    background: #521BD8;
+    border-radius:16px;
+    color: #fff;
+    font-weight:400;
+    line-height:32px;
+    position: absolute;
+    top:145px;
+    left: 60px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 16px;
+
+}
+.advert_right_top{
+    position: absolute;
+    background: #24096F;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -37px;
+    bottom: 380px;
+}
+.advert_left_top{
+    position: absolute;
+    width: 220px;
+    height: 46px;
+    background: url("../image/advert-bg-top.png") no-repeat center;
+    background-size: 100%;
+    top: 0;
+    left: 345px;
+}
+
+.copyright{
+    color: #fff;
+}
+.advert_bg_left{
+    position: absolute;
+    width: 88px;
+    height: 236px;
+    background: url("../image/advert-bg-left.png") no-repeat center;
+    background-size: 100%;
+    left:0px;
+    bottom: 20px;
+
+}

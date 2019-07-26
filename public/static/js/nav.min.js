@@ -1,0 +1,1 @@
+$(function(){$(".nav_name").bind("mouseenter",function(a){$(this).siblings(".nav_text").stop().removeAttr("style").slideDown(300)}),$(".nav_namebox").bind("mouseleave",function(){$(this).find(".nav_text").stop().slideUp(300)})});

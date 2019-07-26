@@ -1,0 +1,32 @@
+@charset "utf-8";
+.log140617_pop { width: 330px; border: 1px solid #ccc; position: fixed; _position: absolute; left: 50%; background: #FFF; top: 50%; z-index: 11; margin: -150px 0px 0px -165px; overflow: hidden; padding-bottom:15px;box-shadow: 0px 2px 5px #333; }
+.log140617_pop_close { text-decoration: none; background: url(../image/log140617_close01.png) no-repeat 0px 0px; margin: 3px 0px 0px 302px; height: 23px; width: 23px; position: absolute; cursor: pointer; }
+.log140617_pop_close:hover { background: url(../image/log140617_close01.png) no-repeat 0px -23px; text-decoration: none; }
+.log140617_pop_title { font: bold 14px/30px 'Microsoft Yahei', 'simhei'; color: #FFF; background: #DB291D; padding: 0px 0px 0px 15px; height: 30px; }
+.log140617_pop_error{ font-size: 12px; line-height: 22px; color: #F00; margin: 3px 0px 0px 50px; position: absolute; }
+.log140617_pop_top { margin: 0px auto; padding: 30px 30px 15px; width: 230px; border-bottom: 1px solid #ccc; }
+.log140617_pop_top_input01 { background: #FFF url(../image/log140617_icon01.png) no-repeat -7px -125px; height: 30px; width: 198px; border: 1px solid #ccc; padding: 0px 5px 0px 25px; font-size: 13px; line-height: 30px; color: #333; margin: 0px 0px 10px; display: block; }
+.log140617_pop_top_input02 { background: #FFF url(../image/log140617_icon01.png) no-repeat -7px -165px; height: 30px; width: 198px; border: 1px solid #ccc; padding: 0px 5px 0px 25px; font-size: 13px; line-height: 30px; color: #333; display: block; }
+.log140617_pop_top_vcode { background: #FFF; height: 30px; width: 106px; border: 1px solid #ccc; padding: 0px 5px;margin-top:10px;margin-right:10px; font-size: 13px; line-height: 30px; color: #333;}
+.vcode-img{width:100px;height:30px;margin-top:10px;border:1px solid #ccc;vertical-align:top;}
+.log140617_pop_top_input03 { vertical-align: middle; display: inline-block; position: relative; }
+.log140617_pop_top_label01 { font-size: 12px; line-height: 26px; color: #666; height: 26px; }
+.log140617_pop_top_a { font-size: 12px; line-height: 26px; color: #1d83b4; margin: 0px 0px 0px 70px; cursor: pointer; text-decoration: none; }
+.log140617_pop_top_a:hover { text-decoration: underline; }
+.log140617_pop_top_btn01 { font: 20px/33px 'Microsoft Yahei', 'simhei'; color: #FFF; text-decoration: none; background: url(../image/log140617_btn_bg01.png) repeat-x 0px 0px; height: 33px; width: 228px; border: 1px solid #B40003; text-align: center; display: block; margin: 10px 0px 0px; cursor: pointer; border-radius: 6px; }
+.log140617_pop_top_btn01:hover { background: url(../image/log140617_btn_bg01.png) repeat-x 0px -33px; color: #FFF; text-decoration: none; }
+.log140617_pop_bottom{ padding: 10px 20px 0px; width: 500px; }
+.log140617_pop_bottom_p{ font-size: 12px; line-height: 24px; color: #666; width: 280px; }
+.log140617_pop_bottom_p_a{ color: #1d83b4; text-decoration: none; cursor: pointer; }
+.log140617_pop_bottom_p_a:hover{ color: #1d83b4; text-decoration: underline; }
+.log140617_pop_bottom_link{ font-size: 12px; line-height: 30px; color: #333; height: 30px; width: 108px; text-decoration: none; display: block; float: left; cursor: pointer; }
+.log140617_pop_bottom_link:hover{ color: #333; text-decoration: underline; }
+.log140617_pop_bottom_link_icon01{ background: url(../image/log140617_icon01.png) no-repeat -5px -5px; vertical-align: middle; display: inline-block; height: 30px; width: 35px; cursor: pointer; }
+.log140617_pop_bottom_link_icon02{ background: url(../image/log140617_icon01.png) no-repeat -5px -45px; vertical-align: middle; display: inline-block; height: 30px; width: 30px; cursor: pointer; }
+.log140617_pop_bottom_link_icon03{ background: url(../image/log140617_icon01.png) no-repeat -5px -85px; vertical-align: middle; display: inline-block; height: 30px; width: 28px; cursor: pointer; }
+.log140617_back { position: fixed; _position: absolute; opacity: .30; left: 0px; top: 0px; height: 100%; width: 100%; background: #000; z-index: 10; }
+*html .log140617_pop  { position: absolute; position: absolute; bottom: auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+}
+*html .log140617_back { position: absolute; position: absolute; bottom: auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+}
+* html, * html body { background-image: url(about:blank); background-attachment: fixed; }

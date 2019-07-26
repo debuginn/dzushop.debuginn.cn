@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+
+
+.user_right {
+    width:1200px;
+    border:none;
+}
+
+.user_main {
+    margin-top:0px;
+}
+
+.user_right .tab_title{
+    position:relative;
+    background-color:#f6f6f6;
+    height:70px;
+    line-height:70px;
+    text-align:center;
+}
+
+.user_right .tab_title span{
+    font-size:16px;
+    color:#434343;
+}
+
+.user_right .tab_title .tab_btn{
+    position:absolute;
+    right:10px;
+    bottom:0px;
+    color:#999999;
+    font-size:14px;
+    text-decoration:underline;
+}
+
+.user_right .tab_body .tucao_type{
+    margin-top:36px;
+}
+.user_right .tab_body .tucao_type p{
+    color:#333333;
+    font-size:16px;
+}
+
+
+.user_right .tab_body .tucao_type p span{
+    color:#ff0000;
+}
+
+.user_right .tab_body .tucao_type .type_items{
+    margin-top:24px;
+}
+
+.user_right .tab_body .tucao_type .type_items a{
+    display:inline-block;
+    background-color:#f8f8f8;
+    border:1px solid #e4e4e4;
+    height:31px;
+    /* width:78px; */
+    padding: 0 10px;
+    line-height:31px;
+    text-decoration:none;
+    text-align:center;
+    color:#868686;
+    float:left;
+    margin-right:17px;
+}
+.user_right .tab_body .tucao_type .type_items a.active{
+    background-color:#ffffff;
+    border:1px solid #e2231a;
+    color:#e2231a;
+}
+
+
+.user_right .tab_body .tucao_type .pro_type_items{
+    margin-top:24px;
+}
+
+.user_right .tab_body .tucao_type .pro_type_items a{
+    display:inline-block;
+    background-color:#f8f8f8;
+    border:1px solid #e4e4e4;
+    height:31px;
+    width:78px;
+    line-height:31px;
+    text-decoration:none;
+    text-align:center;
+    color:#868686;
+    float:left;
+    margin-right:17px;
+}
+.user_right .tab_body .tucao_type .pro_type_items a.active{
+    background-color:#ffffff;
+    border:1px solid #e2231a;
+    color:#e2231a;
+}
+
+
+.user_right .tab_body .tucao_description{
+    margin-top:36px;
+}
+.user_right .tab_body .tucao_description p{
+    color:#333333;
+    font-size:16px;
+}
+
+
+.user_right .tab_body .tucao_description p span{
+    color:#ff0000;
+}
+
+
+.user_right .tab_body .tucao_description .input_content textarea{
+    width:680px;
+    margin-top:15px;
+    padding:5px 10px;
+    color:#000000;
+}
+.user_right .tab_body .tucao_description .input_content span{
+    color:#a1a1a1;
+}
+
+.user_right .tab_body .connect_type{
+    margin-top:36px;
+}
+.user_right .tab_body .connect_type.margin_top15{
+    margin-top:15px;
+}
+.user_right .tab_body .connect_type p{
+    color:#333333;
+    font-size:16px;
+}
+
+.user_right .tab_body .connect_type .input_info.diaocha{
+    padding-top: 15px;
+}
+
+.user_right .tab_body .connect_type .input_info input{
+    width:194px;
+    height:18px;
+    line-height:18px;
+    margin-top:15px;
+    padding:5px 10px;
+    color:#000000;
+}
+.user_right .tab_body .connect_type .input_info input.radion_info{
+    width: auto;
+    vertical-align: middle;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    line-height: normal;
+}
+.user_right .tab_body .connect_type .input_info span.radio_text{
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 3px;
+    color: #636161;
+}
+
+
+.user_right .tab_body .submit_part{
+    margin-top:36px;
+}
+.user_right .tab_body .submit_part a{
+    display:inline-block;
+    background-color:#e2231a;
+    height:30px;
+    width:88px;
+    line-height:30px;
+    text-decoration:none;
+    text-align:center;
+    color:#ffffff;
+}
+
+
+.zhezhao1 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background: rgba(0,0,0,0.6) none repeat scroll !important;
+    filter: alpha(opacity:60);
+    z-index: 9999999999999;
+    display:none;
+}
+
+.mydiv {
+    background-color: #a0a0a0;
+    z-index: 999;
+    width: 460px;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -122px;
+    margin-left: -235px;
+    position: relative;
+    padding: 5px;
+}
+.mydiv_box {
+    width: 459px;
+    height: 233px;
+    background-color: #fff;
+}
+.zf_box_hd{
+	width: 459px;
+	height: 42px;
+	position: relative;	
+}
+.zf_box_hd p{
+	font-size: 16px;
+	color: #6f7170;
+	line-height: 42px;
+	padding-left: 10px;
+	font-family: "微软雅黑";
+}	
+.zf_box_hd img{
+	position: absolute;
+	top: 18px;
+	right: 12px;
+	float: right;
+}
+.mydiv_box b{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	display: block;
+	margin-top: 45px;
+	margin-bottom: 20px;
+}
+.zf_btn{
+	width: 86px;
+	height: 26px;
+	background: #e2231a;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.zf_btn a{
+	font-family: "微软雅黑";
+	text-align: center;
+	display: block;
+	line-height: 26px;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.nav .redon{
+	color: #e2231a;
+	border-bottom: 2px solid #e2231a;
+}

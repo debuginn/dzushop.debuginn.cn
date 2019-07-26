@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+.ns_body fieldset,.ns_body html,body,.ns_body p,.ns_body ul,.ns_body ol,.ns_body li,.ns_body dl,.ns_body dt,.ns_body dd,.ns_body h1,.ns_body h2,.ns_body h3,.ns_body h4,.ns_body h5,.ns_body h6,.ns_body form,.ns_body input,.ns_body select,.ns_body button,.ns_body textarea,.ns_body iframe,.ns_body table,.ns_body th,.ns_body td,.ns_body em{margin:0;padding:0;list-style: none;}
+.ns_body,.ns_body input,.ns_body select,.ns_body button,.ns_body textarea{font-size:12px;font-family:arial,"微软雅黑",\5b8b\4f53,sans-serif}
+/*#main-nav a ,#J_MUIMallbar a{color:#7c7c7c;}*/
+.ns_fixClear:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+.ns_fixClear{zoom:1;}
+.ns_body,.ns_body a{color:#7c7c7c;}
+input{outline:none;}
+a{text-decoration: none;}
+a, a:focus{outline:none !important;}
+img,a img{vertical-align: top;border: 0;}
+.w1200,.ns_w { width:1200px; margin:0 auto;}
+.usepng{display: inline-block;background-image: url(../image/icon1.png);background-repeat: no-repeat;}
+.clearfix:after{display: block;clear: both;height: 0;visibility: hidden;font-size: 0;line-height: 0;content: "";}
+.clearfix{zoom:1;}
+
+/*header-顶部*/
+#site-nav{height:34px;background: #000 none repeat scroll 0 0;line-height: 34px;color:#000;border-bottom: 1px solid #d3d3d3; font-family:"微软雅黑";}
+#site-nav a{color:#fff; font-family:"微软雅黑";}
+#site-nav div{font-family:"微软雅黑";}
+#site-nav a:hover{color: #e2231a;}
+/*#site-nav .ns_w{position: relative;font-size: 14px;}
+#site-nav .ns_w a{font-size: 14px;} */
+#site-nav .ns_w .ns_backto{color: #e2231a;font-size: 15px;}
+#site-nav .ns_nav_l{float: left;padding-top: 11px;margin-left: -10px;}
+#site-nav .ns_nav_l li,#site-nav .ns_top_login li{float: left;height: 14px;line-height: 14px;padding: 0 10px;border-right: 1px solid #fff;}
+#site-nav .ns_top_link{width: 150px;position: relative;float: left;z-index:9999;}
+#site-nav .ns_top_link .ns_top_title{height: 34px;line-height: 35px;position: relative;cursor: pointer;padding-left: 10px; font-size:14px;}
+#site-nav .ns_top_link .ns_top_title:hover{color: #e2231a;}
+#site-nav .ns_top_link .ns_top_down,#site-nav .ns_top_link .ns_top_up{width: 12px;height: 12px;position: absolute;right: 68px;top: 12px;}
+#site-nav .ns_top_link .ns_top_up{background-position: -196px -3px;}
+#site-nav .ns_top_link .ns_top_down{background-position: -211px -3px;}
+#site-nav .ns_top_link ul{width: 156px;border: 1px solid #d3d3d3;position: absolute;left: 0;top: 34px;z-index: 9999;padding: 8px 0;display: none;background: #fff;}
+#site-nav .ns_top_link ul li{padding: 2px 0;}
+#site-nav .ns_top_link ul a{display: block;height: 31px;line-height: 31px;padding-left: 12px;}
+#site-nav .ns_top_link ul a span{width: 31px;height: 31px;float: left;cursor: pointer;}
+#site-nav .ns_top_link ul a .icont_sina{background-position: -3px -269px;}
+#site-nav .ns_top_link ul a .icont_yyq{background-position: -38px -270px;}
+#site-nav .ns_top_link ul a .icont_dfr{background-position: -74px -270px;}
+#site-nav .ns_top_link ul a .icont_weixin{background-position: -108px -269px;}
+#site-nav .ns_top_link ul a .icont_qzone{background-position: -142px -269px;}
+#site-nav .ns_top_link ul a .icont_xqbl{background-position: -176px -269px;}
+#site-nav .ns_top_link ul a .icont_tieba{background-position: -209px -269px;}
+#site-nav .ns_top_link ul a .icont_shequ{background-position: -243px -270px;width: 32px;height: 32px;}
+#site-nav .ns_top_link ul a em{font-style: normal;display: inline-block;height: 31px;line-height: 31px;padding-left: 6px;cursor: pointer;}
+#site-nav .ns_top_login{float: right;padding-top: 11px;cursor: pointer;}
+#site-nav .ns_top_login .ns_login_r{border-right: 0;padding-right: 0;}
+
+/*header-logo栏*/
+#header .ns_lenovo-logo{width:180px;height:38px;text-indent: -99999px;background: url(../image/pic-13.jpg) no-repeat 0 27px;float: left;}
+#header .ns_lenovo-logo a{width: 100%;height: 100%;display: block;zoom:1;}
+#header .ns_lenovo-logo1{width:230px;height:33px;text-indent: -99999px;background: url(../image/logo_list.png) no-repeat 0 27px;float: left;padding-top: 27px;}
+#header .ns_lenovo-logo1 a{width: 100%;height: 100%;display: block;zoom:1;}
+#header .ns_header-extra{float: right;width: 368px;padding-bottom:10px;padding-right: 35px;}
+#header .ns_mall-search{float: left;width: 368px;padding-top: 21px;overflow: hidden;}
+#header .ns_mall-search fieldset{border:0 none;}
+#header legend{display: none;}
+#header .ns_search-box{border:1px solid #6f7170;width:366px;height:26px;overflow: hidden;}
+#header .ns_search-box button{width:40px;height: 26px;display: block;float: right;background-position:0 -29px;border:0 none;text-indent: -99999px;cursor: pointer;background-color: #fff;}
+#header .ns_search-box .ns_s-combobox-input{width:310px;padding-left:10px;height: 26px;border:0 none;background: none;font-size: 15px;color: #bbb;zoom:1;float:left; line-height:26px;}
+#header .ns_hot-query{width:100%;height:18px;line-height: 18px;overflow: hidden;padding:6px 0 0 0;}
+#header .ns_hot-query a{color:#c4c4c4;}
+#header .ns_hot-query li{float: left;border-right: 1px solid #c1c1c1;padding: 0 5px;height: 12px;line-height: 12px;}
+#header .ns_hot-query li a:hover{color:#898989;}
+
+
+#Services-list {
+    background: #f5f5f5;
+    height: 83px;
+    /*padding: 30px 0px;*/
+    border-top: 1px solid #ececec;
+}
+#Services-list .ns_w{background: #f5f5f5;}
+#Services-list li {
+    float: left;
+    text-indent: -99999px;
+    height: 0
+}
+#foot_div,.top_box {
+    min-width: 1200px
+}
+#footer {
+    background: #fff;
+    color: #000;
+    width: 1200px;
+    margin: 0 auto
+}
+
+#footer a {
+    color: #6f7170;
+    font-size: 12px
+}
+
+#footer a:hover {
+    color: #555
+}
+
+#footer a i {
+    color: #000
+}
+
+#footer .ns_p2 {
+    padding-top: 10px;
+    height: 130px
+}
+
+#footer .ns_p2 .ns_w {
+    padding-bottom: 30px
+}
+
+#footer .ns_p2 dl {
+    float: left;
+    height: 140px;
+    position: relative;
+    padding-right: 148px
+}
+
+#footer .ns_p2 dt a {
+    font-size: 14px;
+    color: #000
+}
+
+#footer .ns_p2 dt {
+    line-height: 30px;
+    position: relative
+}
+
+#footer .ns_p2 dd a {
+    display: block;
+    line-height: 22px;
+    color: #555;
+    font-size: 12px
+}
+
+#footer .ns_p2 dd #bank_btn {
+    height: 40px
+}
+
+#footer .ns_p2 dd a:hover {
+    color: #000
+}
+
+#footer .ns_p2 .ns_bank {
+    position: absolute;
+    top: 101px;
+    left: -60px;
+    width: 110px;
+    padding: 0 30px;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    z-index: 56;
+    display: none
+}
+
+#footer .ns_p2 .ns_bank li a {
+    display: block;
+    border-bottom: 1px solid #c4c4c4;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #434343
+}
+
+#footer .ns_p2 .ns_bank li a:hover {
+    color: #d53127
+}
+
+#footer .ns_p2 .ns_bank .jt_top {
+    display: inline-block;
+    width: 16px;
+    height: 7px;
+    background: url(../image/jt_top2.png);
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    margin-left: -8px
+}
+
+/* 权益点兑换页面 web-webapp\src\main\webapp\WEB-INF\vm\cn\pc\reward\common\bottom.vm 引用商城公共尾，样式冲突 修复 */
+._score_exchange_page_footer{display: block;position: relative;}
+
+.ns_p4 {
+    text-align: center
+}
+
+.ns_p4 .ns_w {
+    padding-top: 25px;
+    position: relative;
+}
+
+.ns_p4 .ns_footer_line {
+    padding: 4px 0;
+    color: #6f7170;
+    font-size: 12px
+}
+
+.ns_p4 .ns_footer_line span {
+    margin: 0 8px;
+    color: #6f7170
+}
+
+.ns_p4 .ns_footer_line em {
+    width: 10px;
+    height: 13px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px
+}
+
+.gj_img,.gq_box {
+    position: absolute;
+    right: 0;
+    z-index: 55
+}
+
+.ns_p4 .ns_footer_line .icon_addr1 {
+    background-position: -234px -3px
+}
+
+.ns_p4 .ns_footer_line .icon_addr2 {
+    background-position: -248px -3px
+}
+
+.gj_img {
+    text-align: right;
+    top: 160px
+}
+
+.gq_box {
+    display: none;
+    width: 153px;
+    height: 380px;
+    background: #fff;
+    border: 1px solid #858585;
+    bottom: 22px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.gq_box ul li {
+    text-align: left;
+    margin: 4px
+}
+
+.usepng {
+    display: inline-block;
+    background-image: url(../image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
+    background-repeat: no-repeat
+}
+
+.foot_rz {
+    width: 112px;
+    height: 41px;
+    background-position: -196px -150px
+}
+
+.ns_box {
+    background: #f5f5f5;
+    padding-bottom: 20px
+}
+
+.ns_box a {
+    color: #6f7170;
+    font-size: 12px
+}
+
+.ns_box a:hover {
+    color: #555
+}
+
+#b_bit {
+    width: 123px;
+    height: 19px;
+    background: url(../image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png) -72px -320px
+}
+
+.floor_label,.myicon {
+    background-image: url(../image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png)
+}
+
+body,dd,dl,dt,h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: arial,"微软雅黑",sans-serif;
+    font-size: 12px
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    content: ""
+}
+
+.clearfix {
+    zoom:1}
+
+.myicon {
+    display: inline-block;
+    background-repeat: no-repeat
+}
+
+/*选择语言*/
+.gj_img{ text-align:right;position: absolute;right: 0;top: 180px;z-index: 55;}
+.gq_box{ position:absolute; display:none; width:153px; height:380px; background:#fff; border:1px solid #858585; bottom:24px; right:0; overflow-y:auto; overflow-x:hidden; z-index:55;}
+.gq_box ul li{ text-align:left; margin:4px;}
+
+
+/* 顶部展开 */
+#site-nav .bank_fq {}
+#site-nav .goto_phone {}
+#site-nav .goto_phone .phone_ico{ margin:0 8px 0 18px; vertical-align:text-bottom;}
+#site-nav .goto_phone a{ }
+#site-nav li.goto_phone dl{margin-left:-162px; }
+#site-nav li { position:relative; z-index:111;}
+#site-nav li dl { position:absolute; z-index:999; border:1px solid #c4c4c4; background:#ffffff; left:50%; top:28px; display:none; }
+
+#site-nav li.bank_fq dl{margin-left:-74px; width:124px; padding:0 12px;}
+#site-nav li.bank_fq dl a{ display:block; margin:0 12px; border-bottom:1px solid #c4c4c4; text-align:center; line-height:36px;}
+#site-nav .jt_top { position:absolute; left:50%; top:-7px; margin-left:-8px;}
+#site-nav li:hover dl { display:block;}
+
+#main-nav .ns_n li > dl {
+    left: 384px;
+}
+#site-nav .ns_top_ip{
+    margin-left: -60px;
+}
+#site-nav .ns_top_ip ul{
+    width:auto;
+
+}
+#site-nav .ns_top_ip ul a{
+    height:auto;
+    padding-right: 10px;
+}
+
+/*公共遮罩弹窗*/
+.grey{position: fixed;left:0; top:0;background:#000;filter:alpha(opacity=30);  -moz-opacity:0.30; width: 100%;height: 100%;opacity:0.30;z-index:10000;}
+.selectbox{width: 458px;height: 232px;background:#fff;border: 6px solid #a0a0a0; position: fixed;z-index: 80000;top:50%;left:50%;margin-left:-235px;margin-top:-123px;overflow: auto;position: fixed;overflow: hidden;}
+.selectbox .box-top{width: 440px;margin: 0 auto; height: 50px;line-height: 46px;position: relative;font-size: 16px;color: #000;}
+.selectbox .closebtn{width: 16px;height: 16px;position: absolute;right: 0;top: 15px;}
+.selectbox .box_btm{padding-left: 125px;padding-top: 30px;}
+.selectbox .box_btm img{float: left;margin-right: 15px;}
+.selectbox .box_btm .cont{margin-left: 40px;}
+.selectbox .box_btm .cont p{line-height: 30px;font-size: 14px;color: #6f7170;}
+.selectbox .box_btm .cont .red{font-size: 22px;color: #e2231a;}
+.selectbox .tijiao{text-align: center;margin-top: 28px;}
+.selectbox .tijiao .btn{display: inline-block;width: 98px;height: 22px;line-height: 24px;text-align: center;font-size: 13px; margin-left: 5px;color: #000;background: #eee;border: 1px solid #d9d8d6;border-radius: 2px; }
+.selectbox .tijiao .btn.now{color: #fff;background: #e3231e;border: 1px solid #e3231e;}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+.divtxt {text-align:right; text-align:justify; text-justify:inter-ideograph;}
+body { margin:0;  font-size:12px; color:#069; font-family:Arial, "宋体";background:#FFFFFF;}
+ul{ margin:0;padding:0;}
+li{ list-style:none;list-style-type: none;margin:0;padding:0;}
+.left{float:left;}
+.right{float:right;}
+a { text-decoration:none;color:#069;}
+a:hover { text-decoration:underline}
+#wrap { width:960px; margin:0 auto;}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+* html>body .clearfix { display: inline-block; width: 100%; } 
+* html .clearfix { 
+/* Hides from IE-mac \*/ 
+height: 1%; 
+/* End hide from IE-mac */ 
+} 
+ /* ie7 hack*/ 
+*+html .clearfix { min-height: 1% ; } 
+html {height:100%; margin-bottom:1px;}
+.red {color:#FF0000;}
+.black {color:#000;}
+img {	border-width:0px;}
+input {	border-width:0px;overflow:hidden;_background-attachment:fixed;background-repeat:no-repeat;}
+*+html input {border:1px solid #6699CC;background-attachment:fixed;}
+form {margin:0px;padding:0px;}
+div {SCROLLBAR-FACE-COLOR: #e8e8e8;  SCROLLBAR-HIGHLIGHT-COLOR: #e8e8e8; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #e8e8e8; SCROLLBAR-ARROW-COLOR: #b92426; SCROLLBAR-TRACK-COLOR: #e8e8e8; SCROLLBAR-DARKSHADOW-COLOR: #000000;}
+textarea {SCROLLBAR-FACE-COLOR: #e8e8e8;  SCROLLBAR-HIGHLIGHT-COLOR: #e8e8e8; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #e8e8e8; SCROLLBAR-ARROW-COLOR: #b92426; SCROLLBAR-TRACK-COLOR: #e8e8e8; SCROLLBAR-DARKSHADOW-COLOR: #000000;}
+select {SCROLLBAR-FACE-COLOR: #e8e8e8;  SCROLLBAR-HIGHLIGHT-COLOR: #e8e8e8; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #e8e8e8; SCROLLBAR-ARROW-COLOR: #b92426; SCROLLBAR-TRACK-COLOR: #e8e8e8; SCROLLBAR-DARKSHADOW-COLOR: #000000;}
+iframe {SCROLLBAR-FACE-COLOR: #e8e8e8;  SCROLLBAR-HIGHLIGHT-COLOR: #e8e8e8; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #e8e8e8; SCROLLBAR-ARROW-COLOR: #b92426; SCROLLBAR-TRACK-COLOR: #e8e8e8; SCROLLBAR-DARKSHADOW-COLOR: #000000;}
+/* Top & Nav & Footer */
+#topfooter {height:14px; width:960px; padding:8px 0px 2px 0px; font-family:"新宋体"; font-size:12px; color:#666666;
+clear:both;font-weight:bold}
+#topfooter a { text-decoration:none;color:#666666;}
+#topfooter a:active { text-decoration:none;}
+#topfooter a:visited { text-decoration:none;}
+#topfooter a:link { text-decoration:none;}
+#topfooter a:hover { text-decoration:underline}
+.box_top {font-family: Arial, "新宋体";font-size:12px;color: #555555;height:20px;padding:2px 0px 0px 5px;border-top:1px solid #006699;border-bottom:1px solid #006699;border-left:1px solid #006699;border-right:none;width:140px;}
+#Top {background:url(../image/top_bg.gif); line-height:24px ; height:24px; padding:22px 0;}
+#Top a { color:white; font-weight:bold;}
+#MainNav { height:25px;; background:url(../image/memu_bg.gif);}
+#Footer { height:35px; line-height:35px; width:960px; clear:both;}
+
+/* MainBody */
+#MainBody{width:960px;margin-top:14px;}
+#MainBody #left {float:left;height:100%; width:180px; margin:0 8px 0 0;background:#6699CC;}
+#MainBody #right {float:right;height:100%;width:770px;}

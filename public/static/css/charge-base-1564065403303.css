@@ -1,0 +1,78 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,th,td{margin:0;padding:0;font-size: 14px;font-family: "微软雅黑";}
+a{ color:#333;  text-decoration:none}
+a:hover{ color:#F00;text-decoration:none}
+ul{ list-style:none}
+img{ border:none}
+a:hover{ text-decoration:none}
+h2{ font-weight:500;}
+/*head*/
+.cz_head{width: 100%;height: 38px;line-height:38px;background-color: #000000;}
+.cz_head .cz_headCon{width: 1200px;margin: 0 auto;color: white;}
+.cz_head .cz_headCon .top_login_title{position: relative;cursor: pointer;padding-left: 10px;font-size: 14px;float: right;width: 74px;}
+.cz_head .cz_headCon .top_cart_count{font-size: 11px;position: absolute;display: inline-block;background-position: -4px -40px;  width: 19px;height: 19px;line-height:19px;top: 5px;right: 7px;text-align: center;color: white;}
+.cz_head .cz_headCon a{color: white;}
+.cz_head .cz_headCon a:hover{color:#e2231a ;}
+.right{float: right;}
+.cz_head .top_line{margin: 0 5px;float: right;}
+.cz_head .head_name a:hover{color: #e2231a;}
+.cz_head .head_name{position: relative;}
+.cz_head .top_info{position: absolute;z-index: 100;border: #d3d3d3 solid 1px;width: 140px;height: auto;text-align: center;left: -36px;padding: 10px 0;display: none;}
+.cz_head .top_info a{color: #333;}
+.cz_head .top_info ul li{height: 30px;line-height: 30px;}
+.cz_head .top_down{width: 7px;height: 5px;display: inline-block;margin-left: 5px;background-position: -4px -153px;}
+.cz_logo{width: 191px;height: 37px;background-position: -4px 0;}
+.bg_position{background-image: url(../image/cz_bg.png);background-repeat: no-repeat;display: block;}
+/*content*/
+.cz_content{width: 1200px;margin: 0 auto;}
+.cz_content .cz_conTop{margin: 29px 0 6px 0;}
+.cz_conTitle{width: 1200px;margin: 0 auto;text-align: right;margin-top: 15px;}
+.cz_conTitle .hover{background: #fdebeb;width: 148px;height: 36px;border: #fbc8c8 solid 1px;cursor: pointer;}
+.cz_conTitle button{border: none;background:none;font-size: 14px;width: 148px;height: 36px;}
+.tab_div{width: 1200px;margin: 0 auto;}
+.tab_div .cz_div{width: 1200px;display: none;border-top: #e2231a solid 2px;}
+.tab_div .cz_divTop{height:auto;box-sizing: border-box;border: #e6e6e6 solid 1px;padding: 53px 0 45px 40px;}
+.tab_div .cz_phoneInput{width: 578px;height: 34px;border: #d2d2d2 solid 1px;}
+.tab_div .phone_btn{position: absolute; left: 641px;top: 6px;background-position: -4px -109px;width: 21px;height: 25px;}
+.cz_success{background-position: -4px -61px;width: 42px;height: 42px;}
+.tab_div .phone_div{position: relative;}
+.tab_div .czmz_div{margin-top: 36px;}
+.tab_div .size15{font-size: 15px;margin-right: 10px;}
+.tab_div .left{float: left;}
+.tab_div .cz_typeDiv{margin-left: 5px;width: 634px;}
+.tab_div .cz_type{width: 130px;height: 70px;border: #d2d2d2 solid 1px;box-sizing:border-box; border-radius: 4px;margin-right: 22px;margin-bottom: 22px;cursor: pointer;}
+.tab_div .cz_type div{text-align: center;margin-top: 7px;}
+.size19{font-size: 19px;}
+.marginTop0{margin-top: 0px !important;}
+.tab_div .cz_typeHover{background: #e2231a;color: white;border: none;}
+.marginTop24{margin-top: 24px;}
+.describe{clear: both;}
+.size14{font-size: 14px;}
+.cz_btn{width: 130px;height: 40px;}
+.tab_div .cz_btn{width: 130px;height: 40px;background: #e2231a;border-radius: 5px;font-size: 18px;border:none;margin-top: 39px;color: white;margin-left: 90px;}
+.tab_div .cz_divBottom{box-sizing: border-box;border: #e6e6e6 solid 1px;padding: 33px 30px;margin-top: 7px;line-height: 23px;margin-bottom: 10px}
+/*.tab_div .qu_ul li{background: url(../images/cz_ico2.jpg) left center no-repeat;padding-left: 7px;}*/
+.cz_ico1{background-position: -4px -149px;width: 2px;height: 2px;margin-right: 4px;float: left;margin-top: 12px;}
+.phone_type{position: absolute;left: 383px;top: 8px;}
+.gray{color: #ccc;}
+/*充值成功页面*/
+.success_div{width: 1200px;height:448px;border: #e6e6e6 solid 1px; border-top: #7abd54 solid 2px;margin:25px auto 0;background: #f3fded;padding: 84px 0 0 130px;box-sizing: border-box;}
+.success_left{width: 68px;height:300px;float: left;}
+.cz_status{font-size: 21px;color: #7abd54;}
+.cz_ddh{font-size: 16px;color: #000;margin: 15px 0 24px 0;}
+.cz_cx{font-size: 13px;color: #7d7d7d;}
+.cz_ts{font-size: 14px;color: #7abd54;margin-top: 10px;}
+.cz_next{margin-top: 60px;}
+.cz_next button{width:auto;height: 26px;border: #d2d2d2 solid 1px;font-size: 14px;border-radius: 2px;margin-right: 15px;padding: 0 11px;}
+/*充值成功页面*/
+.error_div{width: 1200px;height:448px;border: #e6e6e6 solid 1px; border-top: #e2231a solid 2px;margin:25px auto 0;background: #f3fded;padding: 84px 0 0 130px;box-sizing: border-box;}
+.cz_error{background-position: -4px -164px;width: 42px;height: 42px;}
+.cz_status1{font-size: 21px;color: #000;}
+.cz_ts1{font-size: 14px;color: #000;margin-top: 10px;}
+
+/*.cz_divBottom h2{font-size:22px;font-weight:bold;padding-bottom: 15px;}*/
+.cz_divBottom p.question {font-size:14px; font-weight:bold;padding-bottom: 10px;}
+.cz_divBottom p.answer{	padding-bottom: 10px;}
+.cz_qa {box-sizing: border-box;   	border: #d9d8d6 solid 1px; padding: 15px 30px ; margin-top: 30px;line-height: 23px;  background: #d9d8d6;}
+.cz_qa h2{ font-size:20px;font-weight:bold;}
+
+.phone_div .tip{color: red;}
