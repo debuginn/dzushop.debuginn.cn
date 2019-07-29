@@ -13,18 +13,46 @@ use App\Http\Controllers\Controller;
 class IndexController extends Controller
 {
     /**
+     * 处理数组数据（递归）
+     * @param $data
+     * @param int $pid
+     * @return array
+     */
+    public function checkTypeData($data, $pid=0){
+        $newArr = array();
+
+        foreach($data as $key => $value){
+            if($value->pid == $pid){
+                $newArr[$value->id] = $value;
+                $newArr[$value->id]->zi = $this->checkTypeData($data, $value->id);
+            }
+        }
+
+        return $newArr;
+    }
+    /**
      * 前台首页方法
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(){
-        // 查询轮播图广告
+        // 查询导航栏导航
+        $types = DB::table('dzushop_types')->get();
+        // 处理导航栏
+        $type = $this->checkTypeData($types);
 
         // 查询广告并排序
         $slider = DB::table('dzushop_slider')
             ->orderBy('sort', 'desc')
             ->get();
 
-        return view("home.index")->with('slider', $slider);
+        // 赋值数据
+        $data = array(
+            'type' => $type,
+            'slider' => $slider,
+        );
+        // 返回试图并赋值
+        return view("home.index")
+            ->with('data', $data);
     }
 
 }

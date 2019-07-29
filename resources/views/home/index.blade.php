@@ -56,7 +56,7 @@
             cursor: pointer;
             width: 41px;
             height: 69px;
-            background-image: url(static/image/icon.png);
+            background-image: url({{ asset('static/image/icon.png') }});
             background-repeat: no-repeat;
             background-position: -88px -192px;
             display: inline-block;
@@ -69,7 +69,7 @@
             cursor: pointer;
             width: 41px;
             height: 69px;
-            background-image: url(static/image/icon.png);
+            background-image: url({{ asset('static/image/icon.png') }});
             background-repeat: no-repeat;
             background-position: -130px -192px;
             display: inline-block;
@@ -147,7 +147,7 @@
             background: rgba(0, 0, 0, .8)
         }
         .closebtn {
-            background: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png) -7px -407px no-repeat;
+            background: url({{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }}) -7px -407px no-repeat;
             width: 19px;
             height: 19px;
             position: absolute;
@@ -252,13 +252,13 @@
             height: 430px;
             float: left;
             margin-right: 12px;
-            background: url(static/image/afd06910-5fe9-424e-b04d-091f36ad.png)no-repeat;
+            background: url({{ asset('static/image/afd06910-5fe9-424e-b04d-091f36ad.png') }})no-repeat;
             position: relative;
             margin-top: 7px;
         }
 
         .Calculation_20180704 .box_left_new {
-            background: url(static/image/884c34f7-4d06-4270-b837-244b80ca.png)no-repeat !important;
+            background: url({{ asset('static/image/884c34f7-4d06-4270-b837-244b80ca.png') }})no-repeat !important;
         }
 
         .Calculation_20180704 .box_right {
@@ -391,7 +391,7 @@
             color: black;
             font-size: 20px;
             margin-right: 20px;
-            font-weight: 550
+            font-weight: 500;
         }
 
         .Calculation_20180704 .box_left .timestar {
@@ -503,7 +503,7 @@
             display: inline-block;
             width: 29px;
             height: 29px;
-            background: url("static/image/18c0c541-ae5a-40c7-898a-b68fc92c.png")no-repeat;
+            background: url("{{ asset('static/image/18c0c541-ae5a-40c7-898a-b68fc92c.png') }}")no-repeat;
         }
 
         .epp_layer_success p {
@@ -512,7 +512,7 @@
             margin: 0;
             color: #000;
             font-size: 17px;
-            font-weight: 540;
+            font-weight: 500;
         }
 
         .epp_layer_success .epp_layer_input {
@@ -580,7 +580,7 @@
         }
 
         .keyup_detection {
-            background: url(static/image/83b5cc8e-ae5d-4abe-b764-285c974c.png)no-repeat left center;
+            background: url("{{ asset('static/image/83b5cc8e-ae5d-4abe-b764-285c974c.png') }}")no-repeat left center;
             padding-left: 19px;
         }
 
@@ -599,7 +599,7 @@
             font-family: "Microsoft Yahei";
             z-index: 19999;
             display: none;
-            background: url(static/image/83c3da66-0706-4810-86e4-8311e184.png) no-repeat;
+            background: url(" {{ asset('static/image/83c3da66-0706-4810-86e4-8311e184.png') }} ") no-repeat;
             background-size: 100%;
             padding-left: 22px;
             box-sizing: border-box;
@@ -683,12 +683,12 @@
 
         .shop_index_floor_l1_r8 .myicon {
             display: inline-block;
-            background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
+            background-image: url("{{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }}");
             background-repeat: no-repeat;
         }
 
         .shop_index_floor_l1_r8 .floor_label {
-            background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
+            background-image: url("{{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }}");
         }
 
         .shop_index_floor_l1_r8 .floor {
@@ -905,12 +905,12 @@
 
         .shop_index_floor_l1_r8 .myicon {
             display: inline-block;
-            background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
+            background-image: url("{{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }}");
             background-repeat: no-repeat;
         }
 
         .shop_index_floor_l1_r8 .floor_label {
-            background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
+            background-image: url("{{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }}");
         }
 
         .shop_index_floor_l1_r8 .floor {
@@ -1195,7 +1195,7 @@
             display: inline-block;
             width: 16px;
             height: 7px;
-            background: url(static/image/jt_top.png);
+            background: url("{{ asset('static/image/jt_top.png') }}");
             position: absolute;
             left: 50%;
             top: -7px;
@@ -1268,7 +1268,7 @@
 
         .usepng {
             display: inline-block;
-            background-image: url(static/image/icons_sprit.png);
+            background-image: url("{{ asset('static/image/icons_sprit.png') }}");
             background-repeat: no-repeat
         }
 
@@ -1295,12 +1295,12 @@
         #b_bit {
             width: 123px;
             height: 19px;
-            background: url(static/image/icons_sprit.png) -72px -320px
+            background: url("{{ asset('static/image/icons_sprit.png') }}") -72px -320px
         }
 
         .floor_label,
         .myicon {
-            background-image: url(static/image/icons_sprit.png)
+            background-image: url("{{ asset('static/image/icons_sprit.png') }}");
         }
 
         .floor_item .pro_img img {
@@ -1359,7 +1359,7 @@
         #cn_img {
             width: 186px;
             height: 24px;
-            background: url(static/image/dc95e9d6-bef7-4f4b-8b03-e6c3deea.jpg);
+            background: url("{{ asset('static/image/dc95e9d6-bef7-4f4b-8b03-e6c3deea.jpg') }}");
         }
 
         .select_country {
@@ -1455,14 +1455,14 @@
         .darkwchat {
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -8px -190px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -8px -190px;
         }
 
         .lightwchat {
             display: none;
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -8px -238px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -8px -238px;
         }
 
         .wchat:hover .darkwchat {
@@ -1476,14 +1476,14 @@
         .darkqqzone {
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -63px -190px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -63px -190px;
         }
 
         .lightqqzone {
             display: none;
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -63px -238px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -63px -238px;
         }
 
         .qqzone:hover .darkqqzone {
@@ -1497,14 +1497,14 @@
         .darkweibo {
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -119px -190px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -119px -190px;
         }
 
         .lightweibo {
             display: none;
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -119px -238px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -119px -238px;
         }
 
         .weibo:hover .darkweibo {
@@ -1518,7 +1518,7 @@
         .dark_tieba {
             width: 74px;
             height: 22px;
-            background: url(static/image/platform_icons_sprits.png) -119px -129px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -119px -129px;
             margin-top: -2px;
         }
 
@@ -1526,7 +1526,7 @@
             display: none;
             width: 74px;
             height: 22px;
-            background: url(static/image/platform_icons_sprits.png) -119px -155px;
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -119px -155px;
             margin-top: -2px;
         }
 
@@ -1545,14 +1545,14 @@
         .dark_weibo_icon {
             width: 82px;
             height: 20px;
-            background: url(static/image/platform_icons_sprits.png) -8px -132px
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -8px -132px
         }
 
         .light_weibo_icon {
             display: none;
             width: 82px;
             height: 20px;
-            background: url(static/image/platform_icons_sprits.png) -8px -158px
+            background: url(" {{ asset('static/image/platform_icons_sprits.png') }} ") -8px -158px
         }
 
         .weibo_icon:hover .dark_weibo_icon {
@@ -1570,14 +1570,14 @@
         .dark_fun_icon {
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -176px -190px
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -176px -190px
         }
 
         .light_fun_icon {
             display: none;
             width: 37px;
             height: 36px;
-            background: url(static/image/platform_icons_sprits.png) -176px -238px
+            background: url("{{ asset('static/image/platform_icons_sprits.png') }}") -176px -238px
         }
 
         .fun_icon:hover .dark_fun_icon {
@@ -1648,7 +1648,7 @@
     <style type="text/css">
         .floor_label,
         .myicon {
-            background-image: url(static/image/302163a8-c40a-4ac0-979e-26f7bc8d.png) !important;
+            background-image: url("{{ asset('static/image/302163a8-c40a-4ac0-979e-26f7bc8d.png') }}") !important;
         }
 
         .floor_nav .ns_floor-nav-box {
@@ -2141,62 +2141,15 @@
                  b_i="1920,406,100">
                 <div id="xiaoxin_div">
                     <ul id="ul1">
+                        @foreach($data['slider'] as $value1)
                         <li class="nohid"
                             latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p1_goods_code_no_exists">
-                            <a target="_blank" href="xiaofei/zjzxp/index.html">
-                                <div style="background:url(static/image/59b32a36-4554-49d4-9b37-d262e1c3.jpg) center no-repeat "
-                                     _bg="static/image/59b32a36-4554-49d4-9b37-d262e1c3.jpg"></div>
+                            <a target="_blank" href="{{ $value1->href }}">
+                                <div style="background:url({{ $value1->img }}) center no-repeat "
+                                     _bg="{{ $value1->img }}"></div>
                             </a>
                         </li>
-                        <li latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p2_goods_code_no_exists">
-                            <a target="_blank" href="product/1005308-in-push_banner-gw_z00008.html">
-                                <div style="background:url('')"
-                                     _bg="https://p2.lefile.cn/product/adminweb/2019/07/25/92dfa726-001b-4e73-913d-35456b8b8b11.jpg">
-                                </div>
-                            </a>
-                        </li>
-                        <li latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p3_goods_code_no_exists">
-                            <a target="_blank" href="mobile/index.html">
-                                <div style="background:url('')"
-                                     _bg="https://p3.lefile.cn/product/adminweb/2019/07/25/30bb0145-d7f7-4ae4-a016-cf3ed26222b6.jpg">
-                                </div>
-                            </a>
-                        </li>
-                        <li latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p4_goods_code_no_exists">
-                            <a target="_blank" href="sales/sc.index-in-push_banner-gw_z0000.html">
-                                <div style="background:url('')"
-                                     _bg="https://p4.lefile.cn/product/adminweb/2019/07/22/f4fc148a-1f20-47ab-801f-16091d73ea90.jpg">
-                                </div>
-                            </a>
-                        </li>
-                        <li latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p5_goods_code_no_exists">
-                            <a target="_blank" href="product/1004339.html">
-                                <div style="background:url('')"
-                                     _bg="https://p3.lefile.cn/product/adminweb/2019/07/22/108c882b-c928-4855-8d2b-8f1bd46ad52a.jpg">
-                                </div>
-                            </a>
-                        </li>
-                        <li latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p6_goods_code_no_exists">
-                            <a target="_blank" href="product/1005176.html">
-                                <div style="background:url('')"
-                                     _bg="https://p3.lefile.cn/product/adminweb/2019/07/23/eac968e1-9d30-425d-8b4f-bf007ba36092.jpg">
-                                </div>
-                            </a>
-                        </li>
-                        <li latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p7_goods_code_no_exists">
-                            <a target="_blank" href="product/1004880-1.html">
-                                <div style="background:url('')"
-                                     _bg="https://p1.lefile.cn/product/adminweb/2019/07/25/4619881f-340b-40d4-b4bf-8f2695a9f198.jpg">
-                                </div>
-                            </a>
-                        </li>
-                        <li latag="latag_home_MD532_04ae3025-466a-40ea-b076-62c4c228742e_p8_goods_code_no_exists">
-                            <a target="_blank" href="product/1005083.html">
-                                <div style="background:url('')"
-                                     _bg="https://p3.lefile.cn/product/adminweb/2019/07/18/3a015675-32fd-4d36-984e-f1eb688bf5b7.jpg">
-                                </div>
-                            </a>
-                        </li>
+                        @endforeach
                     </ul>
                     <span class="btnLeft" style="display: none;"></span>
                     <span class="btnRight" style="display: none;"></span>
@@ -2209,235 +2162,29 @@
                     <div class="fl_rx shop_nav_c floor_cntr">
                         <div class="piece list_nav">
                             <ul>
+                                @foreach($data['type'] as $one)
                                 <li>
                                     <div class="list_name">
-                                        <a href="lenovopc/index-home.html" target="_blank" class="list_nm"
+                                        <a href="#" target="_blank" class="list_nm"
                                            style="height:28px;line-height:28px"
-                                           latag="latag_pc_common_navcategory_1_Lenovo电脑">Lenovo电脑
+                                           >{{ $one->name }}
                                             <span class="list_usepng list_icona"></span></a>
                                         <div class="list_cont">
                                             <div class="list_lt">
+                                                @foreach($one->zi as $two)
                                                 <div class="list_lta">
                                                     <p>
-                                                        <a href="search/293-294-297_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_11_游戏本">游戏本</a></p>
+                                                        <a href="#" target="_blank">{{ $two->name }}</a></p>
                                                     <ul class="clearfix">
+                                                        @foreach($two->zi as $three)
                                                         <li>
-                                                            <a href="search/293-294-297-961.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_111_拯救者Y7000">拯救者Y7000</a>
+                                                            <a href="#" target="_blank">
+                                                                {{ $three->name }}</a>
                                                         </li>
-                                                        <li>
-                                                            <a href="search/293-294-297-1465_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_112_拯救者Y7000P">拯救者Y7000P</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-294-297-1461.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_113_拯救者Y9000K">拯救者Y9000K</a>
-                                                        </li>
+                                                        @endforeach
                                                     </ul>
                                                 </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/293-294-296-860_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_12_轻薄本">轻薄本</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E5B08FE696B020E99D92E698A5E78988.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_121_小新 青春版">小新
-                                                                青春版</a></li>
-                                                        <li>
-                                                            <a href="search/293-294-296-1467_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_122_小新 14">小新 14</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E5B08FE696B015.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_123_小新 15">小新 15</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E5B08FE696B020E6BDAE70002014.0E8.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_124_小新潮7000-14">小新潮7000-14</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E5B08FE696B020E6BDAE70002015.6E8.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_125_小新潮7000-15">小新潮7000-15</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/293-294-296-878293-294-299293-29.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_13_便携本">便携本</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/293-294-296-878.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_131_小新Air">小新Air</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E5B08FE696B020E6BDAE70002013.3E8.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_132_小新潮7000-13">小新潮7000-13</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/yogas940.html"
-                                                               latag="latag_pc_common_navcategory_133_YOGA S940">YOGA
-                                                                S940</a></li>
-                                                        <li>
-                                                            <a href="search/293-294-299-1454_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_134_YOGA Book 2">YOGA
-                                                                Book 2</a></li>
-                                                        <li>
-                                                            <a href="search/293-294-831-879_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_135_ideapad 720s">ideapad
-                                                                720s</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/293-294-831-981293-294-831-888_h.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_14_常规本">常规本</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/293-294-831-981_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_141_ideapad 330C">ideapad
-                                                                330C</a></li>
-                                                        <li>
-                                                            <a href="search/340c.html"
-                                                               latag="latag_pc_common_navcategory_142_ideapad 340C">ideapad
-                                                                340C</a></li>
-                                                        <li>
-                                                            <a href="search/ideapad20320c.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_143_ideapad 320C">ideapad
-                                                                320C</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/310-311310-312310-315_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_15_台式机">台式机</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/geekpro.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_151_GeekPro">GeekPro</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/310-311-749-1463310-311-749-1464.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_152_游戏台式机">游戏台式机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/310-312-832310-312-1462_home_hom.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_153_一体台式机">一体台式机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/310-311-317-834310-311-317-83531.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_154_分体台式机">分体台式机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/951-953-1458951-953-1459.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_155_显示器">显示器</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/326-335-1448-1449326-335-337_hom.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_16_二合一本">二合一本</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/326-335-1448-1449_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_161_D330系列">D330系列</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/326-335-337-850_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_162_MIIX 520系列">MIIX
-                                                                520系列</a></li>
-                                                        <li>
-                                                            <a href="search/326-335-337-746_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_163_MIIX 320系列">MIIX
-                                                                320系列</a></li>
-                                                        <li>
-                                                            <a href="search/326-335-337-622_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_164_MIIX 4系列">MIIX
-                                                                4系列</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/293-294-296293-294-297293-294-29.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_17_子系列">子系列</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/293-294-296_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_171_小新">小新</a></li>
-                                                        <li>
-                                                            <a href="search/293-294-297_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_172_拯救者">拯救者</a></li>
-                                                        <li>
-                                                            <a href="search/293-294-299_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_173_YOGA">YOGA</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/326-335-337_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_174_MIIX">MIIX</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="lenovopc/index.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_18_场景">场景</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/293-294-297310-311-749_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_181_高清游戏">高清游戏</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-294-296326-335-337_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_182_家庭娱乐">家庭娱乐</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-294-296293-294-297_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_183_潮范校园">潮范校园</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-294-299326-335-337_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_184_便捷出行">便捷出行</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="lenovopc/index.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_19_特色服务">特色服务</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="javascript:window.open('https://shop.lenovo.com.cn/lenovomaker/index');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_191_私人定制">私人定制</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="oldfornew/oldchangenew.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_192_以旧换新">以旧换新</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/o2o_293-294_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_193_极速到家（最快3小时送达，工程师上门安装）">极速到家（最快3小时送达，工程师上门安装）</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                @endforeach
                                             </div>
                                             <div class="list_rt">
                                                 <a href="product/1005308.html">
@@ -2450,1065 +2197,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="list_name">
-                                        <a href="thinkshop_index.html" target="_blank" class="list_nm"
-                                           style="height:28px;line-height:28px"
-                                           latag="latag_pc_common_navcategory_2_ThinkPad电脑">ThinkPad电脑
-                                            <span class="list_usepng list_icona"></span></a>
-                                        <div class="list_cont">
-                                            <div class="list_lt">
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/293-295_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_21_ThinkPad">ThinkPad</a>
-                                                    </p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/293-295-307326-336_home_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_211_X1 系列（黑色智慧）">X1
-                                                                系列（黑色智慧）</a></li>
-                                                        <li>
-                                                            <a href="search/293-295-304_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_212_X系列（飞行家系列）">X系列（飞行家系列）</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-295-305_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_213_T系列（工程师系列）">T系列（工程师系列）</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-295-308_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_214_S系列（潮极客系列）">S系列（潮极客系列）</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-295-306_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_215_E系列（先锋派系列）">E系列（先锋派系列）</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-295-309_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_216_P系列（巨匠系列）">P系列（巨匠系列）</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/293-295-867_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_217_R系列（开创者系列）">R系列（开创者系列）</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/310-313310-314_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_22_ThinkCentre">ThinkCentre</a>
-                                                    </p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/310-313_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_221_分体式台式机">分体式台式机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/310-314_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_222_高性能一体机">高性能一体机</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/thinkplus.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_23_thinkplus">thinkplus</a>
-                                                    </p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E58FA3E7BAA2E794B5E6BA90.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_231_口红电源">口红电源</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/thinkplus20E99A8FE8BAABE58585.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_232_随身充">随身充</a></li>
-                                                        <li>
-                                                            <a href="search/thinkplusE4B887E59091E8BDAEE799B.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_233_拉杆箱">拉杆箱</a></li>
-                                                        <li>
-                                                            <a href="search/thinkplus20pods20oneE8939DE78999.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_234_运动耳机">运动耳机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/thinkplus20E68C87E7BAB9E4BC98E79.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_235_指纹U盘">指纹U盘</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/thinkplus20E699BAE883BDE68F92E7B.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_236_智能插线板">智能插线板</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/thinkplus20E4BEBFE690BAE8939DE78.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_237_便携蓝牙鼠标">便携蓝牙鼠标</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/thinkpadE998B2E7AAA5E78987_home.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_24_Think配件">Think配件</a>
-                                                    </p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/thinkpadE58C85_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_241_电脑包">电脑包</a></li>
-                                                        <li>
-                                                            <a href="search/thinkpadE9BCA0E6A087_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_242_键鼠">键鼠</a></li>
-                                                        <li>
-                                                            <a href="search/thinkpadE794B5E6B1A0E794B5E6BA90.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_243_电源适配器">电源适配器</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/thinkpadE8BDACE68EA5_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_244_转接&扩展设备">转接&扩展设备</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/thinkpadE998B2E7AAA5E78987.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_245_防窥片">防窥片</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/E4B8AAE680A7E58C96E8AEA2E588B6_2.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_25_特色服务">特色服务</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="thinkcto/index.html"
-                                                               latag="latag_pc_common_navcategory_251_专属定制">专属定制</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="oldfornew/oldchangenew.html"
-                                                               latag="latag_pc_common_navcategory_252_以旧换新">以旧换新</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/o2o_293-295_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_253_极速到家（最快3小时送达，工程师上门安装）">极速到家（最快3小时送达，工程师上门安装）</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="list_rt">
-                                                <a
-                                                        href="javascript:window.open('https://www.thinkpad.com/active/X1_2019?pmf_source=P0000001403M0002');">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p2.lefile.cn/product/adminweb/2019/07/22/3b8f5c13-746c-4040-a426-e426ed7bc4e7.jpg"></a>
-                                                <a href="product/1004268.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p2.lefile.cn/product/adminweb/2019/04/08/0e8507b1-fe7b-4bbc-ae4a-ef4f954a774a.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_name">
-                                        <a href="phone.html" target="_blank" class="list_nm"
-                                           style="height:28px;line-height:28px"
-                                           latag="latag_pc_common_navcategory_3_手机/通信">手机/通信
-                                            <span class="list_usepng list_icona"></span></a>
-                                        <div class="list_cont">
-                                            <div class="list_lt">
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="phone.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_31_Lenovo">Lenovo</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1005039.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_311_Z6">Z6</a></li>
-                                                        <li>
-                                                            <a href="activity/moto/introduce/lenovoz6pro/html/overview/index.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_312_Z6 Pro">Z6
-                                                                Pro</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://activity.lenovo.com.cn/activity/moto/introduce/Z6qingchun/html/overview/index.html');"
-                                                               latag="latag_pc_common_navcategory_313_Z6 青春版">Z6
-                                                                青春版</a></li>
-                                                        <li>
-                                                            <a href="activity/moto/introduce/lenovoz5pro/html/gt/index-home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_314_Z5 Pro GT 855版">Z5
-                                                                Pro GT 855版</a></li>
-                                                        <li>
-                                                            <a href="activity/moto/introduce/lenovoz5pro/html/overview/index.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_315_Z5 Pro">Z5
-                                                                Pro</a></li>
-                                                        <li>
-                                                            <a href="activity/moto/introduce/lenovoz5s/html/overview/index.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_316_Z5s">Z5s</a></li>
-                                                        <li>
-                                                            <a href="activity/moto/introduce/lenovoz5/html/overview/index.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_317_Z5">Z5</a></li>
-                                                        <li>
-                                                            <a href="activity/moto/introduce/lenovos5pro/html/overview/index.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_318_S5 Pro GT">S5 Pro
-                                                                GT</a></li>
-                                                        <li>
-                                                            <a href="activity/moto/introduce/lenovok5pro/html/overview/index.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_319_K5 Pro">K5
-                                                                Pro</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="javascript:window.open('http://www.motorola.com.cn/store/');"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_32_Motorola">Motorola</a>
-                                                    </p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motogp50/overview/index.html');"
-                                                               latag="latag_pc_common_navcategory_321_motorola p50">motorola
-                                                                p50</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motoz3/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_322_motorola z3">motorola
-                                                                z3</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motop30/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_323_motorola p30">motorola
-                                                                p30</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motoqingyou/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_324_moto 青柚1s">moto
-                                                                青柚1s</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motoe5/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_325_motorola e5 plus">motorola
-                                                                e5 plus</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/store/223.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_326_moto g5s">moto
-                                                                g5s</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/store/166_575.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_327_moto z 2018">moto
-                                                                z 2018</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motoz2play/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_328_moto z2 play">moto
-                                                                z2 play</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motop30play/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_329_motorola p30 play">motorola
-                                                                p30 play</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motop30note/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_3210_motorola p30 note">motorola
-                                                                p30 note</a></li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/motog7plus/overview/index.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_3211_motorola g7 plus">motorola
-                                                                g7 plus</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/3_889-891.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_33_专属配件">专属配件</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1000746.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_331_联想Z5手机保护壳">联想Z5手机保护壳</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/store/74_488.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_332_摩音-JBL扬声器模块">摩音-JBL扬声器模块</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002958.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_333_Watch X plus智能手表">Watch
-                                                                X plus智能手表</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="activity/moto/topic/nianhuojie/index-home.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_34_场景">场景</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1000516.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_341_游戏手机">游戏手机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1003597.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_342_拍照手机">拍照手机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002909.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_343_女性手机">女性手机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002828.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_344_长续航手机">长续航手机</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="lenovo_channel_dongde.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_35_充值中心">充值中心</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="charge/index-0.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_351_话费充值">话费充值</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="charge/index-1.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_352_流量充值">流量充值</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/1450_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_36_170/171">170/171</a>
-                                                    </p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/51899.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_361_懂陪伴">懂陪伴</a></li>
-                                                        <li>
-                                                            <a href="product/51897.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_362_糖豆儿">糖豆儿</a></li>
-                                                        <li>
-                                                            <a href="product/51898.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_363_大白话">大白话</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="list_rt">
-                                                <a href="product/1004633.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p1.lefile.cn/product/adminweb/2019/05/31/4c7b4a84-c9e7-4a2c-a659-5344ce079130.gif"></a>
-                                                <a href="product/1005039.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p3.lefile.cn/product/adminweb/2019/07/05/2e2064b6-a366-4a56-ac35-88663bedf9cf.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_name">
-                                        <a href="lecoo-0.2171571784732318.html" target="_blank" class="list_nm"
-                                           style="height:28px;line-height:28px"
-                                           latag="latag_pc_common_navcategory_4_智能产品">智能产品
-                                            <span class="list_usepng list_icona"></span></a>
-                                        <div class="list_cont">
-                                            <div class="list_lt">
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="product/1002955-home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_41_家居">家居</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1005013.html"
-                                                               latag="latag_pc_common_navcategory_411_节水宝S1">节水宝S1</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E699BAE883BDE99FB3E7AEB1.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_412_智能音箱">智能音箱</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002955.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_413_智能插座">智能插座</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E88194E683B3mirage.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_414_AR设备">AR设备</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1003772.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_415_拯救者路由器">拯救者路由器</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/E4BD93E88482E7A7A4.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_42_健康">健康</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E7A9BAE6B094E58780E58C96E599A8.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_421_空气净化器">空气净化器</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E4BD93E88482E7A7A4.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_422_体脂秤">体脂秤</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/hwE699BAE883BD_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_43_穿戴">穿戴</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1002903.html"
-                                                               latag="latag_pc_common_navcategory_431_Watch S">Watch
-                                                                S</a></li>
-                                                        <li>
-                                                            <a href="product/1002958.html"
-                                                               latag="latag_pc_common_navcategory_432_Watch X Plus">Watch
-                                                                X Plus</a></li>
-                                                        <li>
-                                                            <a href="product/1002328-home.html"
-                                                               latag="latag_pc_common_navcategory_433_Watch 9 星座版">Watch
-                                                                9 星座版</a></li>
-                                                        <li>
-                                                            <a href="search/hwE699BAE883BD.html"
-                                                               latag="latag_pc_common_navcategory_434_智能手环">智能手环</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002894.html"
-                                                               latag="latag_pc_common_navcategory_435_儿童手表">儿童手表</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="product/1002040-home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_44_安防">安防</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E88194E683B3E699BAE883BDE68C87E7.html"
-                                                               latag="latag_pc_common_navcategory_441_智能指纹锁">智能指纹锁</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E79C8BE5AEB6E5AE9Dsnowman.html"
-                                                               latag="latag_pc_common_navcategory_442_看家宝Snowman">看家宝Snowman</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002040.html"
-                                                               latag="latag_pc_common_navcategory_443_看家宝R1">看家宝R1</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1000243.html"
-                                                               latag="latag_pc_common_navcategory_444_倍爱宝A1">倍爱宝A1</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1004080.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_445_家庭安防套件">家庭安防套件</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="product/1001892-home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_45_出行">出行</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1001892.html"
-                                                               latag="latag_pc_common_navcategory_451_蛋蛋车">蛋蛋车</a></li>
-                                                        <li>
-                                                            <a href="search/E8A18CE8BDA6E8AEB0E5BD95E4BBAA.html"
-                                                               latag="latag_pc_common_navcategory_452_行车记录仪">行车记录仪</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E8BDA6E8BDBDE7A9BAE6B094E58780E5.html"
-                                                               latag="latag_pc_common_navcategory_453_车载空气净化器">车载空气净化器</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E8BDA6E8BDBDE58585E794B5E599A8.html"
-                                                               latag="latag_pc_common_navcategory_454_车载充电器">车载充电器</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E5AFB9E8AEB2E69CBA.html"
-                                                               latag="latag_pc_common_navcategory_455_对讲机">对讲机</a></li>
-                                                        <li>
-                                                            <a href="product/1002795.html"
-                                                               latag="latag_pc_common_navcategory_456_车载吸尘器">车载吸尘器</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002796.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_457_车载充气泵">车载充气泵</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="product/1003485-home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_46_智玩">智玩</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1003485.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_461_联想乐迪智能机器人">联想乐迪智能机器人</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1000474.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_462_优必选机器人">优必选机器人</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="list_rt">
-                                                <a href="product/1002494.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p2.lefile.cn/product/adminweb/2018/09/28/68c96b5b-ebc3-4631-9a37-f71a9f3b8ba4.jpg"></a>
-                                                <a href="product/1002955.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p2.lefile.cn/product/adminweb/2018/11/01/ffc1cc29-b220-4abe-87cb-2476be99618c.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_name">
-                                        <a href="pad.html" target="_blank" class="list_nm"
-                                           style="height:28px;line-height:28px"
-                                           latag="latag_pc_common_navcategory_5_平板电脑">平板电脑
-                                            <span class="list_usepng list_icona"></span></a>
-                                        <div class="list_cont">
-                                            <div class="list_lt">
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/E699BAE883BDE5B9B3E69DBFm1020.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_51_智能平板">智能平板</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E699BAE883BDE5B9B3E69DBFm1020.html"
-                                                               latag="latag_pc_common_navcategory_511_M10系列">M10系列</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/326-335-844_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_52_小新平板">小新平板</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/326-335-844_home.html"
-                                                               latag="latag_pc_common_navcategory_521_小新平板">小新平板</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/326-335-337326-335-1448-1449_hom.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_53_二合一笔记本">二合一笔记本</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/326-335-1448-1449_home_home.html"
-                                                               latag="latag_pc_common_navcategory_531_D330">D330</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/326-335-337-850_home.html"
-                                                               latag="latag_pc_common_navcategory_532_MIIX 520系列">MIIX
-                                                                520系列</a></li>
-                                                        <li>
-                                                            <a href="search/326-335-337-746_home.html"
-                                                               latag="latag_pc_common_navcategory_533_MIIX 320系列">MIIX
-                                                                320系列</a></li>
-                                                        <li>
-                                                            <a href="search/326-335-337-622_home.html"
-                                                               latag="latag_pc_common_navcategory_534_MIIX 4 系列">MIIX 4
-                                                                系列</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/326-335-339326-335-340326-335-33.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_54_YOGA平板">YOGA平板</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/326-335-339_home.html"
-                                                               latag="latag_pc_common_navcategory_541_YOGA平板3系列">YOGA平板3系列</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/326-335-342_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_55_常规平板">常规平板</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/326-335-342-755_home.html"
-                                                               latag="latag_pc_common_navcategory_551_TAB4系列">TAB4系列</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/326-335-342-756_home.html"
-                                                               latag="latag_pc_common_navcategory_552_TAB4 Plus系列">TAB4
-                                                                Plus系列</a></li>
-                                                        <li>
-                                                            <a href="search/326-335-342-626_home.html"
-                                                               latag="latag_pc_common_navcategory_553_P8系列">P8系列</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/tab3E7B3BBE58897.html"
-                                                               latag="latag_pc_common_navcategory_554_TAB3系列">TAB3系列</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E88194E683B3E5B9B3E69DBFe10.html"
-                                                               latag="latag_pc_common_navcategory_555_E10系列">E10系列</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="pad-home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_56_场景">场景</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/326-335-342-625326-335-342-75532.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_561_安卓娱乐">安卓娱乐</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/326-335-1448-1449326-335-337-746.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_562_二合一平板">二合一平板</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/326-335-342-755326-335-340_home_.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_563_通话网络平板">通话网络平板</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/326-335-844326-335-342-626_home_.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_564_游戏必备">游戏必备</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/350-752_home_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_57_专属配件">专属配件</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/94148.html"
-                                                               latag="latag_pc_common_navcategory_571_MIIX触控笔">MIIX触控笔</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="list_rt">
-                                                <a href="activity/marketing/p8/index.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p4.lefile.cn/product/adminweb/2017/09/13/47d865bf-9d26-483d-a31b-64ab5ededa6b.jpg"></a>
-                                                <a href="activity/marketing/miix-jh/index.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p4.lefile.cn/product/adminweb/2018/07/10/2b15ba00-60ba-449f-89bf-1816c63d6a2b.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_name">
-                                        <a href="xj/index.html" target="_blank" class="list_nm"
-                                           style="height:28px;line-height:28px"
-                                           latag="latag_pc_common_navcategory_6_配件/办公">配件/办公
-                                            <span class="list_usepng list_icona"></span></a>
-                                        <div class="list_cont">
-                                            <div class="list_lt">
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/E7A7BBE58AA8E7A1ACE79B98.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_61_存储设备">存储设备</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E997AAE5AD98E79B98.html"
-                                                               latag="latag_pc_common_navcategory_611_U盘">U盘</a></li>
-                                                        <li>
-                                                            <a href="search/E7A7BBE58AA8E7A1ACE79B98.html"
-                                                               latag="latag_pc_common_navcategory_612_移动硬盘">移动硬盘</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/E9BAA6E5858BE9A38E_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_62_K歌直播">K歌直播</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E79BB4E692ADE5AE9D.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_621_直播/娱乐宝">直播/娱乐宝</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/kE6AD8CE9BAA6E5858BE9A38E.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_622_麦克风">麦克风</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/E698BEE7A4BAE599A8.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_63_显示生态">显示生态</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/951-954.html"
-                                                               latag="latag_pc_common_navcategory_631_显示器">显示器</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/350-358-398889-891-936350-358-39.html"
-                                                           target="_blank"
-                                                           latag="latag_pc_common_navcategory_64_娱乐生活">娱乐生活</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="350-358-398889-891-936350-358-39.html"
-                                                               latag="latag_pc_common_navcategory_641_耳机耳麦">耳机耳麦</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E99FB3E7AEB1.html"
-                                                               latag="latag_pc_common_navcategory_642_音箱">音箱</a></li>
-                                                        <li>
-                                                            <a href="search/E7AEB1E58C85_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_643_箱包">箱包</a></li>
-                                                        <li>
-                                                            <a href="search/E68A95E5BDB1E4BBAA.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_644_投影仪">投影仪</a></li>
-                                                        <li>
-                                                            <a href="search/E5BD95E99FB3E7AC94.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_645_录音笔">录音笔</a></li>
-                                                        <li>
-                                                            <a href="search/E68F92E7BABFE69DBF.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_646_插线板">插线板</a></li>
-                                                        <li>
-                                                            <a href="search/E586B0E7AEB1.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_647_冰箱">冰箱</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/E6B8B8E6888FE9BCA0E6A087.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_65_游戏装备">游戏装备</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E6B8B8E6888FE9BCA0E6A087.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_651_游戏鼠标">游戏鼠标</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E6B8B8E6888FE994AEE79B98.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_652_游戏键盘">游戏键盘</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E794B5E7AB9EE880B3E69CBA.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_653_电竞耳机">电竞耳机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E68BAFE69591E88085E8838CE58C85.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_654_电竞背包">电竞背包</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E794B5E7AB9EE698BEE7A4BAE599A8.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_655_电竞显示器">电竞显示器</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1002808.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_656_游戏鼠标垫">游戏鼠标垫</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/350-354_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_66_电脑配件">电脑配件</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E9BCA0E6A087.html"
-                                                               latag="latag_pc_common_navcategory_661_鼠标">鼠标</a></li>
-                                                        <li>
-                                                            <a href="search/350-354-384.html"
-                                                               latag="latag_pc_common_navcategory_662_键盘">键盘</a></li>
-                                                        <li>
-                                                            <a href="search/2_home_E794B5E88491E58C85.html"
-                                                               latag="latag_pc_common_navcategory_663_电脑包">电脑包</a></li>
-                                                        <li>
-                                                            <a href="product/58207.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_664_保护壳">保护壳</a></li>
-                                                        <li>
-                                                            <a href="search/350-354-388.html"
-                                                               latag="latag_pc_common_navcategory_665_外置光驱">外置光驱</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E794B5E6BA90E98082E9858DE599A8.html"
-                                                               latag="latag_pc_common_navcategory_666_电源适配器">电源适配器</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E8BDACE68EA526E689A9E5B195E8AEBE.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_667_转接&扩展设备">转接&扩展设备</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/E998B2E7AAA5E78987.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_668_防窥片">防窥片</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/3_889-891.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_67_手机配件">手机配件</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/100608.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_671_联想S5手机保护壳">联想S5手机保护壳</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1000746.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_672_联想Z5手机保护壳">联想Z5手机保护壳</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/store/74_566.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_673_摩玩-游戏手柄模块">摩玩-游戏手柄模块</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/store/74_188.html');"
-                                                               latag="latag_pc_common_navcategory_674_摩眼-哈苏摄影模块">摩眼-哈苏摄影模块</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/store/74_186.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_675_摩影-投影模块">摩影-投影模块</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:window.open('https://www.motorola.com.cn/store/74_488.html');"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_676_摩音-JBL扬声器模块">摩音-JBL扬声器模块</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="350-752_home_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_68_平板配件">平板配件</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/94148-home.html"
-                                                               latag="latag_pc_common_navcategory_681_MIIX触控笔">MIIX触控笔</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/346_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_69_打印机">打印机</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/346-347_home.html"
-                                                               latag="latag_pc_common_navcategory_691_单功能打印机">单功能打印机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/346-348_home.html"
-                                                               latag="latag_pc_common_navcategory_692_多功能一体机">多功能一体机</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/346-349_home.html"
-                                                               latag="latag_pc_common_navcategory_693_耗材">耗材</a></li>
-                                                        <li>
-                                                            <a href="product/1000511.html"
-                                                               latag="latag_pc_common_navcategory_694_3D打印机">3D打印机</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="list_rt">
-                                                <a href="kskh/index.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p3.lefile.cn/product/adminweb/2019/03/15/5f5d93d6-84f3-44c8-bda4-24fa6fcd1d8f.jpg"></a>
-                                                <a href="chunjie/index.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p2.lefile.cn/product/adminweb/2019/03/15/f22c4d27-431a-4bf0-bc44-cc43f9efde1f.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_name">
-                                        <a href="home/serviceindex.html" target="_blank" class="list_nm"
-                                           style="height:28px;line-height:28px"
-                                           latag="latag_pc_common_navcategory_7_增值服务">增值服务
-                                            <span class="list_usepng list_icona"></span></a>
-                                        <div class="list_cont">
-                                            <div class="list_lt">
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="360-364360-361_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_71_Care+">Care+</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/360-361_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_711_延长保修">延长保修</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/360-364_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_712_上门服务">上门服务</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1004546.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_713_长辈关爱卡">长辈关爱卡</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/360-363_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_72_系统服务">系统服务</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1000630.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_721_重装系统">重装系统</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/51644.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_722_新机开荒">新机开荒</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/51641.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_723_专家上门">专家上门</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/51639.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_724_电脑加速">电脑加速</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/51640.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_725_驱动安装">驱动安装</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1001854.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_726_Office365">Office365</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/360-365_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_73_清洁保养">清洁保养</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1003565.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_731_笔记本拆机清洁">笔记本拆机清洁</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1003469.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_732_笔记本外观清洁">笔记本外观清洁</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1004296.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_733_清洁套装工具">清洁套装工具</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="product/1003930-home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_74_诊断维修">诊断维修</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/1003930.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_741_电脑故障检修服务">电脑故障检修服务</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1003932.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_742_电脑硬件安装服务">电脑硬件安装服务</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1003931.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_743_电脑系统检测服务">电脑系统检测服务</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="activity/drservice/index.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_75_数据恢复">数据恢复</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="product/58268-home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_751_远程数据恢复">远程数据恢复</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/58250.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_752_硬件开盘数据恢复">硬件开盘数据恢复</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="list_lta">
-                                                    <p>
-                                                        <a href="search/360-362_home.html" target="_blank"
-                                                           latag="latag_pc_common_navcategory_76_硬件升级">硬件升级</a></p>
-                                                    <ul class="clearfix">
-                                                        <li>
-                                                            <a href="search/E58685E5AD98_360-362-757_home.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_761_内存升级">内存升级</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="search/ssd_360-362-759_home.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_762_SSD固态硬盘升级">SSD固态硬盘升级</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="activity/ob/index-taishijsj_taishijsj_z00001.html"
-                                                               target="_blank"
-                                                               latag="latag_pc_common_navcategory_763_台式机整机升级">台式机整机升级</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/95030.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_764_拯救者灯效升级">拯救者灯效升级</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="product/1004553.html" target="_blank"
-                                                               latag="latag_pc_common_navcategory_765_笔记本升级套装">笔记本升级套装</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="list_rt">
-                                                <a href="product/100785.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p1.lefile.cn/product/adminweb/2019/05/08/23d27887-5450-4fb8-97ae-80338b47eb4c.jpg"></a>
-                                                <a href="product/1003768.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p3.lefile.cn/product/adminweb/2018/12/04/91d54c2f-e813-47cc-8447-465d90c28918.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                @endforeach
                             </ul>
                             <div class="jsurl hid_rx">//m1.lefile.cn/comp/js/classification.js?version=1</div>
                         </div>
@@ -7707,11 +6396,6 @@
                             <em>明星
                                 <br>单品</em></a>
                     </li>
-                    <!--<li class="ns_line"></li>
-          <li class="hunter">
-          <a href="#J-like-box" data-scroll="#J-like-box">
-          <span class="myicon ns_like"></span><em>猜你<br>喜欢</em></a>
-          </li>-->
                     <li class="ns_line hunter"></li>
                     <li>
                         <a href="" data-scroll="#J-computer-box">
