@@ -64,7 +64,7 @@ class AdsTypeController extends Controller
      */
     public function store(Request $request){
         //接受数据
-        $tid = $request->input('tid');
+        $tid   = $request->input('tid');
         $title = $request->input('title');
         $img   = $request->input('img');
         $href  = $request->input('href');
@@ -124,10 +124,12 @@ class AdsTypeController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit($id){
+        // 获取菜单列表数据
         $data1 = DB::table('dzushop_types')
             ->select(DB::raw('dzushop_types.*, concat(path,id) p'))
             ->orderBy("p","asc")
             ->get();
+        // 处理获取菜单数据进行格式化输出
         foreach ($data1 as $key => $value){
             // 将分类进行判断处理，判断该分类为几级分类
             $arr = explode(',', $value->path);
@@ -138,6 +140,7 @@ class AdsTypeController extends Controller
             // 根据所在几级分类进行封装数据
             $value->html = str_repeat('|----', $size-2).$value->name;
         }
+        // 根据前台数据进行查询对应数据
         $data = DB::table('dzushop_typesAds')
             ->where('id','=',$id)
             ->get();

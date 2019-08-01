@@ -7,14 +7,14 @@
                 <div class="admin-head-left">
                     <a href="/admin"><text class="text-primary">首页</text></a>
                     <text class="text-muted">&nbsp;&nbsp;/&nbsp;&nbsp;</text>
-                    <a href="/admin/ads"><text class="text-primary">广告管理</text></a>
+                    <a href="/admin/adstype"><text class="text-primary">分类广告管理</text></a>
                     <text class="text-muted">&nbsp;&nbsp;/&nbsp;&nbsp;</text>
                     <text class="text-info">修改广告</text>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="admin-head-right">
-                    <a href="/admin/ads">
+                    <a href="/admin/adstype">
                         <button class="btn btn-gradient-primary btn-sm admin-head-btn">返回上一页</button>
                     </a>
                 </div>
@@ -32,16 +32,11 @@
                     <div class="form-group">
                         <label for="InputDescription">商品所属分类：</label>
                         <select name="tid" id="tid" class="form-control">
-                            <option value="">请选择所属分类</option>
                             @foreach($data1 as $value)
-                                @if($value->size == 3)
-                                    @if($value->id == $data->tid)
-                                        <option value="{{ $value->id }}" selected>{{ $value->html }}</option>
-                                    @else
-                                        <option value="{{ $value->id }}">{{ $value->html }}</option>
-                                    @endif
+                                @if($data->tid == $value->id)
+                                    <option selected value="{{ $value->id }}">{{ $value->html }}</option>
                                 @else
-                                    <option disabled value="{{ $value->id }}">{{ $value->html }}</option>
+                                    <option value="{{ $value->id }}">{{ $value->html }}</option>
                                 @endif
                             @endforeach
                         </select>

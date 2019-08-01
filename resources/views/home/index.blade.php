@@ -157,6 +157,273 @@
             cursor: pointer;
         }
     </style>
+    <style type="text/css">
+        .shop_index_floor_l1_r9 body,
+        p,
+        ul,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dl,
+        dd,
+        dt {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: arial, "微软雅黑", sans-serif;
+            font-size: 12px;
+        }
+
+        .shop_index_floor_l1_r9 a {
+            text-decoration: none;
+        }
+
+        .shop_index_floor_l1_r9 .clearfix:after {
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+            font-size: 0;
+            line-height: 0;
+            content: "";
+        }
+
+        .shop_index_floor_l1_r9 .clearfix {
+            zoom: 1;
+        }
+
+        .shop_index_floor_l1_r9 .myicon {
+            display: inline-block;
+            background-image: url({{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }});
+            background-repeat: no-repeat;
+        }
+
+        .shop_index_floor_l1_r9 .floor_label {
+            background-image: url({{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }});
+        }
+
+        .shop_index_floor_l1_r9 .floor {
+            background: #f5f5f5;
+            padding: 30px 0;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section a,
+        .floor_section a:focus {
+            outline: none !important;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section img,
+        .floor_section a img {
+            border: 0;
+            vertical-align: top;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section {
+            width: 1200px;
+            margin: 0 auto 30px;
+            color: #000;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section .floor_title {
+            height: 48px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section .floor_title h3 {
+            float: left;
+            height: 48px;
+            line-height: 48px;
+            font-size: 20px;
+            font-weight: normal;
+            width: 240px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section .floor_links {
+            float: right;
+            width: 960px;
+            text-align: right;
+            padding-top: 20px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section .floor_links a {
+            color: #6f7170;
+            margin-left: 12px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_section .floor_links .floor_more {
+            background-position: -12px -433px;
+            width: 24px;
+            height: 16px;
+            display: inline-block;
+            padding-right: 20px;
+        }
+
+        /*左一右九布局*/
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_img {
+            width: 1200px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_left {
+            float: left;
+            width: 240px;
+            height: 535px;
+            overflow: hidden;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_left img {
+            width: 240px;
+            height: 535px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_right {
+            float: right;
+            width: 960px;
+            border-top: 1px solid #dedede;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item {
+            width: 239px;
+            height: 266px;
+            border-right: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            float: left;
+            position: relative;
+            background: #fff;
+            text-align: center;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item a,
+        .floor_l1_r9 .floor_item_small a {
+            display: block;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_img {
+            overflow: hidden;
+            padding: 12px 0;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_img img {
+            height: 164px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_name,
+        .floor_l1_r9 .floor_item_small .pro_name {
+            font-size: 14px;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_name {
+            padding: 0 14px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_description,
+        .floor_l1_r9 .floor_item_small .pro_description {
+            color: #6f7170;
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_description {
+            padding: 0 12px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_price,
+        .floor_l1_r9 .floor_item_small .pro_price {
+            font-size: 14px;
+            color: #e2231a;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label {
+            display: block;
+            width: 54px;
+            height: 54px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label1 {
+            background-position: 0 -700px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label2 {
+            background-position: 0 -760px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label3 {
+            background-position: 0 -820px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label4 {
+            background-position: 0 -880px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label5 {
+            background-position: 0 -940px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label6 {
+            background-position: 0 -1000px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label7 {
+            background-position: 0 -1060px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label8 {
+            background-position: 0 -1120px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label9 {
+            background-position: 0 -1180px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small {
+            width: 239px;
+            border-right: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            float: left;
+            position: relative;
+            background: #fff;
+            text-align: left;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .small_top {
+            height: 133px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .small_bottom {
+            height: 132px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small .pro_img {
+            float: right;
+            text-align: center;
+            padding: 16px 0;
+            width: 120px;
+            overflow: hidden;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small .pro_img img {
+            height: 100px;
+        }
+
+        .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small .floor_item_txt {
+            float: left;
+            width: 104px;
+            padding: 30px 0 0 15px;
+        }
+    </style>
     <!--[if IE 8]>
     <script src="static/js/idangerous.swiper2.7.6.js"></script>
     <link rel="stylesheet" href="static/css/idangerous.swiper2.7.6.css">
@@ -1773,6 +2040,228 @@
             background: 0 0;
         }
     </style>
+    <style type="text/css">
+        .shop_index_floor_l1_r8 body,
+        p,
+        ul,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        dl,
+        dd,
+        dt {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: arial, "微软雅黑", sans-serif;
+            font-size: 12px;
+        }
+
+        .shop_index_floor_l1_r8 a {
+            text-decoration: none;
+        }
+
+        .shop_index_floor_l1_r8 .clearfix:after {
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+            font-size: 0;
+            line-height: 0;
+            content: "";
+        }
+
+        .shop_index_floor_l1_r8 .clearfix {
+            zoom: 1;
+        }
+
+        .shop_index_floor_l1_r8 .myicon {
+            display: inline-block;
+            background-image: url({{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }});
+            background-repeat: no-repeat;
+        }
+
+        .shop_index_floor_l1_r8 .floor_label {
+            background-image: url({{ asset('static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png') }});
+        }
+
+        .shop_index_floor_l1_r8 .floor {
+            background: #f5f5f5;
+            padding: 30px 0;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section a,
+        .floor_section a:focus {
+            outline: none !important;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section img,
+        .floor_section a img {
+            border: 0;
+            vertical-align: top;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section {
+            width: 1200px;
+            margin: 0 auto 30px;
+            color: #000;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section .floor_title {
+            height: 48px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section .floor_title h3 {
+            float: left;
+            height: 48px;
+            line-height: 48px;
+            font-size: 20px;
+            font-weight: normal;
+            width: 240px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section .floor_links {
+            float: right;
+            width: 960px;
+            text-align: right;
+            padding-top: 20px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section .floor_links a {
+            color: #6f7170;
+            margin-left: 12px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_section .floor_links .floor_more {
+            background-position: -12px -433px;
+            width: 24px;
+            height: 16px;
+            display: inline-block;
+            padding-right: 20px;
+        }
+
+        /*左一右八布局*/
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_img {
+            width: 1200px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left {
+            float: left;
+            width: 240px;
+            height: 535px;
+            overflow: hidden;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left img {
+            width: 240px;
+            height: 535px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_right {
+            float: right;
+            width: 960px;
+            border-top: 1px solid #dedede;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item {
+            width: 239px;
+            height: 266px;
+            border-right: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            float: left;
+            position: relative;
+            background: #fff;
+            text-align: center;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item a {
+            display: block;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img {
+            overflow: hidden;
+            padding: 12px 0;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img img {
+            height: 164px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_name {
+            font-size: 14px;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+            padding: 0 14px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_description {
+            color: #6f7170;
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            padding: 0 12px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_price {
+            font-size: 14px;
+            color: #e2231a;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label {
+            display: block;
+            width: 54px;
+            height: 54px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label1 {
+            background-position: 0 -700px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label2 {
+            background-position: 0 -760px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label3 {
+            background-position: 0 -820px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label4 {
+            background-position: 0 -880px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label5 {
+            background-position: 0 -940px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label6 {
+            background-position: 0 -1000px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label7 {
+            background-position: 0 -1060px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label8 {
+            background-position: 0 -1120px;
+        }
+
+        .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label9 {
+            background-position: 0 -1180px;
+        }
+    </style>
+
 </head>
 <body>
 <div pageid='' pageuuid='03a43c26-56d2-43a8-b89a-378dfe727abe' type="0">
@@ -1783,10 +2272,13 @@
             <div componentid='11ae77bb-9914-4336-89e7-9dba391939bf' componentuuid='efe4f827-66c3-42fa-abf2-fff6376b0d3c'
                  type="3" componentaddsrc="css">
                 <div class="header_2018 clear_rx">
+                    {{--商城Logo开始--}}
                     <div id="lenovo_logo">
                         <a href="Index1.html" target="_parent" latag="latag_pc_logo">
                             <img src="static/picture/2d4534f6-29f3-4a05-8e68-97d9904c.png" alt="lenovo.com.cn"></a>
                     </div>
+                    {{--商城Logo结束--}}
+                    {{--顶部导航开始--}}
                     <div class="header_nav">
                         <div class="content">
                             <ul class="ul_nav">
@@ -1961,6 +2453,8 @@
                             </div>
                         </div>
                     </div>
+                    {{--顶部导航结束--}}
+                    {{--顶部二级导航开始--}}
                     <div class="header_box">
                         <ul class="ul">
                             <li class="lis">
@@ -2021,111 +2515,8 @@
                                 <img src="static/picture/dc5504f9-d4f7-4aea-b3ff-6a6bda55.png" alt=""></div>
                         </div>
                     </div>
-                    <!-- 新人礼包 -->
-                    <div class="popup_newguy_gift" style="display: none;">
-                        <i class="popup_corner popupLeftTop"></i>
-                        <i class="popup_corner popupRightTop"></i>
-                        <i class="popup_corner popupLeftBottom"></i>
-                        <i class="popup_corner popupRightBottom"></i>
-                        <i class="popup_cross"></i>
-                        <i class="popup_package"></i>
-                        <i class="getPackageText">恭喜您获得新人礼包</i>
-                        <div class="popup_cart_wrap">
-                            <div id="popup_cart_contain">
-                                <div id="popup_cart_scrollBar">
-                                    <div id="popup_cart_content"></div>
-                                </div>
-                            </div>
-                            <div id="popup_cart_scrollbar_line">
-                                <div id="popup_cart_scrollbtn" style="display: none;"></div>
-                            </div>
-                        </div>
-                        <a href="" class="goToMemberCent">前往会员中心查看</a>
-                    </div>
+                    {{--顶部二级导航结束--}}
                 </div>
-                <div class="hold_header"></div>
-                <div class="sort">
-                    <div class="sort-list">
-                        <ul>
-                            <li class="">
-                                <a class="sort-list-1"></a>
-                                <ul class="list1">
-                                    <li class="zli1">
-                                        <b class="borderred"></b>
-                                    </li>
-                                    <li class="zli2" style="display:none">
-                                        <b class="borderred"></b>
-                                    </li>
-                                    <li class="zli3" style="display:none">
-                                        <b class="borderred"></b>
-                                    </li>
-                                    <li class="zli4" style="display:none">
-                                        <b class="borderred"></b>
-                                    </li>
-                                    <li class="zli5" style="display:none">
-                                        <b class="borderred"></b>
-                                    </li>
-                                    <li class="zli6" style="display:none">
-                                        <b class="borderred"></b>
-                                    </li>
-                                    <li class="zli7" style="display:none">
-                                        <b class="borderred"></b>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="">
-                                <a href="" class="sort-list-2"></a>
-                                <ul class="list2">
-                                    <a href="home/index-1.html" style="display: inline"
-                                       latag="latag_pc_common_right_2_https://srv.lenovo.com.cn/home/index.do?sd=1">
-                                        <li class="zli8">
-                                            <b class="borderred"></b>
-                                        </li>
-                                    </a>
-                                    <a href="lenovo/h325.html" style="display: inline"
-                                       latag="latag_pc_common_right_2_http://robot.lenovo.com.cn/lenovo/?channel=H325">
-                                        <li class="zli9">
-                                            <b class="borderred"></b>
-                                        </li>
-                                    </a>
-                                    <a href="javascript:window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=4009868999&aty=0&a=0&curl=&ty=1');"
-                                       style="display: none"
-                                       latag="latag_pc_common_right_2_http://crm2.qq.com/page/portalpage/wpa.php?uin=4009868999&aty=0&a=0&curl=&ty=1">
-                                        <li class="zli10">
-                                            <b class="borderred"></b>
-                                        </li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li class="">
-                                <a href="Index4.html" class="sort-list-3"
-                                   latag="latag_pc_common_right_3_https://mall.lenovo.com.cn"></a>
-                            </li>
-                            <li class="">
-                                <a href="tucao/lenovo/tucao.html" class="sort-list-4"
-                                   latag="latag_pc_common_right_4_https://c.lenovo.com.cn/tucao/lenovo/tucao.html"></a>
-                            </li>
-                            <li class="">
-                                <a href="" class="sort-list-5"></a>
-                                <ul class="webh">
-                                    <li class="zli11"></li>
-                                </ul>
-                            </li>
-                            <li class="firstenter">
-                                <a class="sort-list-7"></a>
-                                <div class="list_regist">
-                                    <a class="zli71"
-                                       href="javascript:window.open('https://reg.lenovo.com.cn/auth/member/getCard?ticket=a1e5a048-ae13-4a6f-90ba-648e4bd38230');"></a>
-                                </div>
-                            </li>
-                            <li class="">
-                                <a href="javascript:" class="sort-list-6"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div style="text-align:center;clear:both"></div>
-                <script src="static/js/la.cookie.no.leid.getcookie.2019.js"></script>
             </div>
         </div>
     </div>
@@ -2137,6 +2528,7 @@
     <div class="shop_banner_c floor_cntr" bid="b_homepc_00121" ptype="3">
         <div class="nav_top piece_cntr back_h300 fixed along noremove" f_h="406"
              fid="04ae3025-466a-40ea-b076-62c4c228742e" ordnum="5">
+            {{--banner大图开始--}}
             <div class="banner2017060401 piece shoppc_index_banner_1920_406 btn_cntr_in_piece" datatype="2" sort="0"
                  b_i="1920,406,100">
                 <div id="xiaoxin_div">
@@ -2187,12 +2579,11 @@
                                                 @endforeach
                                             </div>
                                             <div class="list_rt">
-                                                <a href="product/1005308.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p2.lefile.cn/product/adminweb/2019/07/25/68b81b3a-e043-4535-9c81-ce496d9a8580.jpg"></a>
-                                                <a href="xiaofei/zjzxp/index.html">
-                                                    <img class="classification_img" src="static/picture/tempimage.gif"
-                                                         _src="https://p3.lefile.cn/product/adminweb/2019/07/24/d471a331-41ee-4679-b81a-028d9ad660aa.jpg"></a>
+                                                @foreach($one->rightAds as $rightads)
+                                                <a href="{{ $rightads->href }}">
+                                                    <img class="classification_img" src="{{ url($rightads->img) }}" alt="{{ $rightads->title }}">
+                                                </a>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -2205,6 +2596,7 @@
                 </div>
             </div>
             <div class="wrap1200 relative" style="width:100%;">
+                {{--明星单品上方导航栏开始--}}
                 <div style="width:1200px;margin:0 auto" class="shop_mainhot_c floor_cntr" bid="b_homepc_00151" ptype="2"
                      floor_max_num="30">
                     <div class="piece_cntr back_h300 fixed along noremove config_btn_show"
@@ -2213,19 +2605,15 @@
                             <div id="quick-link" class="btn_cntr_in_piece" datatype="5" sort="0" b_i="36,36,20">
                                 <ul style="font-size: 0;">
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_1_https://reg.lenovo.com.cn/auth/member/getCard?ticket=6396bb53-c6bd-439b-92d2-3f162776cdef"
-                                           href="javascript:window.open('https://reg.lenovo.com.cn/auth/member/getCard?ticket=6396bb53-c6bd-439b-92d2-3f162776cdef');"
-                                           target="_blank">
-                                            <img src="static/picture/933dd26e-6c29-4b4a-af31-5564dc35.png"
-                                                 class="cur_img">
+                                        <a href="#" target="_blank">
+                                            <img src="static/picture/933dd26e-6c29-4b4a-af31-5564dc35.png" class="cur_img">
                                             <img src="static/picture/bad26f63-5656-46b3-a20d-7f190ce9.png"
                                                  class="hover_img" style="display: none;">
                                             <p>会员福利</p>
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_2_https://shop.lenovo.com.cn/mycenter/coupon.html"
-                                           href="mycenter/coupon.html" target="_blank">
+                                        <a href="#" target="_blank">
                                             <img src="static/picture/d5b3a1d0-c475-4780-98d8-f2955618.png"
                                                  class="cur_img">
                                             <img src="static/picture/947f8425-65d3-464f-8eee-acd71613.png"
@@ -2234,8 +2622,7 @@
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_3_http://support.lenovo.com.cn/lenovo/wsi/Modules/NewDrive.aspx"
-                                           href="lenovo/wsi/modules/newdrive.html" target="_blank">
+                                        <a                                         href="#" target="_blank">
                                             <img src="static/picture/d0bd2d77-3ec6-430d-bde5-17f76f0d.png"
                                                  class="cur_img">
                                             <img src="static/picture/cc876eb2-87b0-4aaa-bda3-e41cb86c.png"
@@ -2244,8 +2631,8 @@
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_4_https://shop.lenovo.com.cn/xiaoxin.html"
-                                           href="xiaoxin.html" target="_blank">
+                                        <a
+                                           href="#" target="_blank">
                                             <img src="static/picture/13cce9d5-93f2-46f9-806f-e8d9d15b.png"
                                                  class="cur_img">
                                             <img src="static/picture/b27b4810-156a-4f7a-bdca-f7871486.png"
@@ -2254,8 +2641,8 @@
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_5_https://activity.lenovo.com.cn/zjz.html"
-                                           href="zjz.html" target="_blank">
+                                        <a
+                                           href="#" target="_blank">
                                             <img src="static/picture/a9a066ed-a8e6-45c6-a8d1-49ff43b7.png"
                                                  class="cur_img">
                                             <img src="static/picture/c617f448-8f0d-47bf-abb0-20e9bf57.png"
@@ -2264,8 +2651,8 @@
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_6_https://thinkpad.lenovo.com.cn/thinkshop_index.html"
-                                           href="thinkshop_index.html" target="_blank">
+                                        <a
+                                           href="#" target="_blank">
                                             <img src="static/picture/c431d883-f57c-43ad-b3e7-f7535a21.png"
                                                  class="cur_img">
                                             <img src="static/picture/b5e75562-b651-44a7-b15e-24ee3071.png"
@@ -2274,8 +2661,8 @@
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_7_https://activity.lenovo.com.cn/activity/moto/phone/index.html"
-                                           href="activity/moto/phone/index.html" target="_blank">
+                                        <a
+                                           href="#" target="_blank">
                                             <img src="static/picture/f090e662-843a-4d06-a195-3ecd10f0.png"
                                                  class="cur_img">
                                             <img src="static/picture/48503e0e-c342-453d-8bf6-7fe8e7e1.png"
@@ -2284,8 +2671,8 @@
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_8_https://shop.lenovo.com.cn/lecoo.html?ss=0.2171571784732318&frompage=home"
-                                           href="lecoo-0.2171571784732318_home.html" target="_blank">
+                                        <a
+                                           href="#" target="_blank">
                                             <img src="static/picture/71b9b032-41c1-4690-a724-94a3db22.png"
                                                  class="cur_img">
                                             <img src="static/picture/3eedc66f-dc6f-4f15-8437-44ed819d.png"
@@ -2294,8 +2681,8 @@
                                         </a>
                                     </li>
                                     <li class="qukuai">
-                                        <a latag="latag_pc_common_mid_9_https://activity.lenovo.com.cn/xiaoyuan.html"
-                                           href="xiaoyuan.html" target="_blank">
+                                        <a
+                                           href="#" target="_blank">
                                             <img src="static/picture/c87fd931-39ea-4c03-99ce-2afa3b56.png"
                                                  class="cur_img">
                                             <img src="static/picture/7fb52d2e-21e0-430a-ada1-6878579e.png"
@@ -2309,6 +2696,8 @@
                         </div>
                     </div>
                 </div>
+                {{--明星单品上方导航栏结束--}}
+                {{--明星商品开始--}}
                 <div class="shop_mainhot_c floor_cntr nav_floor_item" id="J-star-box" bid="b_homepc_0016" ptype="2"
                      floor_max_num="3">
                     <div class="piece_cntr back_h300 fixed along noremove config_btn_show"
@@ -2330,14 +2719,14 @@
                                         </div>
                                         <div class="box_right btn_cntr_in_piece" datatype="3" sort="1" mulitydata="1"
                                              b_i="208,208,10">
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p1_1000193">
-                                                <a target="_blank" href="product/1000193.html">
-                                                    <img src="static/picture/eAOJb7LE7J2CI34yqqdyccihY-8063.w.jpg"
-                                                         alt="联想 T24v 23.8英寸 人脸识别摄像头 内置扬声器 升降旋转显示器"></a>
+                                            @foreach($data['goods'] as $value_goods)
+                                            <div class="box_goods">
+                                                <a target="_blank" href="#">
+                                                    <img src="{{ url($value_goods->img) }}"
+                                                         alt="{{ $value_goods->title }}"></a>
                                                 <div class="goods_price">
-                                                    <a href="product/1000193.html">
-                                                        <h3>联想 T24v 23.8英寸 人脸识别摄像头 内置扬声器 升降旋转显示器</h3>
+                                                    <a href="#">
+                                                        <h3>{{ $value_goods->title }}</h3>
                                                         <p>
                                                         </p>
                                                     </a>
@@ -2346,762 +2735,23 @@
                                                             <p>
                                                                 <span class="price" style="color:#df2634 "
                                                                       gcode="1000193">
-                                                                    <a target="_blank" href="product/1000193.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
+                                                                    <a target="_blank" href="#"
+                                                                       class="red price buy_price" controller="fn1">
+                                                                        ￥{{ number_format($value_goods->price) }}元
+                                                                    </a>
                                                                 </span>
-                                                                <span class="old_price" style="color:#767676"></span>
+                                                                <span class="old_price" style="color:#767676">
+                                                                    <del>￥{{ number_format($value_goods->price + 200) }}元</del>
+                                                                </span>
                                                             </p>
                                                         </div>
                                                         <div class="price_right">
-                                                            <a href="product/1000193.html" buycode="1000193">立即购买</a>
+                                                            <a href="#" buycode="1000193">立即购买</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p1_1003597">
-                                                <a target="_blank" href="product/1003597.html">
-                                                    <img src="static/picture/amLLYqw1GGQRZoHiCJKYk4tzR-6950.w.jpg"
-                                                         alt="联想S5 Pro GT 6GB+64GB 晶耀黑"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1003597.html">
-                                                        <h3>联想S5 Pro GT 6GB+64GB 晶耀黑</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1003597">
-                                                                    <a target="_blank" href="product/1003597.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1003597.html" buycode="1003597">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p1_58941">
-                                                <a target="_blank" href="product/58941.html">
-                                                    <img src="static/picture/ZYHI37gPcwTd6a4ASB78Hjrj8-9430.w.jpg"
-                                                         alt="YOGA Tab3 Pro-X90Y 10.1英寸 投影平板 英特尔凌动X5 WIFI 黑色"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/58941.html">
-                                                        <h3>YOGA Tab3 Pro-X90Y 10.1英寸 投影平板 英特尔凌动X5 WIFI 黑色</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="58941">
-                                                                    <a target="_blank" href="product/58941.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/58941.html" buycode="58941">立即购买</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p1_1002955">
-                                                <a target="_blank" href="product/1002955.html">
-                                                    <img src="static/picture/KN1h36kkuY1o1X2t5Zy0keo7P-4532.w.jpg"
-                                                         alt="联想智能插座"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1002955.html">
-                                                        <h3>联想智能插座</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1002955">
-                                                                    <a target="_blank" href="product/1002955.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1002955.html" buycode="1002955">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide swiper-no-swiping">
-                                        <div class="box_left">
-                                            <div class="secod">
-                                                <div class="secod_radio">
-                                                    <span>今日</span>
-                                                    <span>秒杀</span></div>
-                                            </div>
-                                            <div class="timestar">2019-07-25 23:59</div>
-                                            <div class="coupontext">本场距离结束还剩</div>
-                                            <div class="coupostart">即将开始</div>
-                                            <div class="counttime">2019-07-25 21:00</div>
-                                        </div>
-                                        <div class="box_right btn_cntr_in_piece" datatype="3" sort="2" mulitydata="1"
-                                             b_i="208,208,10">
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p2_1003633">
-                                                <a target="_blank" href="product/1003633.html">
-                                                    <img src="static/picture/aiTO13qT8TPzFui0NEbV87rVB-0636.w.jpg"
-                                                         alt="联想Z5 Pro GT 855版 8GB+128GB 碳纤黑"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1003633.html">
-                                                        <h3>联想Z5 Pro GT 855版 8GB+128GB 碳纤黑</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1003633">
-                                                                    <a target="_blank" href="product/1003633.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1003633.html" buycode="1003633">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p2_1004598">
-                                                <a target="_blank" href="product/1004598.html">
-                                                    <img src="static/picture/DHqM1iw9Sx988u1nzivlHKrOw-7835.w.jpg"
-                                                         alt="联想Type-C扩展坞网线接口转换器 LX0801 Pro"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1004598.html">
-                                                        <h3>联想Type-C扩展坞网线接口转换器 LX0801 Pro</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1004598">
-                                                                    <a target="_blank" href="product/1004598.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1004598.html" buycode="1004598">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p2_1000423">
-                                                <a target="_blank" href="product/1000423.html">
-                                                    <img src="static/picture/GAqbbHlEDHvpibziRepx4qf75-8244.w.jpg"
-                                                         alt="联想HC10车载充电器 灰色"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1000423.html">
-                                                        <h3>联想HC10车载充电器 灰色</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1000423">
-                                                                    <a target="_blank" href="product/1000423.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1000423.html" buycode="1000423">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p2_100477">
-                                                <a target="_blank" href="product/100477.html">
-                                                    <img src="static/picture/kZ7NWbgTR6RIbPLzUtx3xnQhS-1937.w.jpg"
-                                                         alt="联想USB-C电源适配器（45W）"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/100477.html">
-                                                        <h3>联想USB-C电源适配器（45W）</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="100477">
-                                                                    <a target="_blank" href="product/100477.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/100477.html" buycode="100477">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide swiper-no-swiping">
-                                        <div class="box_left">
-                                            <div class="secod">
-                                                <div class="secod_radio">
-                                                    <span>今日</span>
-                                                    <span>秒杀</span></div>
-                                            </div>
-                                            <div class="timestar">2019-07-26 14:00</div>
-                                            <div class="coupontext">本场距离结束还剩</div>
-                                            <div class="coupostart">即将开始</div>
-                                            <div class="counttime">2019-07-26 10:00</div>
-                                        </div>
-                                        <div class="box_right btn_cntr_in_piece" datatype="3" sort="3" mulitydata="1"
-                                             b_i="208,208,10">
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p3_1003913">
-                                                <a target="_blank" href="product/1003913.html">
-                                                    <img src="static/picture/Bup1c5BMJer6KSTpOxhaRkQu7-1579.w.jpg"
-                                                         alt="ideacentre AIO 520C-24ICB 23.8英寸一体台式机 白色"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1003913.html">
-                                                        <h3>ideacentre AIO 520C-24ICB 23.8英寸一体台式机 白色</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1003913">
-                                                                    <a target="_blank" href="product/1003913.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1003913.html" buycode="1003913">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p3_95656">
-                                                <a target="_blank" href="product/95656.html">
-                                                    <img src="static/picture/LcuHd7PF4OhvQb0IZ21jwaZcl-3273.w.jpg"
-                                                         alt="ThinkCentre E95z 英特尔赛扬 一体台式机"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/95656.html">
-                                                        <h3>ThinkCentre E95z 英特尔赛扬 一体台式机</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="95656">
-                                                                    <a target="_blank" href="product/95656.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/95656.html" buycode="95656">立即购买</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p3_1002905">
-                                                <a target="_blank" href="product/1002905.html">
-                                                    <img src="static/picture/vvlj3UKDSI9Ddjs5a6iEVSzTI-8886.w.jpg"
-                                                         alt="联想K5 Pro 6GB+128GB 格调黑"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1002905.html">
-                                                        <h3>联想K5 Pro 6GB+128GB 格调黑</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1002905">
-                                                                    <a target="_blank" href="product/1002905.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1002905.html" buycode="1002905">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p3_1000819">
-                                                <a target="_blank" href="product/1000819.html">
-                                                    <img src="static/picture/gTmYVtKlS76rM5UTOVXqrn50L-8383.w.jpg"
-                                                         alt="联想 小新平板 10.1英寸 X804F WIFI版 香槟金"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1000819.html">
-                                                        <h3>联想 小新平板 10.1英寸 X804F WIFI版 香槟金</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1000819">
-                                                                    <a target="_blank" href="product/1000819.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1000819.html" buycode="1000819">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide swiper-no-swiping">
-                                        <div class="box_left">
-                                            <div class="secod">
-                                                <div class="secod_radio">
-                                                    <span>今日</span>
-                                                    <span>秒杀</span></div>
-                                            </div>
-                                            <div class="timestar">2019-07-26 18:00</div>
-                                            <div class="coupontext">本场距离结束还剩</div>
-                                            <div class="coupostart">即将开始</div>
-                                            <div class="counttime">2019-07-26 14:00</div>
-                                        </div>
-                                        <div class="box_right btn_cntr_in_piece" datatype="3" sort="4" mulitydata="1"
-                                             b_i="208,208,10">
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p4_99322">
-                                                <a target="_blank" href="product/99322.html">
-                                                    <img src="static/picture/7qYuElFfoDleDOggzBHkNYW5J-6142.w.jpg"
-                                                         alt="ideacentre 510A-15IKL 分体台式机 黑色"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/99322.html">
-                                                        <h3>ideacentre 510A-15IKL 分体台式机 黑色</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="99322">
-                                                                    <a target="_blank" href="product/99322.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/99322.html" buycode="99322">立即购买</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p4_1004515">
-                                                <a target="_blank" href="product/1004515.html">
-                                                    <img src="static/picture/9VO943gEjx34xEd1m4Z0dUStJ-2904.w.jpg"
-                                                         alt="ThinkCentre E74 英特尔酷睿i3 台式机 10KSA008CD"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1004515.html">
-                                                        <h3>ThinkCentre E74 英特尔酷睿i3 台式机 10KSA008CD</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1004515">
-                                                                    <a target="_blank" href="product/1004515.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1004515.html" buycode="1004515">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p4_1004705">
-                                                <a target="_blank" href="product/1004705.html">
-                                                    <img src="static/picture/JfVfIqfQUiUOJixosFDyF4ITc-0309.w.jpg"
-                                                         alt="联想Z6 青春版 4GB+64GB 幻彩星尘"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1004705.html">
-                                                        <h3>联想Z6 青春版 4GB+64GB 幻彩星尘</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1004705">
-                                                                    <a target="_blank" href="product/1004705.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1004705.html" buycode="1004705">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p4_1000185">
-                                                <a target="_blank" href="product/1000185.html">
-                                                    <img src="static/picture/MfBYFWbfp9Hptmi3vHGGHvZnv-3543.w.jpg"
-                                                         alt="联想（ThinkVision）T22v 21.5英寸 升降旋转显示器"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1000185.html">
-                                                        <h3>联想（ThinkVision）T22v 21.5英寸 升降旋转显示器</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1000185">
-                                                                    <a target="_blank" href="product/1000185.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1000185.html" buycode="1000185">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide swiper-no-swiping">
-                                        <div class="box_left">
-                                            <div class="secod">
-                                                <div class="secod_radio">
-                                                    <span>今日</span>
-                                                    <span>秒杀</span></div>
-                                            </div>
-                                            <div class="timestar">2019-07-26 21:00</div>
-                                            <div class="coupontext">本场距离结束还剩</div>
-                                            <div class="coupostart">即将开始</div>
-                                            <div class="counttime">2019-07-26 18:00</div>
-                                        </div>
-                                        <div class="box_right btn_cntr_in_piece" datatype="3" sort="5" mulitydata="1"
-                                             b_i="208,208,10">
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p5_1003510">
-                                                <a target="_blank" href="product/1003510.html">
-                                                    <img src="static/picture/M30WKP7hnSg0aiv7K4dCWlCor-7696.w.jpg"
-                                                         alt="thinkplus Pods One蓝牙运动耳机（珊瑚红）"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1003510.html">
-                                                        <h3>thinkplus Pods One蓝牙运动耳机（珊瑚红）</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1003510">
-                                                                    <a target="_blank" href="product/1003510.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1003510.html" buycode="1003510">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p5_1003597">
-                                                <a target="_blank" href="product/1003597.html">
-                                                    <img src="static/picture/amLLYqw1GGQRZoHiCJKYk4tzR-6950.w.jpg"
-                                                         alt="联想S5 Pro GT 6GB+64GB 晶耀黑"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1003597.html">
-                                                        <h3>联想S5 Pro GT 6GB+64GB 晶耀黑</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1003597">
-                                                                    <a target="_blank" href="product/1003597.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1003597.html" buycode="1003597">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p5_58306">
-                                                <a target="_blank" href="product/58306.html">
-                                                    <img src="static/picture/UKXd8YTceKWbT6Kw3HStbyXNd-4864.w.jpg"
-                                                         alt="MIIX 4(MIIX 700)二合一笔记本 12英寸 英特尔酷睿m7 金色 旗舰版"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/58306.html">
-                                                        <h3>MIIX 4(MIIX 700)二合一笔记本 12英寸 英特尔酷睿m7 金色 旗舰版</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="58306">
-                                                                    <a target="_blank" href="product/58306.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/58306.html" buycode="58306">立即购买</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p5_1000243">
-                                                <a target="_blank" href="product/1000243.html">
-                                                    <img src="static/picture/aSX6OA3SrDEJEFw973gNMeeNt-5007.w.jpg"
-                                                         alt="联想Lecoo“倍爱宝”宝宝成长记录仪A1"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1000243.html">
-                                                        <h3>联想Lecoo“倍爱宝”宝宝成长记录仪A1</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1000243">
-                                                                    <a target="_blank" href="product/1000243.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1000243.html" buycode="1000243">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide swiper-no-swiping">
-                                        <div class="box_left">
-                                            <div class="secod">
-                                                <div class="secod_radio">
-                                                    <span>今日</span>
-                                                    <span>秒杀</span></div>
-                                            </div>
-                                            <div class="timestar">2019-07-26 23:59</div>
-                                            <div class="coupontext">本场距离结束还剩</div>
-                                            <div class="coupostart">即将开始</div>
-                                            <div class="counttime">2019-07-26 21:00</div>
-                                        </div>
-                                        <div class="box_right btn_cntr_in_piece" datatype="3" sort="6" mulitydata="1"
-                                             b_i="208,208,10">
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p6_1003599">
-                                                <a target="_blank" href="product/1003599.html">
-                                                    <img src="static/picture/dMNDjAqABGRi7o6yGashOadZh-5968.w.jpg"
-                                                         alt="联想Z5s 6GB+64GB 星夜灰"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1003599.html">
-                                                        <h3>联想Z5s 6GB+64GB 星夜灰</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1003599">
-                                                                    <a target="_blank" href="product/1003599.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1003599.html" buycode="1003599">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p6_100477">
-                                                <a target="_blank" href="product/100477.html">
-                                                    <img src="static/picture/kZ7NWbgTR6RIbPLzUtx3xnQhS-1937.w.jpg"
-                                                         alt="联想USB-C电源适配器（45W）"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/100477.html">
-                                                        <h3>联想USB-C电源适配器（45W）</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="100477">
-                                                                    <a target="_blank" href="product/100477.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/100477.html" buycode="100477">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p6_1001690">
-                                                <a target="_blank" href="product/1001690.html">
-                                                    <img src="static/picture/dCLXJMLSDk4fYwqdTlIEDFt5I-4664.w.jpg"
-                                                         alt="联想20L梦幻迷你冷暖箱 女生美颜小梦箱 男生肥宅欢乐箱 金色"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1001690.html">
-                                                        <h3>联想20L梦幻迷你冷暖箱 女生美颜小梦箱 男生肥宅欢乐箱 金色</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1001690">
-                                                                    <a target="_blank" href="product/1001690.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1001690.html" buycode="1001690">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box_goods"
-                                                 latag="latag_home_MD532_16c890fa-6e60-4655-8a4b-175570e5a316_p6_1000722">
-                                                <a target="_blank" href="product/1000722.html">
-                                                    <img src="static/picture/hHZWvdQag4iAsIK60f3Qis8xR-6441.w.jpg"
-                                                         alt="联想火辣椒无线投影仪 T3   黑色"></a>
-                                                <div class="goods_price">
-                                                    <a href="product/1000722.html">
-                                                        <h3>联想火辣椒无线投影仪 T3 黑色</h3>
-                                                        <p>
-                                                        </p>
-                                                    </a>
-                                                    <div class="price_box">
-                                                        <div class="price_left">
-                                                            <p>
-                                                                <span class="price" style="color:#df2634 "
-                                                                      gcode="1000722">
-                                                                    <a target="_blank" href="product/1000722.html"
-                                                                       class="red price buy_price"
-                                                                       controller="fn1"></a>
-                                                                </span>
-                                                                <span class="old_price" style="color:#767676"></span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="price_right">
-                                                            <a href="product/1000722.html" buycode="1000722">立即购买</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>
@@ -3132,3248 +2782,73 @@
                         </div>
                     </div>
                 </div>
+                {{--明星商品结束--}}
             </div>
             <div style="background:#f5f5f5;padding:30px 0;min-width: 1200px;">
                 <div class="wrap1200">
-                    <div class="floor_cntr nav_floor_item" id="J-computer-box" bid="b_homepc_fl_0001" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="9f1edcb1-6b77-4863-8a4b-ef1d77bd3087" ordnum="7">
-                            <div class="piece shop_index_floor_l1_r8">
-                                <style type="text/css">
-                                    .shop_index_floor_l1_r8 body,
-                                    p,
-                                    ul,
-                                    h1,
-                                    h2,
-                                    h3,
-                                    h4,
-                                    h5,
-                                    h6,
-                                    dl,
-                                    dd,
-                                    dt {
-                                        margin: 0;
-                                        padding: 0;
-                                        list-style: none;
-                                        font-family: arial, "微软雅黑", sans-serif;
-                                        font-size: 12px;
-                                    }
+                    @php
+                        $i = 0;
+                    @endphp
+                    @foreach($data['types'] as $lou)
+                        @if($lou->is_lou == 0)
+                            <div class="floor_cntr nav_floor_item" id="J-computer-box" bid="b_homepc_fl_0001" ptype="2">
+                                <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
+                                     fid="9f1edcb1-6b77-4863-8a4b-ef1d77bd3087" ordnum="7">
+                                    <div class="piece shop_index_floor_l1_r8">
 
-                                    .shop_index_floor_l1_r8 a {
-                                        text-decoration: none;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix:after {
-                                        display: block;
-                                        clear: both;
-                                        height: 0;
-                                        visibility: hidden;
-                                        font-size: 0;
-                                        line-height: 0;
-                                        content: "";
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix {
-                                        zoom: 1;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .myicon {
-                                        display: inline-block;
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                        background-repeat: no-repeat;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_label {
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor {
-                                        background: #f5f5f5;
-                                        padding: 30px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section a,
-                                    .floor_section a:focus {
-                                        outline: none !important;
-                                        text-decoration: none;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section img,
-                                    .floor_section a img {
-                                        border: 0;
-                                        vertical-align: top;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section {
-                                        width: 1200px;
-                                        margin: 0 auto 30px;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title {
-                                        height: 48px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title h3 {
-                                        float: left;
-                                        height: 48px;
-                                        line-height: 48px;
-                                        font-size: 20px;
-                                        font-weight: normal;
-                                        width: 240px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links {
-                                        float: right;
-                                        width: 960px;
-                                        text-align: right;
-                                        padding-top: 20px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links a {
-                                        color: #6f7170;
-                                        margin-left: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links .floor_more {
-                                        background-position: -12px -433px;
-                                        width: 24px;
-                                        height: 16px;
-                                        display: inline-block;
-                                        padding-right: 20px;
-                                    }
-
-                                    /*左一右八布局*/
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_img {
-                                        width: 1200px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left {
-                                        float: left;
-                                        width: 240px;
-                                        height: 535px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left img {
-                                        width: 240px;
-                                        height: 535px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_right {
-                                        float: right;
-                                        width: 960px;
-                                        border-top: 1px solid #dedede;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item {
-                                        width: 239px;
-                                        height: 266px;
-                                        border-right: 1px solid #dedede;
-                                        border-bottom: 1px solid #dedede;
-                                        float: left;
-                                        position: relative;
-                                        background: #fff;
-                                        text-align: center;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item a {
-                                        display: block;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img {
-                                        overflow: hidden;
-                                        padding: 12px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img img {
-                                        height: 164px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_name {
-                                        font-size: 14px;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                        padding: 0 14px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_description {
-                                        color: #6f7170;
-                                        height: 20px;
-                                        line-height: 20px;
-                                        overflow: hidden;
-                                        padding: 0 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_price {
-                                        font-size: 14px;
-                                        color: #e2231a;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label {
-                                        display: block;
-                                        width: 54px;
-                                        height: 54px;
-                                        position: absolute;
-                                        right: 0;
-                                        top: 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label1 {
-                                        background-position: 0 -700px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label2 {
-                                        background-position: 0 -760px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label3 {
-                                        background-position: 0 -820px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label4 {
-                                        background-position: 0 -880px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label5 {
-                                        background-position: 0 -940px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label6 {
-                                        background-position: 0 -1000px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label7 {
-                                        background-position: 0 -1060px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label8 {
-                                        background-position: 0 -1120px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label9 {
-                                        background-position: 0 -1180px;
-                                    }
-                                </style>
-                                <div class="floor_section floor_l1_r8">
-                                    <div class="floor_title clearfix">
-                                        <h3>1F Lenovo 电脑</h3>
-                                        <div class="floor_links">
-                                            <a target="_blank" href="index-yoga.html" title="YOGA系列">YOGA系列</a>
-                                            <a target="_blank" href="293-294-296.html" title="小新系列">小新系列</a>
-                                            <a target="_blank" href="293-294-297.html" title="拯救者系列">拯救者系列</a>
-                                            <a target="_blank" href="aio.html" title="AIO系列">AIO系列</a>
-                                            <a href="lenovopc/index.html" target="_blank" title=""
-                                               class="myicon floor_more">更多</a></div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank" href="xiaofei/zjzxp/index.html"
-                                               latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p2.lefile.cn/product/adminweb/2019/07/19/8150c46c-c0fc-4054-9fe3-4f7a5b3b6cf8.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004456.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p2_1004456"
-                                                   title="拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/04/26/caOZnluiEWuHMv8wVPH5XIEDA-0222.w164.jpg"
-                                                         alt="拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004456.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p2_1004456"
-                                                   title="拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色"
-                                                   class="pro_name">拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色</a>
-                                                <a target="_blank" href="product/1004456.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p2_1004456"
-                                                   title="拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004456">
-                                                    <a target="_blank" href="product/1004456.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p2_1004456"
-                                                       title="拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label1"></span>
+                                        <div class="floor_section floor_l1_r8">
+                                            <div class="floor_title clearfix">
+                                                @php
+                                                    $i++;
+                                                @endphp
+                                                <h3>{{ $i }}F {{ $lou->name }}</h3>
+                                                <div class="floor_links">
+                                                    <a target="_blank" href="#" title="YOGA系列">YOGA系列</a>
+                                                    <a href="#" target="_blank" title=""
+                                                       class="myicon floor_more">更多</a></div>
                                             </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004581.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p3_1004581"
-                                                   title="拯救者 Y7000P 2019 英特尔酷睿i7 15.6英寸专业电竞本 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/08/QA4QIX6F3ammXibeUCJvNLmzr-9612.w164.jpg"
-                                                         alt="拯救者 Y7000P 2019 英特尔酷睿i7 15.6英寸专业电竞本 黑色"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004581.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p3_1004581"
-                                                   title="拯救者 Y7000P 2019 英特尔酷睿i7 15.6英寸专业电竞本 黑色" class="pro_name">拯救者
-                                                    Y7000P 2019 英特尔酷睿i7 15.6英寸专业电竞本 黑色</a>
-                                                <a target="_blank" href="product/1004581.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p3_1004581"
-                                                   title="拯救者 Y7000P 2019 英特尔酷睿i7 15.6英寸专业电竞本 黑色"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004581">
-                                                    <a target="_blank" href="product/1004581.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p3_1004581"
-                                                       title="拯救者 Y7000P 2019 英特尔酷睿i7 15.6英寸专业电竞本 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004892.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p4_1004892"
-                                                   title="拯救者 Y7000 2019高色域 英特尔酷睿i7 15.6英寸游戏笔记本 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/04/26/lyjdWl3RhEg3NAKnTnso1xrBB-4234.w164.jpg"
-                                                         alt="拯救者 Y7000 2019高色域 英特尔酷睿i7 15.6英寸游戏笔记本 黑色"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004892.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p4_1004892"
-                                                   title="拯救者 Y7000 2019高色域 英特尔酷睿i7 15.6英寸游戏笔记本 黑色"
-                                                   class="pro_name">拯救者 Y7000 2019高色域 英特尔酷睿i7 15.6英寸游戏笔记本 黑色</a>
-                                                <a target="_blank" href="product/1004892.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p4_1004892"
-                                                   title="拯救者 Y7000 2019高色域 英特尔酷睿i7 15.6英寸游戏笔记本 黑色"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004892">
-                                                    <a target="_blank" href="product/1004892.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p4_1004892"
-                                                       title="拯救者 Y7000 2019高色域 英特尔酷睿i7 15.6英寸游戏笔记本 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004464.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p5_1004464"
-                                                   title="拯救者 Y7000P 2019 英特尔酷睿i5 15.6英寸专业电竞本 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/04/26/69rvmOTNYuwrVL9EJF4NdVm1Q-1885.w164.jpg"
-                                                         alt="拯救者 Y7000P 2019 英特尔酷睿i5 15.6英寸专业电竞本 黑色"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004464.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p5_1004464"
-                                                   title="拯救者 Y7000P 2019 英特尔酷睿i5 15.6英寸专业电竞本 黑色" class="pro_name">拯救者
-                                                    Y7000P 2019 英特尔酷睿i5 15.6英寸专业电竞本 黑色</a>
-                                                <a target="_blank" href="product/1004464.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p5_1004464"
-                                                   title="拯救者 Y7000P 2019 英特尔酷睿i5 15.6英寸专业电竞本 黑色"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004464">
-                                                    <a target="_blank" href="product/1004464.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p5_1004464"
-                                                       title="拯救者 Y7000P 2019 英特尔酷睿i5 15.6英寸专业电竞本 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004611.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p6_1004611"
-                                                   title="小新 14 英特尔酷睿i5 14.0英寸轻薄笔记本 渣渣灰" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/05/09/Bs1ZoLJm09XDHFRagWdfqZNYR-0424.w164.jpg"
-                                                         alt="小新 14 英特尔酷睿i5 14.0英寸轻薄笔记本 渣渣灰" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004611.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p6_1004611"
-                                                   title="小新 14 英特尔酷睿i5 14.0英寸轻薄笔记本 渣渣灰" class="pro_name">小新 14 英特尔酷睿i5
-                                                    14.0英寸轻薄笔记本 渣渣灰</a>
-                                                <a target="_blank" href="product/1004611.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p6_1004611"
-                                                   title="小新 14 英特尔酷睿i5 14.0英寸轻薄笔记本 渣渣灰" class="pro_description"></a>
-                                                <p class="prod" gcode="1004611">
-                                                    <a target="_blank" href="product/1004611.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p6_1004611"
-                                                       title="小新 14 英特尔酷睿i5 14.0英寸轻薄笔记本 渣渣灰"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004699.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p7_1004699"
-                                                   title="2019款 小新 Air 15 15.6英寸超轻薄笔记本 轻奢灰" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/23/MKhpiTd0tsY73ll5rg3mX3nDU-9661.w164.jpg"
-                                                         alt="2019款 小新 Air 15 15.6英寸超轻薄笔记本 轻奢灰" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004699.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p7_1004699"
-                                                   title="2019款 小新 Air 15 15.6英寸超轻薄笔记本 轻奢灰" class="pro_name">2019款 小新
-                                                    Air 15 15.6英寸超轻薄笔记本 轻奢灰</a>
-                                                <a target="_blank" href="product/1004699.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p7_1004699"
-                                                   title="2019款 小新 Air 15 15.6英寸超轻薄笔记本 轻奢灰"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004699">
-                                                    <a target="_blank" href="product/1004699.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p7_1004699"
-                                                       title="2019款 小新 Air 15 15.6英寸超轻薄笔记本 轻奢灰"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004352.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p8_1004352"
-                                                   title="小新 Air 14 2019款 14.0英寸超轻薄笔记本 轻奢灰" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/04/02/zyOzpMof6NKmZ44dvX4HeucX3-0940.w164.jpg"
-                                                         alt="小新 Air 14 2019款 14.0英寸超轻薄笔记本 轻奢灰" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004352.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p8_1004352"
-                                                   title="小新 Air 14 2019款 14.0英寸超轻薄笔记本 轻奢灰" class="pro_name">小新 Air 14
-                                                    2019款 14.0英寸超轻薄笔记本 轻奢灰</a>
-                                                <a target="_blank" href="product/1004352.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p8_1004352"
-                                                   title="小新 Air 14 2019款 14.0英寸超轻薄笔记本 轻奢灰"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004352">
-                                                    <a target="_blank" href="product/1004352.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p8_1004352"
-                                                       title="小新 Air 14 2019款 14.0英寸超轻薄笔记本 轻奢灰"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="9"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004803.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p9_1004803"
-                                                   title="小新 青春版 英特尔酷睿i7 14.0英寸 轻薄窄边框笔记本 追梦银" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/05/29/GzwT3c29L2AfTpMZ6g8tmItss-4328.w164.jpg"
-                                                         alt="小新 青春版 英特尔酷睿i7 14.0英寸 轻薄窄边框笔记本 追梦银" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004803.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p9_1004803"
-                                                   title="小新 青春版 英特尔酷睿i7 14.0英寸 轻薄窄边框笔记本 追梦银" class="pro_name">小新 青春版
-                                                    英特尔酷睿i7 14.0英寸 轻薄窄边框笔记本 追梦银</a>
-                                                <a target="_blank" href="product/1004803.html"
-                                                   latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p9_1004803"
-                                                   title="小新 青春版 英特尔酷睿i7 14.0英寸 轻薄窄边框笔记本 追梦银"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004803">
-                                                    <a target="_blank" href="product/1004803.html"
-                                                       latag="latag_home_MD532_9f1edcb1-6b77-4863-8a4b-ef1d77bd3087_p9_1004803"
-                                                       title="小新 青春版 英特尔酷睿i7 14.0英寸 轻薄窄边框笔记本 追梦银"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floor_cntr nav_floor_item" id="J-Mobile-box" bid="b_homepc_fl_0003" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="ac0a7aed-aecf-429d-8adb-287a88d89e1a" ordnum="10">
-                            <div class="piece shop_index_floor_l1_r8">
-                                <style type="text/css">
-                                    .shop_index_floor_l1_r8 body,
-                                    p,
-                                    ul,
-                                    h1,
-                                    h2,
-                                    h3,
-                                    h4,
-                                    h5,
-                                    h6,
-                                    dl,
-                                    dd,
-                                    dt {
-                                        margin: 0;
-                                        padding: 0;
-                                        list-style: none;
-                                        font-family: arial, "微软雅黑", sans-serif;
-                                        font-size: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 a {
-                                        text-decoration: none;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix:after {
-                                        display: block;
-                                        clear: both;
-                                        height: 0;
-                                        visibility: hidden;
-                                        font-size: 0;
-                                        line-height: 0;
-                                        content: "";
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix {
-                                        zoom: 1;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .myicon {
-                                        display: inline-block;
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                        background-repeat: no-repeat;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_label {
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor {
-                                        background: #f5f5f5;
-                                        padding: 30px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section a,
-                                    .floor_section a:focus {
-                                        outline: none !important;
-                                        text-decoration: none;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section img,
-                                    .floor_section a img {
-                                        border: 0;
-                                        vertical-align: top;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section {
-                                        width: 1200px;
-                                        margin: 0 auto 30px;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title {
-                                        height: 48px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title h3 {
-                                        float: left;
-                                        height: 48px;
-                                        line-height: 48px;
-                                        font-size: 20px;
-                                        font-weight: normal;
-                                        width: 240px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links {
-                                        float: right;
-                                        width: 960px;
-                                        text-align: right;
-                                        padding-top: 20px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links a {
-                                        color: #6f7170;
-                                        margin-left: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links .floor_more {
-                                        background-position: -12px -433px;
-                                        width: 24px;
-                                        height: 16px;
-                                        display: inline-block;
-                                        padding-right: 20px;
-                                    }
-
-                                    /*左一右八布局*/
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_img {
-                                        width: 1200px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left {
-                                        float: left;
-                                        width: 240px;
-                                        height: 535px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left img {
-                                        width: 240px;
-                                        height: 535px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_right {
-                                        float: right;
-                                        width: 960px;
-                                        border-top: 1px solid #dedede;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item {
-                                        width: 239px;
-                                        height: 266px;
-                                        border-right: 1px solid #dedede;
-                                        border-bottom: 1px solid #dedede;
-                                        float: left;
-                                        position: relative;
-                                        background: #fff;
-                                        text-align: center;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item a {
-                                        display: block;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img {
-                                        overflow: hidden;
-                                        padding: 12px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img img {
-                                        height: 164px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_name {
-                                        font-size: 14px;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                        padding: 0 14px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_description {
-                                        color: #6f7170;
-                                        height: 20px;
-                                        line-height: 20px;
-                                        overflow: hidden;
-                                        padding: 0 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_price {
-                                        font-size: 14px;
-                                        color: #e2231a;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label {
-                                        display: block;
-                                        width: 54px;
-                                        height: 54px;
-                                        position: absolute;
-                                        right: 0;
-                                        top: 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label1 {
-                                        background-position: 0 -700px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label2 {
-                                        background-position: 0 -760px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label3 {
-                                        background-position: 0 -820px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label4 {
-                                        background-position: 0 -880px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label5 {
-                                        background-position: 0 -940px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label6 {
-                                        background-position: 0 -1000px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label7 {
-                                        background-position: 0 -1060px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label8 {
-                                        background-position: 0 -1120px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label9 {
-                                        background-position: 0 -1180px;
-                                    }
-                                </style>
-                                <div class="floor_section floor_l1_r8">
-                                    <div class="floor_title clearfix">
-                                        <h3>2F Lenovo 台式机</h3>
-                                        <div class="floor_links">
-                                            <a target="_blank" href="search/aioE7B3BBE58897.html"
-                                               title="AIO系列">AIO系列</a>
-                                            <a target="_blank" href="search/E58883E7B3BBE58897.html" title="刃系列">刃系列</a>
-                                            <a target="_blank" href="search/20geek20proE7B3BBE58897.html"
-                                               title="GeekPro系列">GeekPro系列</a>
-                                            <a target="_blank" href="search/box.html" title="BOX系列">BOX系列</a>
-                                            <a href="search/E58FB0E5BC8FE69CBA.html" target="_blank" title=""
-                                               class="myicon floor_more">更多</a></div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank" href="xiaofei/717gaming.index.html"
-                                               latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p4.lefile.cn/product/adminweb/2019/07/19/28339c61-8952-44d9-91ec-94ecae80ad66.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004469.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p2_1004469"
-                                                   title="拯救者 刃7000 3代 分体台式机 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/04/22/iif3pCt0xvN61I1HiGTfWEBOP-7962.w164.jpg"
-                                                         alt="拯救者 刃7000 3代 分体台式机 黑色" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004469.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p2_1004469"
-                                                   title="拯救者 刃7000 3代 分体台式机 黑色" class="pro_name">拯救者 刃7000 3代 分体台式机
-                                                    黑色</a>
-                                                <a target="_blank" href="product/1004469.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p2_1004469"
-                                                   title="拯救者 刃7000 3代 分体台式机 黑色"
-                                                   class="pro_description">GTX1660Ti显卡，散热升级ITC2.0</a>
-                                                <p class="prod" gcode="1004469">
-                                                    <a target="_blank" href="product/1004469.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p2_1004469"
-                                                       title="拯救者 刃7000 3代 分体台式机 黑色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004468.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p3_1004468"
-                                                   title="联想GeekPro 分体式台式机" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/04/21/5Mlsw4dty4S3w6pB2w8hDkJtx-7038.w164.jpg"
-                                                         alt="联想GeekPro 分体式台式机" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004468.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p3_1004468"
-                                                   title="联想GeekPro 分体式台式机" class="pro_name">联想GeekPro 分体式台式机</a>
-                                                <a target="_blank" href="product/1004468.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p3_1004468"
-                                                   title="联想GeekPro 分体式台式机" class="pro_description">1650显卡 强大图形处理能力</a>
-                                                <p class="prod" gcode="1004468">
-                                                    <a target="_blank" href="product/1004468.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p3_1004468"
-                                                       title="联想GeekPro 分体式台式机" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label1"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1005111.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p4_1005111"
-                                                   title="AIO 520X 23.8英寸一体台式机 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="https://p4.lefile.cn/product/adminweb/2019/07/16/f0f12adf-b8b4-46fc-ad40-904bdd70c8fa.jpg"
-                                                         alt="AIO 520X 23.8英寸一体台式机 黑色" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1005111.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p4_1005111"
-                                                   title="AIO 520X 23.8英寸一体台式机 黑色" class="pro_name">AIO 520X
-                                                    23.8英寸一体台式机 黑色</a>
-                                                <a target="_blank" href="product/1005111.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p4_1005111"
-                                                   title="AIO 520X 23.8英寸一体台式机 黑色"
-                                                   class="pro_description">四边微边框全面屏,100%sRGB高色域</a>
-                                                <p class="prod" gcode="1005111">
-                                                    <a target="_blank" href="product/1005111.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p4_1005111"
-                                                       title="AIO 520X 23.8英寸一体台式机 黑色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004683.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p5_1004683"
-                                                   title="AIO 520C 21.5英寸一体台式机 白色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/05/31/D7jCNPt3Kme4pCOygBbTPtEPw-8422.w164.jpg"
-                                                         alt="AIO 520C 21.5英寸一体台式机 白色" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004683.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p5_1004683"
-                                                   title="AIO 520C 21.5英寸一体台式机 白色" class="pro_name">AIO 520C
-                                                    21.5英寸一体台式机 白色</a>
-                                                <a target="_blank" href="product/1004683.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p5_1004683"
-                                                   title="AIO 520C 21.5英寸一体台式机 白色"
-                                                   class="pro_description">高色域窄边框，内置无线网卡</a>
-                                                <p class="prod" gcode="1004683">
-                                                    <a target="_blank" href="product/1004683.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p5_1004683"
-                                                       title="AIO 520C 21.5英寸一体台式机 白色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1005176.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p6_1005176"
-                                                   title="联想GeekPro 分体式台式机" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/07/17/hZtvLQwboghsJFbvWxTvqKnZX-1738.w164.jpg"
-                                                         alt="联想GeekPro 分体式台式机" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1005176.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p6_1005176"
-                                                   title="联想GeekPro 分体式台式机" class="pro_name">联想GeekPro 分体式台式机</a>
-                                                <a target="_blank" href="product/1005176.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p6_1005176"
-                                                   title="联想GeekPro 分体式台式机" class="pro_description"></a>
-                                                <p class="prod" gcode="1005176">
-                                                    <a target="_blank" href="product/1005176.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p6_1005176"
-                                                       title="联想GeekPro 分体式台式机" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004279.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p7_1004279"
-                                                   title="AIO 520C-24ICB 英特尔酷睿i5 23.8英寸一体台式机 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/03/26/vJI16LWF56GA1V6dTFtNs6POV-1909.w164.jpg"
-                                                         alt="AIO 520C-24ICB 英特尔酷睿i5 23.8英寸一体台式机 黑色"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004279.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p7_1004279"
-                                                   title="AIO 520C-24ICB 英特尔酷睿i5 23.8英寸一体台式机 黑色" class="pro_name">AIO
-                                                    520C-24ICB 英特尔酷睿i5 23.8英寸一体台式机 黑色</a>
-                                                <a target="_blank" href="product/1004279.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p7_1004279"
-                                                   title="AIO 520C-24ICB 英特尔酷睿i5 23.8英寸一体台式机 黑色"
-                                                   class="pro_description">高色域 窄边框,轻松扩展</a>
-                                                <p class="prod" gcode="1004279">
-                                                    <a target="_blank" href="product/1004279.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p7_1004279"
-                                                       title="AIO 520C-24ICB 英特尔酷睿i5 23.8英寸一体台式机 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004755.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p8_1004755"
-                                                   title="天逸510Pro 分体式台式机" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/05/31/4DUKYDZGml5LFC9Bait4BNTZQ-7418.w164.jpg"
-                                                         alt="天逸510Pro 分体式台式机" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004755.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p8_1004755"
-                                                   title="天逸510Pro 分体式台式机" class="pro_name">天逸510Pro 分体式台式机</a>
-                                                <a target="_blank" href="product/1004755.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p8_1004755"
-                                                   title="天逸510Pro 分体式台式机" class="pro_description">九代处理器，双硬盘</a>
-                                                <p class="prod" gcode="1004755">
-                                                    <a target="_blank" href="product/1004755.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p8_1004755"
-                                                       title="天逸510Pro 分体式台式机" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="9"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1005068.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p9_1005068"
-                                                   title="拯救者 刃9000 分体台式机 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/05/16/mCgrY8TUpbl7Qz1MD78n3nFSR-9384.w164.jpg"
-                                                         alt="拯救者 刃9000 分体台式机 黑色" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1005068.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p9_1005068"
-                                                   title="拯救者 刃9000 分体台式机 黑色" class="pro_name">拯救者 刃9000 分体台式机 黑色</a>
-                                                <a target="_blank" href="product/1005068.html"
-                                                   latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p9_1005068"
-                                                   title="拯救者 刃9000 分体台式机 黑色"
-                                                   class="pro_description">第九代不锁频处理器，1T大容量SSD</a>
-                                                <p class="prod" gcode="1005068">
-                                                    <a target="_blank" href="product/1005068.html"
-                                                       latag="latag_home_MD532_ac0a7aed-aecf-429d-8adb-287a88d89e1a_p9_1005068"
-                                                       title="拯救者 刃9000 分体台式机 黑色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floor_cntr nav_floor_item" id="J-Think-box" bid="b_homepc_fl_0002" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="c0a80e57-d488-4f19-b169-8e101a8e4e4f" ordnum="8">
-                            <div class="piece shop_index_floor_l1_r8">
-                                <style type="text/css">
-                                    .shop_index_floor_l1_r8 body,
-                                    p,
-                                    ul,
-                                    h1,
-                                    h2,
-                                    h3,
-                                    h4,
-                                    h5,
-                                    h6,
-                                    dl,
-                                    dd,
-                                    dt {
-                                        margin: 0;
-                                        padding: 0;
-                                        list-style: none;
-                                        font-family: arial, "微软雅黑", sans-serif;
-                                        font-size: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 a {
-                                        text-decoration: none;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix:after {
-                                        display: block;
-                                        clear: both;
-                                        height: 0;
-                                        visibility: hidden;
-                                        font-size: 0;
-                                        line-height: 0;
-                                        content: "";
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix {
-                                        zoom: 1;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .myicon {
-                                        display: inline-block;
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                        background-repeat: no-repeat;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_label {
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor {
-                                        background: #f5f5f5;
-                                        padding: 30px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section a,
-                                    .floor_section a:focus {
-                                        outline: none !important;
-                                        text-decoration: none;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section img,
-                                    .floor_section a img {
-                                        border: 0;
-                                        vertical-align: top;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section {
-                                        width: 1200px;
-                                        margin: 0 auto 30px;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title {
-                                        height: 48px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title h3 {
-                                        float: left;
-                                        height: 48px;
-                                        line-height: 48px;
-                                        font-size: 20px;
-                                        font-weight: normal;
-                                        width: 240px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links {
-                                        float: right;
-                                        width: 960px;
-                                        text-align: right;
-                                        padding-top: 20px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links a {
-                                        color: #6f7170;
-                                        margin-left: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links .floor_more {
-                                        background-position: -12px -433px;
-                                        width: 24px;
-                                        height: 16px;
-                                        display: inline-block;
-                                        padding-right: 20px;
-                                    }
-
-                                    /*左一右八布局*/
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_img {
-                                        width: 1200px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left {
-                                        float: left;
-                                        width: 240px;
-                                        height: 535px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left img {
-                                        width: 240px;
-                                        height: 535px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_right {
-                                        float: right;
-                                        width: 960px;
-                                        border-top: 1px solid #dedede;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item {
-                                        width: 239px;
-                                        height: 266px;
-                                        border-right: 1px solid #dedede;
-                                        border-bottom: 1px solid #dedede;
-                                        float: left;
-                                        position: relative;
-                                        background: #fff;
-                                        text-align: center;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item a {
-                                        display: block;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img {
-                                        overflow: hidden;
-                                        padding: 12px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img img {
-                                        height: 164px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_name {
-                                        font-size: 14px;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                        padding: 0 14px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_description {
-                                        color: #6f7170;
-                                        height: 20px;
-                                        line-height: 20px;
-                                        overflow: hidden;
-                                        padding: 0 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_price {
-                                        font-size: 14px;
-                                        color: #e2231a;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label {
-                                        display: block;
-                                        width: 54px;
-                                        height: 54px;
-                                        position: absolute;
-                                        right: 0;
-                                        top: 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label1 {
-                                        background-position: 0 -700px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label2 {
-                                        background-position: 0 -760px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label3 {
-                                        background-position: 0 -820px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label4 {
-                                        background-position: 0 -880px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label5 {
-                                        background-position: 0 -940px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label6 {
-                                        background-position: 0 -1000px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label7 {
-                                        background-position: 0 -1060px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label8 {
-                                        background-position: 0 -1120px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label9 {
-                                        background-position: 0 -1180px;
-                                    }
-                                </style>
-                                <div class="floor_section floor_l1_r8">
-                                    <div class="floor_title clearfix">
-                                        <h3>3F 手机</h3>
-                                        <div class="floor_links">
-                                            <a target="_blank" href="phone.html" title="联想手机">联想手机</a>
-                                            <a target="_blank"
-                                               href="javascript:window.open('https://www.motorola.com.cn/');"
-                                               title="Moto">Moto</a>
-                                            <a href="phone.html" target="_blank" title=""
-                                               class="myicon floor_more">更多</a></div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank" href="product/1004705.html"
-                                               latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p1.lefile.cn/product/adminweb/2019/07/25/62e1b3b3-9f32-4127-bf37-887c76755d8a.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1005039.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p2_1005039"
-                                                   title="联想Z6 6GB+64GB 蓝色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/07/25/FAfMvAHi0tnuAnFSrk2bgTdoH-2864.w164.jpg"
-                                                         alt="联想Z6 6GB+64GB 蓝色" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1005039.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p2_1005039"
-                                                   title="联想Z6 6GB+64GB 蓝色" class="pro_name">联想Z6 6GB+64GB 蓝色</a>
-                                                <a target="_blank" href="product/1005039.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p2_1005039"
-                                                   title="联想Z6 6GB+64GB 蓝色" class="pro_description">骁龙730旗舰处理器 |
-                                                    屏幕指纹</a>
-                                                <p class="prod" gcode="1005039">
-                                                    <a target="_blank" href="product/1005039.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p2_1005039"
-                                                       title="联想Z6 6GB+64GB 蓝色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004388.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p3_1004388"
-                                                   title="联想Z6 Pro 6GB+128GB 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/07/25/4Svuim0AYPIg6TOouRKfcRGlW-1350.w164.jpg"
-                                                         alt="联想Z6 Pro 6GB+128GB 黑色" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004388.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p3_1004388"
-                                                   title="联想Z6 Pro 6GB+128GB 黑色" class="pro_name">联想Z6 Pro 6GB+128GB
-                                                    黑色</a>
-                                                <a target="_blank" href="product/1004388.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p3_1004388"
-                                                   title="联想Z6 Pro 6GB+128GB 黑色" class="pro_description">超级视频AI四摄 |
-                                                    骁龙855旗舰处理器</a>
-                                                <p class="prod" gcode="1004388">
-                                                    <a target="_blank" href="product/1004388.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p3_1004388"
-                                                       title="联想Z6 Pro 6GB+128GB 黑色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1002905.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p4_1002905"
-                                                   title="联想K5 Pro 6GB+128GB 格调黑" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/07/25/vvlj3UKDSI9Ddjs5a6iEVSzTI-8886.w164.jpg"
-                                                         alt="联想K5 Pro 6GB+128GB 格调黑" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1002905.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p4_1002905"
-                                                   title="联想K5 Pro 6GB+128GB 格调黑" class="pro_name">联想K5 Pro 6GB+128GB
-                                                    格调黑</a>
-                                                <a target="_blank" href="product/1002905.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p4_1002905"
-                                                   title="联想K5 Pro 6GB+128GB 格调黑" class="pro_description">4050 mAh大电池 |
-                                                    6英寸FHD+全面屏</a>
-                                                <p class="prod" gcode="1002905">
-                                                    <a target="_blank" href="product/1002905.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p4_1002905"
-                                                       title="联想K5 Pro 6GB+128GB 格调黑" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1003597.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p5_1003597"
-                                                   title="联想S5 Pro GT 6GB+64GB 晶耀黑" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/07/26/HtnDAHcmzcN8AalQiE3SRwwmS-0869.w164.JPG"
-                                                         alt="联想S5 Pro GT 6GB+64GB 晶耀黑" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1003597.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p5_1003597"
-                                                   title="联想S5 Pro GT 6GB+64GB 晶耀黑" class="pro_name">联想S5 Pro GT
-                                                    6GB+64GB 晶耀黑</a>
-                                                <a target="_blank" href="product/1003597.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p5_1003597"
-                                                   title="联想S5 Pro GT 6GB+64GB 晶耀黑"
-                                                   class="pro_description">前后2000万AI四摄丨深度相机光学变焦</a>
-                                                <p class="prod" gcode="1003597">
-                                                    <a target="_blank" href="product/1003597.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p5_1003597"
-                                                       title="联想S5 Pro GT 6GB+64GB 晶耀黑" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1003036.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p6_1003036"
-                                                   title="联想Z5 Pro 6GB+64GB 陶瓷黑" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/07/25/z3OIj11QdcgMZOM6LONaxsdaR-3186.w164.jpg"
-                                                         alt="联想Z5 Pro 6GB+64GB 陶瓷黑" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1003036.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p6_1003036"
-                                                   title="联想Z5 Pro 6GB+64GB 陶瓷黑" class="pro_name">联想Z5 Pro 6GB+64GB
-                                                    陶瓷黑</a>
-                                                <a target="_blank" href="product/1003036.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p6_1003036"
-                                                   title="联想Z5 Pro 6GB+64GB 陶瓷黑" class="pro_description">95.06%超级屏占比 |
-                                                    第五代光电屏下指纹</a>
-                                                <p class="prod" gcode="1003036">
-                                                    <a target="_blank" href="product/1003036.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p6_1003036"
-                                                       title="联想Z5 Pro 6GB+64GB 陶瓷黑" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004164.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p7_1004164"
-                                                   title="联想Z5 畅享版 舒曼黑 6GB+64GB" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/07/25/kkYh2lK4HqTq5nZDkLNHP6JP6-3872.w164.jpg"
-                                                         alt="联想Z5 畅享版 舒曼黑 6GB+64GB" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004164.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p7_1004164"
-                                                   title="联想Z5 畅享版 舒曼黑 6GB+64GB" class="pro_name">联想Z5 畅享版 舒曼黑
-                                                    6GB+64GB</a>
-                                                <a target="_blank" href="product/1004164.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p7_1004164"
-                                                   title="联想Z5 畅享版 舒曼黑 6GB+64GB"
-                                                   class="pro_description">6.2英寸靓彩全面屏丨90%屏占比</a>
-                                                <p class="prod" gcode="1004164">
-                                                    <a target="_blank" href="product/1004164.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p7_1004164"
-                                                       title="联想Z5 畅享版 舒曼黑 6GB+64GB" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1003633.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p8_1003633"
-                                                   title="联想Z5 Pro GT 855版 8GB+128GB 碳纤黑" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/07/25/aiTO13qT8TPzFui0NEbV87rVB-0636.w164.jpg"
-                                                         alt="联想Z5 Pro GT 855版 8GB+128GB 碳纤黑" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1003633.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p8_1003633"
-                                                   title="联想Z5 Pro GT 855版 8GB+128GB 碳纤黑" class="pro_name">联想Z5 Pro GT
-                                                    855版 8GB+128GB 碳纤黑</a>
-                                                <a target="_blank" href="product/1003633.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p8_1003633"
-                                                   title="联想Z5 Pro GT 855版 8GB+128GB 碳纤黑"
-                                                   class="pro_description">95.06%屏占比 | 光电屏下指纹</a>
-                                                <p class="prod" gcode="1003633">
-                                                    <a target="_blank" href="product/1003633.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p8_1003633"
-                                                       title="联想Z5 Pro GT 855版 8GB+128GB 碳纤黑"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="9"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1003599.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p9_1003599"
-                                                   title="联想Z5s 6GB+64GB 星夜灰" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/07/25/dMNDjAqABGRi7o6yGashOadZh-5968.w164.jpg"
-                                                         alt="联想Z5s 6GB+64GB 星夜灰" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1003599.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p9_1003599"
-                                                   title="联想Z5s 6GB+64GB 星夜灰" class="pro_name">联想Z5s 6GB+64GB 星夜灰</a>
-                                                <a target="_blank" href="product/1003599.html"
-                                                   latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p9_1003599"
-                                                   title="联想Z5s 6GB+64GB 星夜灰" class="pro_description">后置AI变焦三摄 |
-                                                    92.6%屏占比水滴屏</a>
-                                                <p class="prod" gcode="1003599">
-                                                    <a target="_blank" href="product/1003599.html"
-                                                       latag="latag_home_MD532_c0a80e57-d488-4f19-b169-8e101a8e4e4f_p9_1003599"
-                                                       title="联想Z5s 6GB+64GB 星夜灰" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floor_cntr nav_floor_item" id="J-Tablet-box" bid="b_homepc_fl_0004" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="5891b8a6-229b-4551-b86e-a0d1071aebde" ordnum="9">
-                            <div class="piece shop_index_floor_l1_r8">
-                                <style type="text/css">
-                                    .shop_index_floor_l1_r8 body,
-                                    p,
-                                    ul,
-                                    h1,
-                                    h2,
-                                    h3,
-                                    h4,
-                                    h5,
-                                    h6,
-                                    dl,
-                                    dd,
-                                    dt {
-                                        margin: 0;
-                                        padding: 0;
-                                        list-style: none;
-                                        font-family: arial, "微软雅黑", sans-serif;
-                                        font-size: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 a {
-                                        text-decoration: none;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix:after {
-                                        display: block;
-                                        clear: both;
-                                        height: 0;
-                                        visibility: hidden;
-                                        font-size: 0;
-                                        line-height: 0;
-                                        content: "";
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix {
-                                        zoom: 1;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .myicon {
-                                        display: inline-block;
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                        background-repeat: no-repeat;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_label {
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor {
-                                        background: #f5f5f5;
-                                        padding: 30px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section a,
-                                    .floor_section a:focus {
-                                        outline: none !important;
-                                        text-decoration: none;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section img,
-                                    .floor_section a img {
-                                        border: 0;
-                                        vertical-align: top;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section {
-                                        width: 1200px;
-                                        margin: 0 auto 30px;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title {
-                                        height: 48px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title h3 {
-                                        float: left;
-                                        height: 48px;
-                                        line-height: 48px;
-                                        font-size: 20px;
-                                        font-weight: normal;
-                                        width: 240px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links {
-                                        float: right;
-                                        width: 960px;
-                                        text-align: right;
-                                        padding-top: 20px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links a {
-                                        color: #6f7170;
-                                        margin-left: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links .floor_more {
-                                        background-position: -12px -433px;
-                                        width: 24px;
-                                        height: 16px;
-                                        display: inline-block;
-                                        padding-right: 20px;
-                                    }
-
-                                    /*左一右八布局*/
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_img {
-                                        width: 1200px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left {
-                                        float: left;
-                                        width: 240px;
-                                        height: 535px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left img {
-                                        width: 240px;
-                                        height: 535px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_right {
-                                        float: right;
-                                        width: 960px;
-                                        border-top: 1px solid #dedede;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item {
-                                        width: 239px;
-                                        height: 266px;
-                                        border-right: 1px solid #dedede;
-                                        border-bottom: 1px solid #dedede;
-                                        float: left;
-                                        position: relative;
-                                        background: #fff;
-                                        text-align: center;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item a {
-                                        display: block;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img {
-                                        overflow: hidden;
-                                        padding: 12px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img img {
-                                        height: 164px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_name {
-                                        font-size: 14px;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                        padding: 0 14px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_description {
-                                        color: #6f7170;
-                                        height: 20px;
-                                        line-height: 20px;
-                                        overflow: hidden;
-                                        padding: 0 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_price {
-                                        font-size: 14px;
-                                        color: #e2231a;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label {
-                                        display: block;
-                                        width: 54px;
-                                        height: 54px;
-                                        position: absolute;
-                                        right: 0;
-                                        top: 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label1 {
-                                        background-position: 0 -700px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label2 {
-                                        background-position: 0 -760px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label3 {
-                                        background-position: 0 -820px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label4 {
-                                        background-position: 0 -880px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label5 {
-                                        background-position: 0 -940px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label6 {
-                                        background-position: 0 -1000px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label7 {
-                                        background-position: 0 -1060px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label8 {
-                                        background-position: 0 -1120px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label9 {
-                                        background-position: 0 -1180px;
-                                    }
-                                </style>
-                                <div class="floor_section floor_l1_r8">
-                                    <div class="floor_title clearfix">
-                                        <h3>4F ThinkPad 电脑</h3>
-                                        <div class="floor_links">
-                                            <a target="_blank" href="search/293-295-307.html" title="X1 系列">X1 系列</a>
-                                            <a target="_blank" href="293-295-304.html" title="X系列">X系列</a>
-                                            <a target="_blank" href="293-295-305.html" title="T系列">T系列</a>
-                                            <a target="_blank" href="293-295-306.html" title="E系列">E系列</a>
-                                            <a target="_blank" href="293-295-308.html" title="S系列">S系列</a>
-                                            <a href="Index5.html" target="_blank" title=""
-                                               class="myicon floor_more">更多</a></div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank"
-                                               href="javascript:window.open('https://m.thinkpad.com/wap/active/X1_2019?pmf_source=P0000001403M0003');"
-                                               latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p2.lefile.cn/product/adminweb/2019/07/22/fbc1a75c-46a5-4f09-a066-74c32edd1493.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1005075.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p2_1005075"
-                                                   title="ThinkPad X1 Carbon2019 LTE版英特尔酷睿i5笔记本电脑20QDA00PCD"
-                                                   class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/07/18/Yh5l39r868imKAFyVbET9aDvK-1655.w164.jpg"
-                                                         alt="ThinkPad X1 Carbon2019 LTE版英特尔酷睿i5笔记本电脑20QDA00PCD"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1005075.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p2_1005075"
-                                                   title="ThinkPad X1 Carbon2019 LTE版英特尔酷睿i5笔记本电脑20QDA00PCD"
-                                                   class="pro_name">ThinkPad X1 Carbon2019
-                                                    LTE版英特尔酷睿i5笔记本电脑20QDA00PCD</a>
-                                                <a target="_blank" href="product/1005075.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p2_1005075"
-                                                   title="ThinkPad X1 Carbon2019 LTE版英特尔酷睿i5笔记本电脑20QDA00PCD"
-                                                   class="pro_description">1年流量免费用</a>
-                                                <p class="prod" gcode="1005075">
-                                                    <a target="_blank" href="product/1005075.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p2_1005075"
-                                                       title="ThinkPad X1 Carbon2019 LTE版英特尔酷睿i5笔记本电脑20QDA00PCD"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1005077.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p3_1005077"
-                                                   title="ThinkPad X1 Yoga 2019 英特尔酷睿i5笔记本电脑20QFA006CD水雾灰"
-                                                   class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/07/18/YbydCPQXARfS03Q6PW2BtLhj2-5155.w164.jpg"
-                                                         alt="ThinkPad X1 Yoga 2019 英特尔酷睿i5笔记本电脑20QFA006CD水雾灰"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1005077.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p3_1005077"
-                                                   title="ThinkPad X1 Yoga 2019 英特尔酷睿i5笔记本电脑20QFA006CD水雾灰"
-                                                   class="pro_name">ThinkPad X1 Yoga 2019 英特尔酷睿i5笔记本电脑20QFA006CD水雾灰</a>
-                                                <a target="_blank" href="product/1005077.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p3_1005077"
-                                                   title="ThinkPad X1 Yoga 2019 英特尔酷睿i5笔记本电脑20QFA006CD水雾灰"
-                                                   class="pro_description">6期分期免息轻松购</a>
-                                                <p class="prod" gcode="1005077">
-                                                    <a target="_blank" href="product/1005077.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p3_1005077"
-                                                       title="ThinkPad X1 Yoga 2019 英特尔酷睿i5笔记本电脑20QFA006CD水雾灰"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004444.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p4_1004444"
-                                                   title="ThinkPad X390 4G版 英特尔酷睿i5 笔记本电脑 20Q0A00BCD" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/05/31/400ZmC6Dj6RPFrtvD2H8Q9NYF-0162.w164.jpg"
-                                                         alt="ThinkPad X390 4G版 英特尔酷睿i5 笔记本电脑 20Q0A00BCD"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004444.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p4_1004444"
-                                                   title="ThinkPad X390 4G版 英特尔酷睿i5 笔记本电脑 20Q0A00BCD"
-                                                   class="pro_name">ThinkPad X390 4G版 英特尔酷睿i5 笔记本电脑 20Q0A00BCD</a>
-                                                <a target="_blank" href="product/1004444.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p4_1004444"
-                                                   title="ThinkPad X390 4G版 英特尔酷睿i5 笔记本电脑 20Q0A00BCD"
-                                                   class="pro_description">赠价值249元口红电源</a>
-                                                <p class="prod" gcode="1004444">
-                                                    <a target="_blank" href="product/1004444.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p4_1004444"
-                                                       title="ThinkPad X390 4G版 英特尔酷睿i5 笔记本电脑 20Q0A00BCD"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004339.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p5_1004339"
-                                                   title="ThinkPad T490 英特尔酷睿i5 笔记本电脑 20N2A000CD" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/05/QKNPzo36LFafYVzh7Utz5f3gd-3273.w164.jpg"
-                                                         alt="ThinkPad T490 英特尔酷睿i5 笔记本电脑 20N2A000CD"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004339.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p5_1004339"
-                                                   title="ThinkPad T490 英特尔酷睿i5 笔记本电脑 20N2A000CD"
-                                                   class="pro_name">ThinkPad T490 英特尔酷睿i5 笔记本电脑 20N2A000CD</a>
-                                                <a target="_blank" href="product/1004339.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p5_1004339"
-                                                   title="ThinkPad T490 英特尔酷睿i5 笔记本电脑 20N2A000CD"
-                                                   class="pro_description">赠价值499元空气净化器</a>
-                                                <p class="prod" gcode="1004339">
-                                                    <a target="_blank" href="product/1004339.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p5_1004339"
-                                                       title="ThinkPad T490 英特尔酷睿i5 笔记本电脑 20N2A000CD"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/100459.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p6_100459"
-                                                   title="ThinkPad E580 27CD" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/31/lcCCktXuvZ6zHK5mOEzdeOqkT-8418.w164.jpg"
-                                                         alt="ThinkPad E580 27CD" class="lazy_img"></a>
-                                                <a target="_blank" href="product/100459.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p6_100459"
-                                                   title="ThinkPad E580 27CD" class="pro_name">ThinkPad E580 27CD</a>
-                                                <a target="_blank" href="product/100459.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p6_100459"
-                                                   title="ThinkPad E580 27CD" class="pro_description">社区晒单，最高送一年延保</a>
-                                                <p class="prod" gcode="100459">
-                                                    <a target="_blank" href="product/100459.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p6_100459"
-                                                       title="ThinkPad E580 27CD" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/100456.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p7_100456"
-                                                   title="ThinkPad E480 英特尔酷睿i5 笔记本电脑 20KNA001CD" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/29/rA3ox40yVAKQzUGESsKBH7Xvl-0802.w164.jpg"
-                                                         alt="ThinkPad E480 英特尔酷睿i5 笔记本电脑 20KNA001CD"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/100456.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p7_100456"
-                                                   title="ThinkPad E480 英特尔酷睿i5 笔记本电脑 20KNA001CD"
-                                                   class="pro_name">ThinkPad E480 英特尔酷睿i5 笔记本电脑 20KNA001CD</a>
-                                                <a target="_blank" href="product/100456.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p7_100456"
-                                                   title="ThinkPad E480 英特尔酷睿i5 笔记本电脑 20KNA001CD"
-                                                   class="pro_description">媒体价5999元，限时秒杀</a>
-                                                <p class="prod" gcode="100456">
-                                                    <a target="_blank" href="product/100456.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p7_100456"
-                                                       title="ThinkPad E480 英特尔酷睿i5 笔记本电脑 20KNA001CD"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/100723.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p8_100723"
-                                                   title="ThinkPad T480 1SCD" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/05/29/Cp468f1xuOI7YvhrnXg56B71e-3139.w164.jpg"
-                                                         alt="ThinkPad T480 1SCD" class="lazy_img"></a>
-                                                <a target="_blank" href="product/100723.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p8_100723"
-                                                   title="ThinkPad T480 1SCD" class="pro_name">ThinkPad T480 1SCD</a>
-                                                <a target="_blank" href="product/100723.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p8_100723"
-                                                   title="ThinkPad T480 1SCD" class="pro_description">双硬盘设计，快速响应</a>
-                                                <p class="prod" gcode="100723">
-                                                    <a target="_blank" href="product/100723.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p8_100723"
-                                                       title="ThinkPad T480 1SCD" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="9"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/95656.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p9_95656"
-                                                   title="ThinkCentre E95z 英特尔赛扬 一体台式机" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/31/LcuHd7PF4OhvQb0IZ21jwaZcl-3273.w164.jpg"
-                                                         alt="ThinkCentre E95z 英特尔赛扬 一体台式机" class="lazy_img"></a>
-                                                <a target="_blank" href="product/95656.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p9_95656"
-                                                   title="ThinkCentre E95z 英特尔赛扬 一体台式机" class="pro_name">ThinkCentre
-                                                    E95z 英特尔赛扬 一体台式机</a>
-                                                <a target="_blank" href="product/95656.html"
-                                                   latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p9_95656"
-                                                   title="ThinkCentre E95z 英特尔赛扬 一体台式机"
-                                                   class="pro_description">赠价值169元无线键鼠套装</a>
-                                                <p class="prod" gcode="95656">
-                                                    <a target="_blank" href="product/95656.html"
-                                                       latag="latag_home_MD532_5891b8a6-229b-4551-b86e-a0d1071aebde_p9_95656"
-                                                       title="ThinkCentre E95z 英特尔赛扬 一体台式机" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floor_cntr nav_floor_item" id="J-Accessories-box" bid="b_homepc_fl_0005" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="073818f8-3519-4f06-bcf1-0d1aee62e147" ordnum="11">
-                            <div class="piece shop_index_floor_l1_r8">
-                                <style type="text/css">
-                                    .shop_index_floor_l1_r8 body,
-                                    p,
-                                    ul,
-                                    h1,
-                                    h2,
-                                    h3,
-                                    h4,
-                                    h5,
-                                    h6,
-                                    dl,
-                                    dd,
-                                    dt {
-                                        margin: 0;
-                                        padding: 0;
-                                        list-style: none;
-                                        font-family: arial, "微软雅黑", sans-serif;
-                                        font-size: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 a {
-                                        text-decoration: none;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix:after {
-                                        display: block;
-                                        clear: both;
-                                        height: 0;
-                                        visibility: hidden;
-                                        font-size: 0;
-                                        line-height: 0;
-                                        content: "";
-                                    }
-
-                                    .shop_index_floor_l1_r8 .clearfix {
-                                        zoom: 1;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .myicon {
-                                        display: inline-block;
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                        background-repeat: no-repeat;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_label {
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor {
-                                        background: #f5f5f5;
-                                        padding: 30px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section a,
-                                    .floor_section a:focus {
-                                        outline: none !important;
-                                        text-decoration: none;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section img,
-                                    .floor_section a img {
-                                        border: 0;
-                                        vertical-align: top;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section {
-                                        width: 1200px;
-                                        margin: 0 auto 30px;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title {
-                                        height: 48px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_title h3 {
-                                        float: left;
-                                        height: 48px;
-                                        line-height: 48px;
-                                        font-size: 20px;
-                                        font-weight: normal;
-                                        width: 240px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links {
-                                        float: right;
-                                        width: 960px;
-                                        text-align: right;
-                                        padding-top: 20px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links a {
-                                        color: #6f7170;
-                                        margin-left: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_section .floor_links .floor_more {
-                                        background-position: -12px -433px;
-                                        width: 24px;
-                                        height: 16px;
-                                        display: inline-block;
-                                        padding-right: 20px;
-                                    }
-
-                                    /*左一右八布局*/
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_img {
-                                        width: 1200px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left {
-                                        float: left;
-                                        width: 240px;
-                                        height: 535px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_left img {
-                                        width: 240px;
-                                        height: 535px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_right {
-                                        float: right;
-                                        width: 960px;
-                                        border-top: 1px solid #dedede;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item {
-                                        width: 239px;
-                                        height: 266px;
-                                        border-right: 1px solid #dedede;
-                                        border-bottom: 1px solid #dedede;
-                                        float: left;
-                                        position: relative;
-                                        background: #fff;
-                                        text-align: center;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item a {
-                                        display: block;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img {
-                                        overflow: hidden;
-                                        padding: 12px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_img img {
-                                        height: 164px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_name {
-                                        font-size: 14px;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                        padding: 0 14px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_description {
-                                        color: #6f7170;
-                                        height: 20px;
-                                        line-height: 20px;
-                                        overflow: hidden;
-                                        padding: 0 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .pro_price {
-                                        font-size: 14px;
-                                        color: #e2231a;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label {
-                                        display: block;
-                                        width: 54px;
-                                        height: 54px;
-                                        position: absolute;
-                                        right: 0;
-                                        top: 0;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label1 {
-                                        background-position: 0 -700px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label2 {
-                                        background-position: 0 -760px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label3 {
-                                        background-position: 0 -820px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label4 {
-                                        background-position: 0 -880px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label5 {
-                                        background-position: 0 -940px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label6 {
-                                        background-position: 0 -1000px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label7 {
-                                        background-position: 0 -1060px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label8 {
-                                        background-position: 0 -1120px;
-                                    }
-
-                                    .shop_index_floor_l1_r8 .floor_l1_r8 .floor_item .floor_label9 {
-                                        background-position: 0 -1180px;
-                                    }
-                                </style>
-                                <div class="floor_section floor_l1_r8">
-                                    <div class="floor_title clearfix">
-                                        <h3>5F 平板电脑</h3>
-                                        <div class="floor_links">
-                                            <a target="_blank" href="search/20miixE4BA8CE59088E4B880E7AC94E8.html"
-                                               title="MIIX二合一笔记本">MIIX二合一笔记本</a>
-                                            <a target="_blank" href="326-335-339326-335-340326-335-33.html"
-                                               title="YOGA平板">YOGA平板</a>
-                                            <a target="_blank" href="326-335-844_home_home.html" title="小新平板">小新平板</a>
-                                            <a target="_blank" href="326-335-342_home_home.html" title="常规平板">常规平板</a>
-                                            <a href="pad.html" target="_blank" title="" class="myicon floor_more">更多</a>
-                                        </div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank" href="search/326-335-337-850_home_2.133881162.html"
-                                               latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p3.lefile.cn/product/adminweb/2019/06/10/5db74446-21b9-45d4-9170-0734c7283285.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1003355.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p2_1003355"
-                                                   title="MIIX 520 二合一笔记本 12.2英寸 八代英特尔酷睿i5 星际灰" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2018/11/28/SznCu2q5a3EJqCmSaXpWyWCfg-6066.w164.jpg"
-                                                         alt="MIIX 520 二合一笔记本 12.2英寸 八代英特尔酷睿i5 星际灰" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1003355.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p2_1003355"
-                                                   title="MIIX 520 二合一笔记本 12.2英寸 八代英特尔酷睿i5 星际灰" class="pro_name">MIIX
-                                                    520 二合一笔记本 12.2英寸 八代英特尔酷睿i5 星际灰</a>
-                                                <a target="_blank" href="product/1003355.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p2_1003355"
-                                                   title="MIIX 520 二合一笔记本 12.2英寸 八代英特尔酷睿i5 星际灰"
-                                                   class="pro_description">广色域高清触摸屏</a>
-                                                <p class="prod" gcode="1003355">
-                                                    <a target="_blank" href="product/1003355.html"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p2_1003355"
-                                                       title="MIIX 520 二合一笔记本 12.2英寸 八代英特尔酷睿i5 星际灰"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/97371.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p3_97371"
-                                                   title="MIIX520 二合一笔记本12.2英寸 i7含背光键盘 蓝牙笔 星际灰" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2017/11/09/sPD3d2CnPdDMilToCevMttFWU-6104.w164.jpg"
-                                                         alt="MIIX520 二合一笔记本12.2英寸 i7含背光键盘 蓝牙笔 星际灰" class="lazy_img"></a>
-                                                <a target="_blank" href="product/97371.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p3_97371"
-                                                   title="MIIX520 二合一笔记本12.2英寸 i7含背光键盘 蓝牙笔 星际灰"
-                                                   class="pro_name">MIIX520 二合一笔记本12.2英寸 i7含背光键盘 蓝牙笔 星际灰</a>
-                                                <a target="_blank" href="product/97371.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p3_97371"
-                                                   title="MIIX520 二合一笔记本12.2英寸 i7含背光键盘 蓝牙笔 星际灰"
-                                                   class="pro_description">广色域高清触摸屏</a>
-                                                <p class="prod" gcode="97371">
-                                                    <a target="_blank" href="product/97371.html"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p3_97371"
-                                                       title="MIIX520 二合一笔记本12.2英寸 i7含背光键盘 蓝牙笔 星际灰"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/58306.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p4_58306"
-                                                   title="MIIX 4（MIIX 700） 二合一笔记本 12英寸 旗舰版 金色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/24/3yQzKknVmByt936AyHGXaXSsS-6686.w164.jpg"
-                                                         alt="MIIX 4（MIIX 700） 二合一笔记本 12英寸 旗舰版 金色" class="lazy_img"></a>
-                                                <a target="_blank" href="product/58306.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p4_58306"
-                                                   title="MIIX 4（MIIX 700） 二合一笔记本 12英寸 旗舰版 金色" class="pro_name">MIIX
-                                                    4（MIIX 700） 二合一笔记本 12英寸 旗舰版 金色</a>
-                                                <a target="_blank" href="product/58306.html"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p4_58306"
-                                                   title="MIIX 4（MIIX 700） 二合一笔记本 12英寸 旗舰版 金色"
-                                                   class="pro_description">精致轻薄流畅办公</a>
-                                                <p class="prod" gcode="58306">
-                                                    <a target="_blank" href="product/58306.html"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p4_58306"
-                                                       title="MIIX 4（MIIX 700） 二合一笔记本 12英寸 旗舰版 金色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label6"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000822.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p5_1000822"
-                                                   title="MIIX 320 二合一笔记本 英特尔凌动X5 10.1英寸 4GB 128GB 银色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/05/31/bxFqWUvftCrm6Aak98VDHhnPl-1052.w164.jpg"
-                                                         alt="MIIX 320 二合一笔记本 英特尔凌动X5 10.1英寸 4GB 128GB 银色"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000822.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p5_1000822"
-                                                   title="MIIX 320 二合一笔记本 英特尔凌动X5 10.1英寸 4GB 128GB 银色"
-                                                   class="pro_name">MIIX 320 二合一笔记本 英特尔凌动X5 10.1英寸 4GB 128GB 银色</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000822.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p5_1000822"
-                                                   title="MIIX 320 二合一笔记本 英特尔凌动X5 10.1英寸 4GB 128GB 银色"
-                                                   class="pro_description">轻薄便携磁吸键盘</a>
-                                                <p class="prod" gcode="1000822">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1000822.html');"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p5_1000822"
-                                                       title="MIIX 320 二合一笔记本 英特尔凌动X5 10.1英寸 4GB 128GB 银色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000817.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p6_1000817"
-                                                   title="联想 小新平板 8英寸 8804F WIFI版 香槟金" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/06/25/IyRX0Dyzs0TT1kJrF6dRsprlf-2484.w164.jpg"
-                                                         alt="联想 小新平板 8英寸 8804F WIFI版 香槟金" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000817.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p6_1000817"
-                                                   title="联想 小新平板 8英寸 8804F WIFI版 香槟金" class="pro_name">联想 小新平板 8英寸
-                                                    8804F WIFI版 香槟金</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000817.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p6_1000817"
-                                                   title="联想 小新平板 8英寸 8804F WIFI版 香槟金"
-                                                   class="pro_description">轻巧便携娱乐畅玩</a>
-                                                <p class="prod" gcode="1000817">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1000817.html');"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p6_1000817"
-                                                       title="联想 小新平板 8英寸 8804F WIFI版 香槟金" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label1"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/94280.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p7_94280"
-                                                   title="TAB4 TB-X304N 10.1英寸平板电脑 LTE版 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/03/08/FhyhzZ4nggCOtfwvxjke2jCrK-4536.w164.jpg"
-                                                         alt="TAB4 TB-X304N 10.1英寸平板电脑 LTE版 黑色" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/94280.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p7_94280"
-                                                   title="TAB4 TB-X304N 10.1英寸平板电脑 LTE版 黑色" class="pro_name">TAB4
-                                                    TB-X304N 10.1英寸平板电脑 LTE版 黑色</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/94280.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p7_94280"
-                                                   title="TAB4 TB-X304N 10.1英寸平板电脑 LTE版 黑色"
-                                                   class="pro_description">学习娱乐平板</a>
-                                                <p class="prod" gcode="94280">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/94280.html');"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p7_94280"
-                                                       title="TAB4 TB-X304N 10.1英寸平板电脑 LTE版 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/58519.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p8_58519"
-                                                   title="YOGA Tab3 Plus-X703F 10.1英寸平板电脑 WIFI版 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2016/10/24/MY00QGiBwggT5afPZNIwVZtfJ-7415.w164.jpg"
-                                                         alt="YOGA Tab3 Plus-X703F 10.1英寸平板电脑 WIFI版 黑色"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/58519.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p8_58519"
-                                                   title="YOGA Tab3 Plus-X703F 10.1英寸平板电脑 WIFI版 黑色"
-                                                   class="pro_name">YOGA Tab3 Plus-X703F 10.1英寸平板电脑 WIFI版 黑色</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/58519.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p8_58519"
-                                                   title="YOGA Tab3 Plus-X703F 10.1英寸平板电脑 WIFI版 黑色"
-                                                   class="pro_description">2K分辨率纵享影音</a>
-                                                <p class="prod" gcode="58519">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/58519.html');"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p8_58519"
-                                                       title="YOGA Tab3 Plus-X703F 10.1英寸平板电脑 WIFI版 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="9"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000816.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p9_1000816"
-                                                   title="联想Mirage | 星球大战：绝地挑战" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/05/31/9ePuCxYuiqUqFuYR5s8DOjuIz-0209.w164.jpg"
-                                                         alt="联想Mirage | 星球大战：绝地挑战" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000816.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p9_1000816"
-                                                   title="联想Mirage | 星球大战：绝地挑战" class="pro_name">联想Mirage |
-                                                    星球大战：绝地挑战</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000816.html');"
-                                                   latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p9_1000816"
-                                                   title="联想Mirage | 星球大战：绝地挑战" class="pro_description">Mirage AR头盔</a>
-                                                <p class="prod" gcode="1000816">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1000816.html');"
-                                                       latag="latag_home_MD532_073818f8-3519-4f06-bcf1-0d1aee62e147_p9_1000816"
-                                                       title="联想Mirage | 星球大战：绝地挑战" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label1"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floor_cntr nav_floor_item" id="J-Services-box" bid="b_homepc_fl_0006" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="e702e4a8-db91-4ff8-a8c5-b41ed1f928af" ordnum="12">
-                            <div class="piece shop_index_floor_l1_r9">
-                                <style type="text/css">
-                                    .shop_index_floor_l1_r9 body,
-                                    p,
-                                    ul,
-                                    h1,
-                                    h2,
-                                    h3,
-                                    h4,
-                                    h5,
-                                    h6,
-                                    dl,
-                                    dd,
-                                    dt {
-                                        margin: 0;
-                                        padding: 0;
-                                        list-style: none;
-                                        font-family: arial, "微软雅黑", sans-serif;
-                                        font-size: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 a {
-                                        text-decoration: none;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .clearfix:after {
-                                        display: block;
-                                        clear: both;
-                                        height: 0;
-                                        visibility: hidden;
-                                        font-size: 0;
-                                        line-height: 0;
-                                        content: "";
-                                    }
-
-                                    .shop_index_floor_l1_r9 .clearfix {
-                                        zoom: 1;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .myicon {
-                                        display: inline-block;
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                        background-repeat: no-repeat;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_label {
-                                        background-image: url(static/image/CmBZD1ZynUyAUnWjAAGn0mxLsoI703.png);
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor {
-                                        background: #f5f5f5;
-                                        padding: 30px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section a,
-                                    .floor_section a:focus {
-                                        outline: none !important;
-                                        text-decoration: none;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section img,
-                                    .floor_section a img {
-                                        border: 0;
-                                        vertical-align: top;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section {
-                                        width: 1200px;
-                                        margin: 0 auto 30px;
-                                        color: #000;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section .floor_title {
-                                        height: 48px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section .floor_title h3 {
-                                        float: left;
-                                        height: 48px;
-                                        line-height: 48px;
-                                        font-size: 20px;
-                                        font-weight: normal;
-                                        width: 240px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section .floor_links {
-                                        float: right;
-                                        width: 960px;
-                                        text-align: right;
-                                        padding-top: 20px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section .floor_links a {
-                                        color: #6f7170;
-                                        margin-left: 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_section .floor_links .floor_more {
-                                        background-position: -12px -433px;
-                                        width: 24px;
-                                        height: 16px;
-                                        display: inline-block;
-                                        padding-right: 20px;
-                                    }
-
-                                    /*左一右九布局*/
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_img {
-                                        width: 1200px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_left {
-                                        float: left;
-                                        width: 240px;
-                                        height: 535px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_left img {
-                                        width: 240px;
-                                        height: 535px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_right {
-                                        float: right;
-                                        width: 960px;
-                                        border-top: 1px solid #dedede;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item {
-                                        width: 239px;
-                                        height: 266px;
-                                        border-right: 1px solid #dedede;
-                                        border-bottom: 1px solid #dedede;
-                                        float: left;
-                                        position: relative;
-                                        background: #fff;
-                                        text-align: center;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item a,
-                                    .floor_l1_r9 .floor_item_small a {
-                                        display: block;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_img {
-                                        overflow: hidden;
-                                        padding: 12px 0;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_img img {
-                                        height: 164px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_name,
-                                    .floor_l1_r9 .floor_item_small .pro_name {
-                                        font-size: 14px;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_name {
-                                        padding: 0 14px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_description,
-                                    .floor_l1_r9 .floor_item_small .pro_description {
-                                        color: #6f7170;
-                                        height: 20px;
-                                        line-height: 20px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_description {
-                                        padding: 0 12px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item .pro_price,
-                                    .floor_l1_r9 .floor_item_small .pro_price {
-                                        font-size: 14px;
-                                        color: #e2231a;
-                                        height: 22px;
-                                        line-height: 22px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label {
-                                        display: block;
-                                        width: 54px;
-                                        height: 54px;
-                                        position: absolute;
-                                        right: 0;
-                                        top: 0;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label1 {
-                                        background-position: 0 -700px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label2 {
-                                        background-position: 0 -760px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label3 {
-                                        background-position: 0 -820px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label4 {
-                                        background-position: 0 -880px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label5 {
-                                        background-position: 0 -940px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label6 {
-                                        background-position: 0 -1000px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label7 {
-                                        background-position: 0 -1060px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label8 {
-                                        background-position: 0 -1120px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_label9 {
-                                        background-position: 0 -1180px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small {
-                                        width: 239px;
-                                        border-right: 1px solid #dedede;
-                                        border-bottom: 1px solid #dedede;
-                                        float: left;
-                                        position: relative;
-                                        background: #fff;
-                                        text-align: left;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .small_top {
-                                        height: 133px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .small_bottom {
-                                        height: 132px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small .pro_img {
-                                        float: right;
-                                        text-align: center;
-                                        padding: 16px 0;
-                                        width: 120px;
-                                        overflow: hidden;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small .pro_img img {
-                                        height: 100px;
-                                    }
-
-                                    .shop_index_floor_l1_r9 .floor_l1_r9 .floor_item_small .floor_item_txt {
-                                        float: left;
-                                        width: 104px;
-                                        padding: 30px 0 0 15px;
-                                    }
-                                </style>
-                                <div class="floor_section floor_l1_r9">
-                                    <div class="floor_title clearfix">
-                                        <h3>6F 服务/配件</h3>
-                                        <div class="floor_links">
-                                            <a target="_blank" href="home/serviceindex.html" title="原厂保修">原厂保修</a>
-                                            <a target="_blank"
-                                               href="javascript:window.open('https://activity.lenovo.com.cn/ecare365/index.html?_ga=2.2414130.325049902.1556435938-582914145.1547544390');"
-                                               title="软件服务">软件服务</a>
-                                            <a target="_blank"
-                                               href="javascript:window.open('https://activity.lenovo.com.cn/repair-service/index.html?_ga=2.2414130.325049902.1556435938-582914145.1547544390');"
-                                               title="维修保养">维修保养</a>
-                                            <a href="javascript:window.open('https://s.lenovo.com.cn/?index=360');"
-                                               target="_blank" title="" class="myicon floor_more">更多</a></div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank"
-                                               href="javascript:window.open('https://activity.lenovo.com.cn/repair-service/index.html?_ga=2.182132391.1813918443.1563761840-1283756253.1560319673');"
-                                               latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p2.lefile.cn/product/adminweb/2019/07/23/d01cde01-576e-429b-af72-52344b5e9150.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/100785.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p2_100785"
-                                                   title="Lenovo Care＋笔记本整机延保优享服务" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/05/08/zXxeHjk9TI2mtwuhg9JR0Ybkv-1199.w164.jpg"
-                                                         alt="Lenovo Care＋笔记本整机延保优享服务" class="lazy_img"></a>
-                                                <a target="_blank" href="product/100785.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p2_100785"
-                                                   title="Lenovo Care＋笔记本整机延保优享服务" class="pro_name">Lenovo
-                                                    Care＋笔记本整机延保优享服务</a>
-                                                <a target="_blank" href="product/100785.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p2_100785"
-                                                   title="Lenovo Care＋笔记本整机延保优享服务"
-                                                   class="pro_description">延保+远程+优惠权益</a>
-                                                <p class="prod" gcode="100785">
-                                                    <a target="_blank" href="product/100785.html"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p2_100785"
-                                                       title="Lenovo Care＋笔记本整机延保优享服务" class="pro_price red price"
-                                                       controller="fn1">299元</a></p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1004296.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p3_1004296"
-                                                   title="联想清洁套装C01" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/03/27/GA7BpIudR2edUSyxsBGu3fc5k-6276.w164.jpg"
-                                                         alt="联想清洁套装C01" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1004296.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p3_1004296"
-                                                   title="联想清洁套装C01" class="pro_name">联想清洁套装C01</a>
-                                                <a target="_blank" href="product/1004296.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p3_1004296"
-                                                   title="联想清洁套装C01" class="pro_description">天然提炼，强力去污，清洁彻底</a>
-                                                <p class="prod" gcode="1004296">
-                                                    <a target="_blank" href="product/1004296.html"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p3_1004296"
-                                                       title="联想清洁套装C01" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005156.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p4_1005156"
-                                                   title="联想一键服务有线键鼠套装" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/07/15/ig0A1su9UvHaHIrgm651ZB3LX-1125.w164.jpg"
-                                                         alt="联想一键服务有线键鼠套装" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005156.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p4_1005156"
-                                                   title="联想一键服务有线键鼠套装" class="pro_name">联想一键服务有线键鼠套装</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005156.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p4_1005156"
-                                                   title="联想一键服务有线键鼠套装" class="pro_description">有困难？一键呼叫工程师！</a>
-                                                <p class="prod" gcode="1005156">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1005156.html');"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p4_1005156"
-                                                       title="联想一键服务有线键鼠套装" class="pro_price red price"
-                                                       controller="fn1">79元</a></p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000841.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p5_1000841"
-                                                   title="联想USB-C电源适配器（65W）" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2018/09/04/7f5lJU5ejCv3gsEe9TyHPTg33-3361.w164.jpg"
-                                                         alt="联想USB-C电源适配器（65W）" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000841.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p5_1000841"
-                                                   title="联想USB-C电源适配器（65W）" class="pro_name">联想USB-C电源适配器（65W）</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000841.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p5_1000841"
-                                                   title="联想USB-C电源适配器（65W）" class="pro_description">比公交卡还小，支持快充</a>
-                                                <p class="prod" gcode="1000841">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1000841.html');"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p5_1000841"
-                                                       title="联想USB-C电源适配器（65W）" class="pro_price red price"
-                                                       controller="fn1">259元</a></p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1003768.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p6_1003768"
-                                                   title="联想服务插线板 P22" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2018/11/14/HNjXa33Uc1Qz5XDxJ0tFreJP2-4008.w164.jpg"
-                                                         alt="联想服务插线板 P22" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1003768.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p6_1003768"
-                                                   title="联想服务插线板 P22" class="pro_name">联想服务插线板 P22</a>
-                                                <a target="_blank" href="product/1003768.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p6_1003768"
-                                                   title="联想服务插线板 P22" class="pro_description">双USB、双5孔、1.8米线长</a>
-                                                <p class="prod" gcode="1003768">
-                                                    <a target="_blank" href="product/1003768.html"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p6_1003768"
-                                                       title="联想服务插线板 P22" class="pro_price red price"
-                                                       controller="fn1">69元</a></p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002262.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p7_1002262"
-                                                   title="联想服务都市简约双肩包B1801" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2018/09/04/XGd7FGi5bN7Rx1EJr4kZ73LVg-8378.w164.jpg"
-                                                         alt="联想服务都市简约双肩包B1801" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002262.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p7_1002262"
-                                                   title="联想服务都市简约双肩包B1801" class="pro_name">联想服务都市简约双肩包B1801</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002262.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p7_1002262"
-                                                   title="联想服务都市简约双肩包B1801"
-                                                   class="pro_description">简约14寸，赠1次电脑远程调修服务</a>
-                                                <p class="prod" gcode="1002262">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1002262.html');"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p7_1002262"
-                                                       title="联想服务都市简约双肩包B1801" class="pro_price red price"
-                                                       controller="fn1">79元</a></p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005023.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p8_1005023"
-                                                   title="联想精密清洁方案Y01" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/07/04/u6PMiw4cYL0B8pDqUKghHx6wE-8162.w164.jpg"
-                                                         alt="联想精密清洁方案Y01" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005023.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p8_1005023"
-                                                   title="联想精密清洁方案Y01" class="pro_name">联想精密清洁方案Y01</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005023.html');"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p8_1005023"
-                                                   title="联想精密清洁方案Y01" class="pro_description">广泛使用与精密仪器内部+外部养护</a>
-                                                <p class="prod" gcode="1005023">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1005023.html');"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p8_1005023"
-                                                       title="联想精密清洁方案Y01" class="pro_price red price"
-                                                       controller="fn1">199元</a></p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item_small small_top clearfix btn_cntr_in_piece"
-                                                 datatype="3" sort="9" b_i="100,100,10">
-                                                <a target="_blank" href="product/1000630.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p9_1000630"
-                                                   title="重装系统服务" class="pro_img">
-                                                    <img width="100" height="100" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/01/04/zqJsmV56J6P9CQZlNrbBdKImg-8807.w100.jpg"
-                                                         alt="重装系统服务" class="lazy_img"></a>
-                                                <div class="floor_item_txt">
-                                                    <a target="_blank" href="product/1000630.html"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p9_1000630"
-                                                       title="重装系统服务" class="pro_name">重装系统服务</a>
-                                                    <a target="_blank" href="product/1000630.html"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p9_1000630"
-                                                       title="重装系统服务" class="pro_description">足不出户</a>
-                                                    <p class="prod" gcode="1000630">
-                                                        <a target="_blank" href="product/1000630.html"
-                                                           latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p9_1000630"
-                                                           title="重装系统服务" class="pro_price red price"
-                                                           controller="fn1">118元</a></p>
+                                            <div class="floor_img clearfix">
+                                                {{--广告--}}
+                                                <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
+                                                     b_i="240,535,40">
+                                                    <a target="_blank" href="{{ $lou->leftAds->href }}"
+                                                       title="">
+                                                        <img width="240" height="535" src="{{ url($lou->leftAds->img) }}"
+                                                             alt="" class="lazy_img"></a>
                                                 </div>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item_small small_bottom clearfix btn_cntr_in_piece"
-                                                 datatype="3" sort="10" b_i="100,100,10">
-                                                <a target="_blank" href="product/1003565.html"
-                                                   latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p10_1003565"
-                                                   title="笔记本拆机清洁保养服务（到店）" class="pro_img">
-                                                    <img width="100" height="100" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2019/05/13/V5wPUh8hLPKsYtD6gGnblfjp4-0572.w100.jpg"
-                                                         alt="笔记本拆机清洁保养服务（到店）" class="lazy_img"></a>
-                                                <div class="floor_item_txt">
-                                                    <a target="_blank" href="product/1003565.html"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p10_1003565"
-                                                       title="笔记本拆机清洁保养服务（到店）" class="pro_name">笔记本拆机清洁保养服务（到店）</a>
-                                                    <a target="_blank" href="product/1003565.html"
-                                                       latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p10_1003565"
-                                                       title="笔记本拆机清洁保养服务（到店）" class="pro_description">改善散热</a>
-                                                    <p class="prod" gcode="1003565">
-                                                        <a target="_blank" href="product/1003565.html"
-                                                           latag="latag_home_MD532_e702e4a8-db91-4ff8-a8c5-b41ed1f928af_p10_1003565"
-                                                           title="笔记本拆机清洁保养服务（到店）" class="pro_price red price"
-                                                           controller="fn1">69元</a></p>
+
+                                                <div class="floor_right">
+                                                    @foreach($lou->goods as $goods1)
+                                                    <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
+                                                         b_i="164,164,10">
+                                                        <a target="_blank" href="#"
+                                                           title="{{ $goods1->title }}" class="pro_img">
+                                                            <img width="164" height="164" src="{{ url($goods1->img) }}"
+                                                                 alt="{{ $goods1->title }}"
+                                                                 class="lazy_img"></a>
+                                                        <a target="_blank" href="#"
+                                                           title="{{ $goods1->title }}"
+                                                           class="pro_name">{{ $goods1->title }}</a>
+                                                        <a target="_blank" href="#"
+                                                           title="{{ $goods1->title }}"
+                                                           class="pro_description"></a>
+                                                        <p class="prod" gcode="1004456">
+                                                            <a target="_blank" href="#"
+                                                               title="{{ $goods1->title }}"
+                                                               class="pro_price red price">￥{{ number_format($goods1->price) }}元</a>
+                                                        </p>
+                                                       {{-- <span class="floor_label floor_label1"></span>--}}
+                                                    </div>
+                                                    @endforeach
                                                 </div>
-                                                <span class=""></span>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="floor_cntr nav_floor_item" id="J-Social-box" bid="b_homepc_fl_0007" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="44b1a6a9-3c64-42e9-b4e5-92ccd05beedd" ordnum="1">
-                            <div class="piece shop_index_floor_l1_r8">
-                                <div class="floor_section floor_l1_r8">
-                                    <div class="floor_title clearfix">
-                                        <h3>7F 选件</h3>
-                                        <div class="floor_links">
-                                            <a href="javascript:window.open('https://shop.lenovo.com.cn/lenovo_channel_shuma.html?ss=0.4725734347834738');"
-                                               target="_blank" title="" class="myicon floor_more">更多</a></div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank"
-                                               href="javascript:window.open('https://activity.lenovo.com.cn/xj/index.html');"
-                                               latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p3.lefile.cn/product/adminweb/2019/05/13/58a9640b-acdf-41b5-9190-3f62293a7f3d.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002305.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p2_1002305"
-                                                   title="联想小新Air双模鼠标 便携办公 无线蓝牙台式机笔记本鼠标" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2018/08/24/lDd4bIAZJvHgiV6j34d0znjRl-2484.w164.jpg"
-                                                         alt="联想小新Air双模鼠标 便携办公 无线蓝牙台式机笔记本鼠标" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002305.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p2_1002305"
-                                                   title="联想小新Air双模鼠标 便携办公 无线蓝牙台式机笔记本鼠标" class="pro_name">联想小新Air双模鼠标
-                                                    便携办公 无线蓝牙台式机笔记本鼠标</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002305.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p2_1002305"
-                                                   title="联想小新Air双模鼠标 便携办公 无线蓝牙台式机笔记本鼠标" class="pro_description"></a>
-                                                <p class="prod" gcode="1002305">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1002305.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p2_1002305"
-                                                       title="联想小新Air双模鼠标 便携办公 无线蓝牙台式机笔记本鼠标"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label1"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004880.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p3_1004880"
-                                                   title="联想小新智能语音鼠标" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/06/12/EktbPzXA34wKa8fChc0iVFRFE-4307.w164.jpg"
-                                                         alt="联想小新智能语音鼠标" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004880.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p3_1004880"
-                                                   title="联想小新智能语音鼠标" class="pro_name">联想小新智能语音鼠标</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004880.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p3_1004880"
-                                                   title="联想小新智能语音鼠标" class="pro_description"></a>
-                                                <p class="prod" gcode="1004880">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1004880.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p3_1004880"
-                                                       title="联想小新智能语音鼠标" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005022.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p4_1005022"
-                                                   title="联想拯救者HEADSHOT游戏鼠标" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/07/04/pABeg0Ccqd5xTjEijpIgyORN5-1944.w164.jpg"
-                                                         alt="联想拯救者HEADSHOT游戏鼠标" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005022.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p4_1005022"
-                                                   title="联想拯救者HEADSHOT游戏鼠标" class="pro_name">联想拯救者HEADSHOT游戏鼠标</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1005022.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p4_1005022"
-                                                   title="联想拯救者HEADSHOT游戏鼠标" class="pro_description"></a>
-                                                <p class="prod" gcode="1005022">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1005022.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p4_1005022"
-                                                       title="联想拯救者HEADSHOT游戏鼠标" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002490.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p5_1002490"
-                                                   title="拯救者LEGION多功能双肩包X1(15.6英寸)" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2018/09/13/MCjVgT2AKBpsfEO7DemCc6cqY-4265.w164.jpg"
-                                                         alt="拯救者LEGION多功能双肩包X1(15.6英寸)" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002490.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p5_1002490"
-                                                   title="拯救者LEGION多功能双肩包X1(15.6英寸)"
-                                                   class="pro_name">拯救者LEGION多功能双肩包X1(15.6英寸)</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002490.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p5_1002490"
-                                                   title="拯救者LEGION多功能双肩包X1(15.6英寸)"
-                                                   class="pro_description">3层独立分区，防泼水</a>
-                                                <p class="prod" gcode="1002490">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1002490.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p5_1002490"
-                                                       title="拯救者LEGION多功能双肩包X1(15.6英寸)" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004881.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p6_1004881"
-                                                   title="联想U04分线器 USB3.0一拖四多接口 HUB扩展 深灰色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/06/12/dX271apKAF6WB4GF4iZI29K7i-5636.w164.jpg"
-                                                         alt="联想U04分线器 USB3.0一拖四多接口 HUB扩展 深灰色" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004881.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p6_1004881"
-                                                   title="联想U04分线器 USB3.0一拖四多接口 HUB扩展 深灰色" class="pro_name">联想U04分线器
-                                                    USB3.0一拖四多接口 HUB扩展 深灰色</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004881.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p6_1004881"
-                                                   title="联想U04分线器 USB3.0一拖四多接口 HUB扩展 深灰色" class="pro_description"></a>
-                                                <p class="prod" gcode="1004881">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1004881.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p6_1004881"
-                                                       title="联想U04分线器 USB3.0一拖四多接口 HUB扩展 深灰色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000303.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p7_1000303"
-                                                   title="联想45W圆头电源适配器(CN)" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2018/01/26/UshgRPxv1v8CniHXuycXkKRch-8630.w164.jpg"
-                                                         alt="联想45W圆头电源适配器(CN)" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000303.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p7_1000303"
-                                                   title="联想45W圆头电源适配器(CN)" class="pro_name">联想45W圆头电源适配器(CN)</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000303.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p7_1000303"
-                                                   title="联想45W圆头电源适配器(CN)" class="pro_description"></a>
-                                                <p class="prod" gcode="1000303">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1000303.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p7_1000303"
-                                                       title="联想45W圆头电源适配器(CN)" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004836.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p8_1004836"
-                                                   title="联想B510电脑包13/14/15.6英寸笔记本背包 电脑背包 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/06/03/VB4iFAetTTsowQSBWSlx0eXgR-3752.w164.jpg"
-                                                         alt="联想B510电脑包13/14/15.6英寸笔记本背包 电脑背包 黑色" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004836.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p8_1004836"
-                                                   title="联想B510电脑包13/14/15.6英寸笔记本背包 电脑背包 黑色"
-                                                   class="pro_name">联想B510电脑包13/14/15.6英寸笔记本背包 电脑背包 黑色</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004836.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p8_1004836"
-                                                   title="联想B510电脑包13/14/15.6英寸笔记本背包 电脑背包 黑色"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1004836">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1004836.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p8_1004836"
-                                                       title="联想B510电脑包13/14/15.6英寸笔记本背包 电脑背包 黑色"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="9"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004532.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p9_1004532"
-                                                   title="拯救者LEGION铝合金散热支架" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2019/04/28/QvxvfnmX635sxiLiv7EoaL1AS-4592.w164.jpg"
-                                                         alt="拯救者LEGION铝合金散热支架" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004532.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p9_1004532"
-                                                   title="拯救者LEGION铝合金散热支架" class="pro_name">拯救者LEGION铝合金散热支架</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004532.html');"
-                                                   latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p9_1004532"
-                                                   title="拯救者LEGION铝合金散热支架" class="pro_description">6段可调，可折叠</a>
-                                                <p class="prod" gcode="1004532">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1004532.html');"
-                                                       latag="latag_home_MD532_44b1a6a9-3c64-42e9-b4e5-92ccd05beedd_p9_1004532"
-                                                       title="拯救者LEGION铝合金散热支架" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label1"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floor_cntr nav_floor_item" id="J-night-box" bid="b_homepc_fl_0008" ptype="2">
-                        <div class="piece_cntr back_h200 fixed along noremove config_btn_show"
-                             fid="fc6472bc-a1cd-42a3-af8f-81f989ae43f2" ordnum="1">
-                            <div class="piece shop_index_floor_l1_r8">
-                                <div class="floor_section floor_l1_r8">
-                                    <div class="floor_title clearfix">
-                                        <h3>8F 智能</h3>
-                                        <div class="floor_links">
-                                            <a href="javascript:window.open('https://shop.lenovo.com.cn/intelligent.html?ss=0.8562415378702846');"
-                                               target="_blank" title="" class="myicon floor_more">更多</a></div>
-                                    </div>
-                                    <div class="floor_img clearfix">
-                                        <div class="floor_left btn_cntr_in_piece" datatype="5" sort="1"
-                                             b_i="240,535,40">
-                                            <a target="_blank" href="product/1002955.html"
-                                               latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p1_goods_code_no_exists"
-                                               title="">
-                                                <img width="240" height="535" src="static/picture/tempimage.gif"
-                                                     _src="https://p3.lefile.cn/product/adminweb/2019/04/24/e6c9cb17-c276-4714-a5ac-7179871d08f3.jpg"
-                                                     alt="" class="lazy_img"></a>
-                                        </div>
-                                        <div class="floor_right">
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="2"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002831.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p2_1002831"
-                                                   title="联想Watch S 真皮表带 黑色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2018/10/17/dhtJAYHQrhSuqP8ZeNdnyunjO-3234.w164.jpg"
-                                                         alt="联想Watch S 真皮表带 黑色" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002831.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p2_1002831"
-                                                   title="联想Watch S 真皮表带 黑色" class="pro_name">联想Watch S 真皮表带 黑色</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002831.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p2_1002831"
-                                                   title="联想Watch S 真皮表带 黑色" class="pro_description"></a>
-                                                <p class="prod" gcode="1002831">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1002831.html');"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p2_1002831"
-                                                       title="联想Watch S 真皮表带 黑色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="3"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002496.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p3_1002496"
-                                                   title="联想智能空气净化器" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p1.lefile.cn/product/adminweb/2018/12/12/RZECXQBIIpI2tlxA1aUQtBCgm-0427.w164.jpg"
-                                                         alt="联想智能空气净化器" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002496.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p3_1002496"
-                                                   title="联想智能空气净化器" class="pro_name">联想智能空气净化器</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002496.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p3_1002496"
-                                                   title="联想智能空气净化器" class="pro_description"></a>
-                                                <p class="prod" gcode="1002496">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1002496.html');"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p3_1002496"
-                                                       title="联想智能空气净化器" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="4"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004675.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p4_1004675"
-                                                   title="联想智能指纹锁R2（咖啡棕）" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/05/20/6eMwDlQR9HLosoBaDa07hRvpx-7375.w164.jpg"
-                                                         alt="联想智能指纹锁R2（咖啡棕）" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004675.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p4_1004675"
-                                                   title="联想智能指纹锁R2（咖啡棕）" class="pro_name">联想智能指纹锁R2（咖啡棕）</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1004675.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p4_1004675"
-                                                   title="联想智能指纹锁R2（咖啡棕）" class="pro_description"></a>
-                                                <p class="prod" gcode="1004675">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1004675.html');"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p4_1004675"
-                                                       title="联想智能指纹锁R2（咖啡棕）" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="5"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1005013.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p5_1005013"
-                                                   title="Lecoo感应节水宝S1" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2019/06/24/Ky0ZC9YOp4g40d0CorhkwkPA7-6491.w164.jpg"
-                                                         alt="Lecoo感应节水宝S1" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1005013.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p5_1005013"
-                                                   title="Lecoo感应节水宝S1" class="pro_name">Lecoo感应节水宝S1</a>
-                                                <a target="_blank" href="product/1005013.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p5_1005013"
-                                                   title="Lecoo感应节水宝S1" class="pro_description"></a>
-                                                <p class="prod" gcode="1005013">
-                                                    <a target="_blank" href="product/1005013.html"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p5_1005013"
-                                                       title="Lecoo感应节水宝S1" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="6"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1001892.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p6_1001892"
-                                                   title="联想（Lenovo）平衡车儿童 成人独轮电动平衡车 蛋蛋体感车 智能代步车" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2018/07/23/fFHtKp54f3e8vyxhYcGcquraI-0371.w164.jpg"
-                                                         alt="联想（Lenovo）平衡车儿童 成人独轮电动平衡车 蛋蛋体感车 智能代步车"
-                                                         class="lazy_img"></a>
-                                                <a target="_blank" href="product/1001892.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p6_1001892"
-                                                   title="联想（Lenovo）平衡车儿童 成人独轮电动平衡车 蛋蛋体感车 智能代步车"
-                                                   class="pro_name">联想（Lenovo）平衡车儿童 成人独轮电动平衡车 蛋蛋体感车 智能代步车</a>
-                                                <a target="_blank" href="product/1001892.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p6_1001892"
-                                                   title="联想（Lenovo）平衡车儿童 成人独轮电动平衡车 蛋蛋体感车 智能代步车"
-                                                   class="pro_description"></a>
-                                                <p class="prod" gcode="1001892">
-                                                    <a target="_blank" href="product/1001892.html"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p6_1001892"
-                                                       title="联想（Lenovo）平衡车儿童 成人独轮电动平衡车 蛋蛋体感车 智能代步车"
-                                                       class="pro_price red price" controller="fn1"></a>
-                                                </p>
-                                                <span class=""></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="7"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002895.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p7_1002895"
-                                                   title="联想Lenovo Watch C 小乐儿童电话手表 粉色" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p4.lefile.cn/product/adminweb/2018/12/12/mOdr5uvQO2NofiRDNwgRwU0a7-5432.w164.jpg"
-                                                         alt="联想Lenovo Watch C 小乐儿童电话手表 粉色" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002895.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p7_1002895"
-                                                   title="联想Lenovo Watch C 小乐儿童电话手表 粉色" class="pro_name">联想Lenovo Watch
-                                                    C 小乐儿童电话手表 粉色</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1002895.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p7_1002895"
-                                                   title="联想Lenovo Watch C 小乐儿童电话手表 粉色" class="pro_description"></a>
-                                                <p class="prod" gcode="1002895">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1002895.html');"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p7_1002895"
-                                                       title="联想Lenovo Watch C 小乐儿童电话手表 粉色" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="8"
-                                                 b_i="164,164,10">
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000742.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p8_1000742"
-                                                   title="联想HC11车载充电器 一拖二" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p3.lefile.cn/product/adminweb/2018/06/12/AGd7HBNLVfP6P1pV4B1afG1n8-3594.w164.jpg"
-                                                         alt="联想HC11车载充电器 一拖二" class="lazy_img"></a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000742.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p8_1000742"
-                                                   title="联想HC11车载充电器 一拖二" class="pro_name">联想HC11车载充电器 一拖二</a>
-                                                <a target="_blank"
-                                                   href="javascript:window.open('https://item.lenovo.com.cn/product/1000742.html');"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p8_1000742"
-                                                   title="联想HC11车载充电器 一拖二" class="pro_description"></a>
-                                                <p class="prod" gcode="1000742">
-                                                    <a target="_blank"
-                                                       href="javascript:window.open('https://item.lenovo.com.cn/product/1000742.html');"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p8_1000742"
-                                                       title="联想HC11车载充电器 一拖二" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label2"></span>
-                                            </div>
-                                            <div class="floor_item btn_cntr_in_piece" datatype="3" sort="9"
-                                                 b_i="164,164,10">
-                                                <a target="_blank" href="product/1003772.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p9_1003772"
-                                                   title="拯救者电竞路由器 FogPOD 800G" class="pro_img">
-                                                    <img width="164" height="164" src="static/picture/tempimage.gif"
-                                                         _src="//p2.lefile.cn/product/adminweb/2019/01/08/KiyB9a1iQFJg7IkaA5KtWMhSm-1070.w164.jpg"
-                                                         alt="拯救者电竞路由器 FogPOD 800G" class="lazy_img"></a>
-                                                <a target="_blank" href="product/1003772.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p9_1003772"
-                                                   title="拯救者电竞路由器 FogPOD 800G" class="pro_name">拯救者电竞路由器 FogPOD
-                                                    800G</a>
-                                                <a target="_blank" href="product/1003772.html"
-                                                   latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p9_1003772"
-                                                   title="拯救者电竞路由器 FogPOD 800G" class="pro_description"></a>
-                                                <p class="prod" gcode="1003772">
-                                                    <a target="_blank" href="product/1003772.html"
-                                                       latag="latag_home_MD532_fc6472bc-a1cd-42a3-af8f-81f989ae43f2_p9_1003772"
-                                                       title="拯救者电竞路由器 FogPOD 800G" class="pro_price red price"
-                                                       controller="fn1"></a>
-                                                </p>
-                                                <span class="floor_label floor_label3"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -6735,13 +3210,8 @@
                         <div class="all_countries" id="all_countries" style="display: none;">
                             <ul>
                                 <li>
-                                    <a href='javascript:window.open(' https://www.lenovo.com/dz/fr/ ');'>Algeria</a>
-                                </li>
-                                <li>
-                                    <a href='javascript:window.open(' https://www.lenovo.com/ao/en/ ');'>Angola</a></li>
-                                <li>
-                                    <a href='javascript:window.open(' https://www.lenovo.com/ar/es/ ');'>Argentina</a>
-                                </li>
+                                    <a href='javascript:window.open("https://debuginn.cn");'>Algeria</a>
+                                </li
                             </ul>
                         </div>
                         <div id="cn_img"></div>
@@ -7026,6 +3496,7 @@
 </script>
 <script type="text/javascript" src="static/js/prdPlatInfo.js"></script>
 <script type="text/javascript" src="static/js/latag.js"></script>
+<script src="static/js/la.cookie.no.leid.getcookie.2019.js"></script>
 <script type="text/javascript">
     function fn1(){
         var p_fn1 = '';

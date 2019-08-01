@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="前台首页变动">
+    <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="前台首页遍历导航页及banner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdsTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdsTypeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adstype/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adstype/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adstype/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adstype/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,52 +41,6 @@
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>assets</find>
-      <find>管理员密码</find>
-      <find>editAdmin</find>
-      <find>图片</find>
-      <find>ordpassword</find>
-      <find>editbody</find>
-      <find>types</find>
-      <find>pic</find>
-      <find>admin-box</find>
-      <find>pid</find>
-      <find>菜单</find>
-      <find>数据</find>
-      <find>getContent</find>
-      <find>setContent</find>
-      <find>插入</find>
-      <find>管理员</find>
-      <find>轮播图</find>
-      <find>添加</find>
-      <find>广告</find>
-      <find>sort</find>
-      <find>count</find>
-      <find>管理</find>
-      <find>订单</find>
-      <find>用户</find>
-      <find>只有一天</find>
-      <find>/images/slider</find>
-      <find>bg-5</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>{{ asset(&quot;home</replace>
-      <replace>home</replace>
-      <replace>菜单</replace>
-      <replace>轮播图</replace>
-      <replace>slider</replace>
-      <replace>商品</replace>
-      <replace>更新</replace>
-      <replace>广告</replace>
-      <replace>修改</replace>
-      <replace>分类广告</replace>
-      <replace>详情</replace>
-      <replace>订单</replace>
-      <replace>评论</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -289,7 +246,8 @@
       <workItem from="1564060106319" duration="337000" />
       <workItem from="1564133674523" duration="7110000" />
       <workItem from="1564205428303" duration="2004000" />
-      <workItem from="1564360290168" duration="6416000" />
+      <workItem from="1564360290168" duration="6487000" />
+      <workItem from="1564640032794" duration="17781000" />
     </task>
     <task id="LOCAL-00001" summary="修改readme文件为laravel，后期加上readme文件">
       <created>1561460857044</created>
@@ -515,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564150220717</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="前台首页遍历导航页及banner">
+      <created>1564404871659</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1564404871659</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -547,7 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除管理员" />
     <MESSAGE value="修改管理员模块+laravel加解密部署" />
     <MESSAGE value="修改管理员模块完工" />
     <MESSAGE value="添加菜单管理模块   但是刚开始起步" />
@@ -572,7 +536,8 @@
     <MESSAGE value="用户退出功能" />
     <MESSAGE value="渲染前台轮播图" />
     <MESSAGE value="前台首页变动" />
-    <option name="LAST_COMMIT_MESSAGE" value="前台首页变动" />
+    <MESSAGE value="前台首页遍历导航页及banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="前台首页遍历导航页及banner" />
   </component>
   <component name="masterDetails">
     <states>

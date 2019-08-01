@@ -33,11 +33,7 @@
                         <select name="tid" id="tid" class="form-control">
                             <option value="">请选择所属分类</option>
                             @foreach($data as $value)
-                                @if($value->size == 3)
-                                    <option value="{{ $value->id }}">{{ $value->html }}</option>
-                                @else
-                                    <option disabled value="{{ $value->id }}">{{ $value->html }}</option>
-                                @endif
+                                <option value="{{ $value->id }}">{{ $value->html }}</option>
                             @endforeach
                         </select>
                     </div>
