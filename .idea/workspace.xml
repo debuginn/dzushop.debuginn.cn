@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="前台首页遍历导航页及banner">
+    <list default="true" id="7ff056f8-c0cf-48f8-94f3-5d9e54b284b8" name="默认更改列表" comment="前台首页遍历明星商品、楼层及商品">
+      <change afterPath="$PROJECT_DIR$/resources/views/template/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdsTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdsTypeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adstype/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adstype/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adstype/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adstype/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -247,7 +244,8 @@
       <workItem from="1564133674523" duration="7110000" />
       <workItem from="1564205428303" duration="2004000" />
       <workItem from="1564360290168" duration="6487000" />
-      <workItem from="1564640032794" duration="17781000" />
+      <workItem from="1564640032794" duration="17906000" />
+      <workItem from="1564715824820" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="修改readme文件为laravel，后期加上readme文件">
       <created>1561460857044</created>
@@ -480,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564404871659</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="前台首页遍历明星商品、楼层及商品">
+      <created>1564666285007</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564666285007</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -512,7 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改管理员模块+laravel加解密部署" />
     <MESSAGE value="修改管理员模块完工" />
     <MESSAGE value="添加菜单管理模块   但是刚开始起步" />
     <MESSAGE value="菜单 未完成树型分布" />
@@ -537,7 +541,8 @@
     <MESSAGE value="渲染前台轮播图" />
     <MESSAGE value="前台首页变动" />
     <MESSAGE value="前台首页遍历导航页及banner" />
-    <option name="LAST_COMMIT_MESSAGE" value="前台首页遍历导航页及banner" />
+    <MESSAGE value="前台首页遍历明星商品、楼层及商品" />
+    <option name="LAST_COMMIT_MESSAGE" value="前台首页遍历明星商品、楼层及商品" />
   </component>
   <component name="masterDetails">
     <states>
