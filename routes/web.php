@@ -14,8 +14,10 @@
 /*
  * 路由组 -- 前台
  */
+// 前台首页界面
 Route::get('/', 'Home\IndexController@index');
-
+// 前台商品界面
+Route::get('/goods/{id}', 'Home\GoodsController@index');
 
 
 /*
