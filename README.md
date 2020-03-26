@@ -3,7 +3,7 @@
 ## 项目链接
 **前台展示地址：** http://dzushop.debuginn.cn/ （未完全开发）
 
-**后台登录地址：** http://dzushop.debuginn.cn/admin/login （完全开发）
+**后台登录地址：** http://dzushop.debuginn.cn/admin/login （大部分开发）
 
 ## 项目技术选型
 - 操作系统：Linux / Ubuntu16.04
